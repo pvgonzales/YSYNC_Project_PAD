@@ -1,8 +1,19 @@
+p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    background-color: #D6DBEA; 
+}
+
 .parentNav {
     display: flex;
+    /* flex-flow: row wrap; */
     justify-content: space-between;
     align-items: center;
-    padding: 30px 80px;
+    padding: 10px 80px;
     background-color: #132B41;
     overflow: auto;
     gap: 1rem;
@@ -31,10 +42,12 @@
     padding: 0px 80px;
     text-decoration: none;
     align-items: center;
+    /* flex-wrap: wrap; */
 }
 
 .navButtons li {
     display: inline;
+    /* flex: 1 1 auto; */
 }
 
 .navButtons a {
@@ -46,9 +59,6 @@
     text-decoration: underline;
 } */
 
-body{
-    margin: 0;
-}
 
 .logo{
     width: 70px;
@@ -65,4 +75,96 @@ body{
     background-color: #00A3F0;
     padding: 10px 15px; 
     border-radius: 40px;
+}
+
+.message {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.connect-left,
+.connect-right {
+    flex: 1; 
+    min-width: 50px;
+}
+
+.connect {
+    display: flex;
+    width: 70rem;
+    height: auto;
+    color: #132B41;
+    background-color: white;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 15px;
+    flex-direction: column;
+    /* column-gap: 30px; */
+    border-bottom: 0.5px solid #565656;
+}
+
+.chat {
+    color: black;
+    display: flex; 
+    column-gap: 15px;
+}
+
+.connectTitle{    
+    border-bottom: 0.5px solid #565656;
+}
+
+.connectTitleT{       
+    margin-left: 20px;
+}
+
+.profileChat{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 2px;
+    margin-top: 1rem;
+}
+
+.chatProfile{
+    margin: 1rem;
+    margin-right: 3px;
+    margin-left: 5rem;
+}
+
+.chatName{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3px;
+    margin-top: 1.5rem;
+}
+
+.chatD{
+    font-size: 10px;
+}
+
+.chatD2{
+    margin: 2rem;
+}
+
+.chatN{
+    align-items: center;
+    margin-right: 8px;
+}
+
+.chatT2{
+    margin: 0;
+}
+
+.chatInfo{
+    margin-right: 5rem;
+}
+
+.heart {
+    font-size: 50px; 
+    color: red;      
+}
+
+.heart:focus{
+    color: blue;
 }
