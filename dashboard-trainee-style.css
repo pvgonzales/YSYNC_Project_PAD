@@ -1,0 +1,208 @@
+p {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #d6dbea;
+}
+
+h1 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 23px;
+  color: #1e1e1e;
+}
+
+.logoname {
+  display: flex;
+  align-items: center;
+}
+
+.parentNav {
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background-color: #132b41;
+  overflow: auto;
+  gap: 1rem;
+}
+
+.navi {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: "Segoe UI";
+  padding: 15px;
+  padding-right: 0;
+}
+
+.navButtons {
+  list-style-type: none;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  text-decoration: none;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.navButtons li {
+  display: inline;
+  /* flex: 1 1 auto; */
+}
+
+.navButtons a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  width: 70px;
+}
+
+.profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subNav {
+  border-bottom: 0.5px solid #565656;
+}
+
+.subNavButtons {
+  list-style-type: none;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  padding-top: 12px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.subNavButtons a {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+.dashboard {
+  /* display: flex;
+  width: 70rem;
+  height: auto;
+  color: #132b41;
+  background-color: white;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 15px;
+  flex-direction: column; */
+  /* column-gap: 30px; */
+}
+
+.dashboard-left {
+  flex: 1;
+  float: left;
+  width: 70%;
+}
+
+.dashboard-right {
+  float: right;
+  flex: 1;
+  width: 30%;
+}
+
+.pinned-container {
+  min-height: 300px;
+  max-width: 1000px;
+  margin: 25px auto 0px 40px;
+  background-color: #f2f5ff;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+}
+
+.pinned-header {
+  max-width: 1200px;
+  max-height: 70px;
+  align-items: center;
+  display: flex;
+  background-color: #132b41;
+  padding-left: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.pinned-Announcements {
+  padding-left: 10px;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  text-decoration: none;
+  color: #f2f5ff;
+}
+
+.stream-header {
+  padding: 0px 90px;
+}
+
+.stream {
+  margin: auto;
+  min-height: 200px;
+  max-width: 800px;
+  margin: 10px 20px 100px 120px;
+}
+
+.posts-box {
+  min-height: 200px;
+  max-width: 800px;
+  margin: 10px 20px 100px 120px;
+  background-color: #f2f5ff;
+  outline-style: solid;
+  outline-color: #00a3f0;
+  outline-width: 2px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 1.5rem;
+  padding-right: 2px;
+  margin-top: 1rem;
+}
+
+.profilePic {
+  max-width: 50px;
+  float: left;
+}
+
+.postDets {
+  padding-top: 6px;
+  padding-left: 85px;
+}
+
+.username {
+  font-size: 23px;
+}
+
+.authorName {
+  padding-bottom: 0;
+}
+
+.postTime {
+  margin: 0px;
+}
+.date-time {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 14px;
+}
