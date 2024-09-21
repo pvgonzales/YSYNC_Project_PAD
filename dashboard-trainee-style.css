@@ -37,6 +37,7 @@ h1 {
   background-color: #132b41;
   overflow: auto;
   gap: 1rem;
+  /* flex-wrap: wrap;  */
 }
 
 .navi {
@@ -70,6 +71,10 @@ h1 {
   color: white;
 }
 
+.navActive{
+
+}
+
 .logo {
   width: 70px;
 }
@@ -82,7 +87,7 @@ h1 {
 }
 
 .subNav {
-  border-bottom: 0.5px solid #565656;
+  /* border-bottom: 0.5px solid #565656; */
 }
 
 .subNavButtons {
@@ -95,11 +100,27 @@ h1 {
   padding-top: 12px;
   text-decoration: none;
   align-items: center;
+  border-bottom: 0.5px solid #565656;
 }
 
 .subNavButtons a {
   text-decoration: none;
+  color: #565656;
+}
+
+.subNavActive {
+  border-bottom: 5px solid #3498db;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.subNavActive a {
   color: rgb(27, 27, 27);
+}
+
+.subNavButtons li {
+  position: relative; /* Ensure all buttons align properly */
+  padding-bottom: 8px; /* Add same padding as subNavActive */
 }
 
 .dashboard {
