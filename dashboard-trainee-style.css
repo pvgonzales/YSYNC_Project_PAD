@@ -1,4 +1,6 @@
-p {
+p,
+h1,
+h2 {
   font-size: 15px;
   font-weight: normal;
   font-family: "Segoe UI";
@@ -16,6 +18,11 @@ h1 {
   color: #1e1e1e;
 }
 
+.left-border,
+.right-border {
+  flex: 1;
+  min-width: 50px;
+}
 .logoname {
   display: flex;
   align-items: center;
@@ -223,9 +230,133 @@ h1 {
 
 .postContent {
   padding-left: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 55px;
+  max-width: 700px;
 }
 
 .post-content {
   font-size: 16px;
+  max-width: fit-content;
+  padding-bottom: 30px;
+  border-bottom: 0.3px solid #a8a8a8;
+  border-bottom-width: 1px;
+  margin-bottom: 0;
+}
+
+.reactions {
+  margin-top: -50px;
+  padding-bottom: 1px;
+}
+.buttons {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 40px;
+  padding-right: 0px;
+  align-items: center;
+}
+
+.counter {
+  margin-top: 0px;
+  float: right;
+  font-size: 20px;
+}
+
+.heart-icon {
+  margin-top: -6px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.comment-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.speech-icon {
+  width: 28px;
+}
+
+.comment-icon-container {
+  padding-right: 140px;
+}
+
+.comment-box {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #f7f9fe;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  width: 100%;
+  outline: 0.5px solid #939393;
+  max-width: 400px;
+}
+
+.comments-container {
+  margin-top: -70px;
+  max-width: 400px;
+  max-height: 9px;
+  width: 100%;
+  float: right;
+  flex: auto;
+}
+
+textarea {
+  background-color: #f7f9fe;
+  margin-top: -10px;
+  border: none;
+  outline: none;
+  max-width: 400px;
+  max-height: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  resize: none;
+  overflow: hidden;
+}
+
+textarea::placeholder {
+  color: #aaa;
+  font-family: "Segoe UI";
+}
+
+.submit-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.upcoming-container {
+  min-height: 300px;
+  max-width: 370px;
+  margin: 25px auto 0px 40px;
+  background-color: #f2f5ff;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+}
+
+.upcoming-header {
+  max-width: 370px;
+  max-height: 70px;
+  align-items: center;
+  display: flex;
+  background-color: #132b41;
+  padding-left: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.main {
+  width: 100%;
+  margin-right: 10px;
 }

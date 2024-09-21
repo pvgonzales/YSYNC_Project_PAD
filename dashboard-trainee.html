@@ -23,7 +23,9 @@
       <img src="profile.jpg" alt="profile pic" class="profile" />
     </div>
 
+    <div class="left-border"></div>
     <div class="main">
+      <!--Div for the subNav (Announcements | Calendar)-->
       <div class="subNav">
         <ul class="subNavButtons">
           <li id="announcements"><a href="#">Announcements</a></li>
@@ -31,6 +33,7 @@
         </ul>
       </div>
 
+      <!--Div for the left division (Announcements)-->
       <div class="dashboard-left">
         <div class="pinned-container">
           <div class="pinned-header">
@@ -40,91 +43,174 @@
         </div>
 
         <div class="announcement-stream">
-            <div class="stream-header">
-                <h1>Announcements</h1>
-            </div>
+          <div class="stream-header">
+            <h1>Announcements</h1>
+          </div>
 
-            <div class="posts-container">
-                <div class="posts-box">
-
-                    <div class="post">
-
-                        <div class="postInfo">
-                            <div class="profilePic">
-                                <img src="Snorlax.png" alt="profile-photo" class="profile-picture">
-                            </div>
-                            <div class="postDets">
-                                <div class="author-name">
-                                    <h1 class="username">John Doe</h1>
-                                </div>
-                                <div class="postTime"></div>
-                                    <h2 class="date-time">September 9, 2024 | 12:30pm</h2>
-                                </div>
-                            </div>
-
-                            <div class="postProper">
-                                <div class="Title">
-                                    <h1 class="post-title">Welcome to YSYNC Trainees!</h1>
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">Hello YSES Trainees! This is the official YSES Website for the training process. 
-                                        Always check the announcement stream to be updated of the latest happenings, schedules, 
-                                        and updates regarding the training process. Goodluck!
-                                    </p>
-                                </div>
-                            </div>
-                                
-                            </div>
-                            </div>
-                </div> 
-                
-                <div class="posts-container">
-                    <div class="posts-box">
-    
-                        <div class="post">
-    
-                            <div class="postInfo">
-                                <div class="profilePic">
-                                    <img src="Snorlax.png" alt="profile-photo" class="profile-picture">
-                                </div>
-                                <div class="postDets">
-                                    <div class="author-name">
-                                        <h1 class="username">John Doe</h1>
-                                    </div>
-                                    <div class="postTime"></div>
-                                        <h2 class="date-time">September 9, 2024 | 12:30pm</h2>
-                                    </div>
-                                </div>
-    
-                                <div class="postProper">
-                                    <div class="Title">
-                                        <h1 class="post-title">Welcome to YSYNC Trainees!</h1>
-                                    </div>
-                                    <div class="postContent">
-                                        <p class="post-content">Hello YSES Trainees! This is the official YSES Website for the training process. 
-                                            Always check the announcement stream to be updated of the latest happenings, schedules, 
-                                            and updates regarding the training process. Goodluck!
-                                        </p>
-                                    </div>
-                                </div>
-                                    
-                                </div>
-                                </div>
+          <div class="posts-container">
+            <div class="posts-box">
+              <div class="post">
+                <div class="postInfo">
+                  <div class="profilePic">
+                    <img
+                      src="Snorlax.png"
+                      alt="profile-photo"
+                      class="profile-picture"
+                    />
+                  </div>
+                  <div class="postDets">
+                    <div class="author-name">
+                      <h1 class="username">John Doe</h1>
                     </div>
-
-            </div>
-                        
-                    
+                    <div class="postTime"></div>
+                    <h2 class="date-time">September 9, 2024 | 12:30pm</h2>
+                  </div>
                 </div>
+
+                <div class="postProper">
+                  <div class="Title">
+                    <h1 class="post-title">Welcome to YSYNC Trainees!</h1>
+                  </div>
+                  <div class="postContent">
+                    <p class="post-content">
+                      Hello YSES Trainees! This is the official YSES Website for
+                      the training process. Always check the announcement stream
+                      to be updated of the latest happenings, schedules, and
+                      updates regarding the training process. Goodluck!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="user-Interaction">
+                  <div class="reactions">
+                    <ul class="buttons">
+                      <li class="heart">
+                        <div class="heart-container">
+                          <button id="heartButton" class="heart-icon">❤</button>
+                          <h2 class="counter">1</h2>
+                        </div>
+                      </li>
+                      <li class="comments">
+                        <div class="comment-icon-container">
+                          <button class="comment-icon">
+                            <img
+                              src="speech-bubble.png"
+                              alt="Comment Icon"
+                              class="speech-icon"
+                            />
+                          </button>
+                          <h2 class="counter">1</h2>
+                        </div>
+                      </li>
+                      <li class="comments-container">
+                          <div class="comment-box">
+                            <textarea
+                              id="commentSection"
+                              placeholder="Add a comment..."
+                            ></textarea>
+                            <button class="submit-button">
+                              <img
+                                src="submit.png"
+                                alt="submit-button"
+                                class="send-icon"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
 
+          <div class="posts-container">
+            <div class="posts-box">
+              <div class="post">
+                <div class="postInfo">
+                  <div class="profilePic">
+                    <img
+                      src="Snorlax.png"
+                      alt="profile-photo"
+                      class="profile-picture"
+                    />
+                  </div>
+                  <div class="postDets">
+                    <div class="author-name">
+                      <h1 class="username">John Doe</h1>
+                    </div>
+                    <div class="postTime"></div>
+                    <h2 class="date-time">September 9, 2024 | 12:30pm</h2>
+                  </div>
+                </div>
 
+                <div class="postProper">
+                  <div class="Title">
+                    <h1 class="post-title">Welcome to YSYNC Trainees!</h1>
+                  </div>
+                  <div class="postContent">
+                    <p class="post-content">
+                      Hello YSES Trainees! This is the official YSES Website for
+                      the training process. Always check the announcement stream
+                      to be updated of the latest happenings, schedules, and
+                      updates regarding the training process. Goodluck!
+                    </p>
+                  </div>
+                </div>
+                <div class="user-Interaction"></div>
+                  <div class="reactions">
+                    <ul class="buttons">
+                      <li class="heart">
+                        <div class="heart-container">
+                          <button id="heartButton" class="heart-icon">❤</button>
+                          <h2 class="counter">12</h2>
+                        </div>
+                      </li>
+                      <li class="comments">
+                        <div class="comment-icon-container">
+                          <button class="comment-icon">
+                            <img
+                              src="speech-bubble.png"
+                              alt="Comment Icon"
+                              class="speech-icon"
+                            />
+                          </button>
+                          <h2 class="counter">1</h2>
+                        </div>
+                      </li>
+                      <li class="comments-container">
+                          <div class="comment-box">
+                            <textarea
+                              id="commentSection"
+                              placeholder="Add a comment..."
+                            ></textarea>
+                            <button class="submit-button">
+                              <img
+                                src="submit.png"
+                                alt="submit-button"
+                                class="send-icon"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
       </div>
 
+      <!--Div for the Upcoming Container-->
       <div class="dashboard-right">
+        <div class="upcoming-container">
+          <div class="upcoming-header">
+            <h1 class="pinned-Announcements">Upcoming</h1>
+          </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="right-border"></div>
   </body>
 </html>
