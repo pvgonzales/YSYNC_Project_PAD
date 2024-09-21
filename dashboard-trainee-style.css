@@ -72,7 +72,9 @@ h1 {
 }
 
 .navActive{
-
+  background-color: #00A3F0;
+  padding: 10px 15px; 
+  border-radius: 40px;
 }
 
 .logo {
