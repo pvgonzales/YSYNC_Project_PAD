@@ -51,13 +51,13 @@
             </div>
             <!-- Tabs -->
             <div class="tabs">
-                <button class="tab active">Trainees</button>
-                <button class="tab">Members</button>
+                <button class="tab active" id="trainees-tab" onclick="switchTab()">Trainees</button>
+                <button class="tab" id="members-tab" onclick="switchTab()">Members</button>
             </div>
             
             <!-- Table -->
             <div class="table-textfields">
-                <table class="account-table">
+                <table class="account-table" id="account-table-id">
                     <thead>
                         <tr>
                             <th>NAME</th>

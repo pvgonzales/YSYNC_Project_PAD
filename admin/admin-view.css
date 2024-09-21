@@ -60,14 +60,14 @@ body {
 .menu-container.active {
     font-weight: bold;
     background-position: left center;
-    background-image: url("./pics/highlight.png");
+    background-image: url("./assets/highlight.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .menu-container:hover {
     font-weight: bold;
-    background-image: url("./pics/highlight.png");
+    background-image: url("./assets/highlight.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
