@@ -1,6 +1,7 @@
 p {
   font-size: 15px;
   font-weight: normal;
+  font-family: "Segoe UI";
 }
 
 body {
@@ -168,6 +169,7 @@ h1 {
   outline-width: 2px;
   border-radius: 30px;
   box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  margin-bottom: 20px;
 }
 
 .profile-picture {
@@ -186,16 +188,16 @@ h1 {
 }
 
 .postDets {
-  padding-top: 6px;
+  padding-top: 4px;
   padding-left: 85px;
 }
 
-.username {
-  font-size: 23px;
+.author-name {
+  margin-bottom: -16px;
 }
 
-.authorName {
-  padding-bottom: 0;
+.username {
+  font-size: 22px;
 }
 
 .postTime {
@@ -204,5 +206,26 @@ h1 {
 .date-time {
   font-family: "Segoe UI";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13.5px;
+}
+
+.postProper {
+  padding-left: 40px;
+}
+
+.Title {
+  margin-bottom: -10px;
+}
+
+.post-title {
+  font-size: 27px;
+}
+
+.postContent {
+  padding-left: 5px;
+  padding-bottom: 20px;
+}
+
+.post-content {
+  font-size: 16px;
 }
