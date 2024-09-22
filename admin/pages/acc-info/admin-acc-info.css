@@ -24,6 +24,8 @@ body {
     padding: 20px;
 }
 
+
+
 .logo {
     text-align: center;
     margin-bottom: 40px;
@@ -56,6 +58,7 @@ body {
     display: flex;
     align-items: center;
     text-align: left;
+    transition: all 0.3s ease;
 }
 .menu-container.active {
     font-weight: bold;
@@ -80,11 +83,16 @@ body {
     color: #90A4AE;
 }
 
+@keyframes fadeIn{
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
 .main-content {
     flex: 1;
     padding: 30px;
     background-color: #D6DBEA;
-
+    animation: fadeIn 0.25s ease-in forwards;  
 }
 
 .header {
@@ -144,14 +152,19 @@ body {
     cursor: pointer;
 }
 
+.tab:hover{
+    transition: all 0.3s ease;
+}
+
 .tab.active {
     background-color: #00a3f0;
     color: white;
 }
 
 .account-table {    
-    margin-left:-35px;
-    width: 110%;
+    left: -30px;
+    position: relative;
+    width:105%;
     border-collapse: collapse;
     background-color: white;
     border-radius: 8px;
