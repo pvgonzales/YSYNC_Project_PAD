@@ -207,7 +207,7 @@ body{
     margin-right: 1rem;
     margin-bottom: 3rem;
     background: none;
-    background-color: #565656;
+    background-color: #a4a3a3;
     border: none;
     cursor: pointer;
     font-family: 'Segoe UI';
@@ -217,4 +217,9 @@ body{
     color: white;
     text-align: center;
     border-radius: 20%;
+}
+
+.post-create-button:hover,
+.post-cancel-button:hover {
+    background-color: #00A3F0; 
 }

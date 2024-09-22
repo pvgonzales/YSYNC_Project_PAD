@@ -1,0 +1,112 @@
+a{
+    font-family: 'Segoe UI';
+}
+
+p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    background-color: #D6DBEA; 
+    height: 100%;
+}
+
+.parentNav {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #132B41;
+    overflow: auto;
+    gap: 1rem;
+    min-width: 65rem;
+}
+
+.logoname{
+    display: flex;
+    align-items: center;
+}
+
+.navi {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Segoe UI';
+    padding: 15px;
+    padding-right: 0;
+}
+
+.navButtons {
+    list-style-type: none;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    display: flex;
+    gap: 4rem;
+    padding: 0px 80px;
+    text-decoration: none;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.navButtons li {
+    display: inline;
+    /* flex: 1 1 auto; */
+}
+
+.navButtons a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 70px;
+}
+
+.profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.selected{
+    background-color: #00A3F0;
+    padding: 10px 15px; 
+    border-radius: 40px;
+}
+
+.connect-profile-info {
+    width: 100%; 
+    margin: 0; 
+    display: flex;
+    flex-direction: row; 
+    position: relative;
+}
+
+.left-side-connect-profile,
+.right-side-connect-profile {
+    flex: 1; 
+    min-width: 50px;
+}
+
+.connect-go-back{
+    text-decoration: none;
+    color: black;
+    margin: 2rem;
+}
+
+.postProfile{
+    margin-top: 1rem;
+    color: white;
+    min-width: 700px;
+    min-height: 500px;
+    border-radius: 10%;
+    border: 2px solid #132B41;
+}
+
+.middle{
+    margin-top: 1rem;
+}

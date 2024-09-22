@@ -21,7 +21,7 @@ window.onload = () => {
 
         var tempInfo = document.createElement("div");
         tempInfo.className = "chatInfo";
-        tempInfo.innerHTML = "<div class='chatName'><div class='chatN'><h1>Pikachu</h1></div><div class='chatD'><h2 class='chatD2'>September 9, 2024 | 12:30pm</h2></div><div class='chatS'><button id='chatInfoSettings' class='chatInfoSetting'>...</button></div></div>"
+        tempInfo.innerHTML = "<div class='chatName'><div class='chatN'><h1>Pikachu</h1></div><div class='chatD'><h2 class='chatD2'>September 9, 2024 | 12:30pm</h2></div><div class='chatS'><a id='chatInfoSettings' class='chatInfoSetting' href='connect-trainee-profile.html'>...</a></div></div>"
 
         tempTitle.innerHTML = "<div class='chatT'><h1 class='chatT2'>EME EME EME</h1></div>"
 
