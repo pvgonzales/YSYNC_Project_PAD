@@ -13,7 +13,7 @@ window.onload = () => {
         var tempProfile = document.createElement("div");
         tempProfile.className = "chatProfile";
         var tempProfileImage = document.createElement("img");
-        tempProfileImage.src = "profile.jpg";
+        tempProfileImage.src = "connect-post-images/profile.jpg";
         tempProfileImage.alt = "profile pic";
         tempProfileImage.className = "profileChat";
         var tempTitle = document.createElement("div");
@@ -33,7 +33,7 @@ window.onload = () => {
 
         var tempInteract = document.createElement("div");
         tempInteract.className = "chatInteract";
-        tempInteract.innerHTML = "<div class='heartContainerConnect'> <button id='heartButtonConnect' class='heartIconConnect'>❤</button><h2 class='counterHeartConnect'>1</h2> </div> <div class='commentContainerConnect'> <button class='commentIconConnect'> <img src='speech-bubble.png' alt='Comment Icon' class='speech-icon' /> </button> <h2 class='counterCommentConnect'>1</h2> </div> "
+        tempInteract.innerHTML = "<div class='heartContainerConnect'> <button id='heartButtonConnect' class='heartIconConnect'>❤</button><h2 class='counterHeartConnect'>1</h2> </div> <div class='commentContainerConnect'> <button class='commentIconConnect'> <img src='connect-post-images/speech-bubble.png' alt='Comment Icon' class='speech-icon' /> </button> <h2 class='counterCommentConnect'>1</h2> </div> "
 
 
         tempP.appendChild(paragraph);
