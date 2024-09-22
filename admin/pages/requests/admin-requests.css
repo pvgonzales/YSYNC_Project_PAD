@@ -162,13 +162,16 @@ body {
     font-family: "Roboto", sans-serif;
     padding: 12px 20px;
     text-align: left;
-    width: 20%; 
+    max-width: 100px;
+    /* break word enables us to wrap the text into the width of the cell */
+    word-wrap: break-word; 
 }
 
 .account-table th {
-    background-color: #00a3f0;
+    background-color: #00a3f0;  
     color: white;
     font-weight: 400;
+    width:20%;
 }
 
 .account-table td {
