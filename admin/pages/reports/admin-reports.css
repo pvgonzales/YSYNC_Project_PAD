@@ -16,7 +16,6 @@ body {
 }
 
 .sidebar {
-    /* z-index basically pinapataas yung panel, something like navbar */
     z-index: 10; 
     background-color: #132B41;
     color: white;
@@ -37,8 +36,9 @@ body {
 
 .logo-img{
     width: 83px;
-    height: 83  px;
+    height: 83px;
 }
+
 .menu {
     margin-left: 30px;
     margin-bottom: 100px;
@@ -57,17 +57,18 @@ body {
     align-items: center;
     text-align: left;
 }
+
 .menu-container.active {
     font-weight: bold;
     background-position: left center;
-    background-image: url("./assets/highlight.png");
+    background-image: url("../../assets/highlight.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .menu-container:hover {
     font-weight: bold;
-    background-image: url("./assets/highlight.png");
+    background-image: url("../../assets/highlight.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -84,7 +85,6 @@ body {
     flex: 1;
     padding: 30px;
     background-color: #D6DBEA;
-
 }
 
 .header {
@@ -150,7 +150,7 @@ body {
 }
 
 .account-table {    
-    margin-left:-35px;
+    margin-left: -35px;
     width: 110%;
     border-collapse: collapse;
     background-color: white;
@@ -167,20 +167,17 @@ body {
 .account-table th {
     background-color: #00a3f0;
     color: white;
-    font-weight:400;
+    font-weight: 400;
 }
 
 .account-table td {
-    
-    border-bottom: 1px solid #D6DBEA    ;
+    border-bottom: 1px solid #D6DBEA;
 }
-
 
 .account-table tr:hover {
     background-color: #F1F1F1;
 }
 
-/* added elements */
 .header-main-title{
     font-weight: bold;
     font-size: 30px;
@@ -193,14 +190,14 @@ body {
 
 .menu-img{
     margin-right: 20px;
-    width:25px;
-    height:25px;
+    width: 25px;
+    height: 25px;
 }
 
 .table-textfields{
     font-family: "Roboto", sans-serif;
     color: #565656;
-    font-weight:300;
+    font-weight: 300;
 }
 
 .table-align-picture{
@@ -215,10 +212,9 @@ body {
 .search-img{
     cursor: pointer;
     margin-top: 5px;
-    width:15px;
-    height:15px;
+    width: 15px;
+    height: 15px;
 }
-/* shapes cuz wth */
 
 .circle {
     height: 25px;
@@ -226,4 +222,30 @@ body {
     background-color: #D6DBEA;
     border-radius: 50%;
     margin-right: 10px;
-  }
+}
+
+.accept-btn{
+    width: 85px;
+    height:25px;
+    background-color: #00a3f0;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.decline-btn{
+    width: 85px;
+    height:25px;
+    background-color: gray;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.button-div{
+    display: flex;
+    gap: 10px;
+}
+

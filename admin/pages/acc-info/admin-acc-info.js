@@ -168,11 +168,16 @@ document.getElementById("search-input").addEventListener("input", search);
 // document listeners for the tabs
 document.getElementById("trainees-tab").addEventListener("click", () => {
     switchTab("trainees-tab");
+    var secondary = document.getElementsByClassName("header-main-secondary")
+    secondary[0].innerHTML="/ Trainees";
     typeFlag = "trainees";
     updateTable(typeFlag);
 })
 document.getElementById("members-tab").addEventListener("click", () => {
     switchTab("members-tab");
+    var secondary = document.getElementsByClassName("header-main-secondary")
+    secondary[0].innerHTML="/ Members";
     typeFlag = "members";
     updateTable(typeFlag);
 })
+
