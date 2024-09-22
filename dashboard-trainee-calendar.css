@@ -150,6 +150,36 @@ h1 {
   width: 30%;
 }
 
+.button {
+    /* Removed unnecessary properties */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .editButton {
+    display: flex;                
+    align-items: center;         
+    justify-content: center;      
+    cursor: pointer;
+    width: 170px;                 
+    height: 60px;                 
+    /* margin: 10px; */
+    position: relative;
+    margin: 25px auto 0 150px;
+    /* margin-left: auto; */
+    border: 2px solid #00A3F0;   
+    border-radius: 40px;
+    background-color: #00A3F0;
+    color: #FFFFFF;
+    font-size: 15px;
+  }
+  
+  .editIcon {
+    margin-right: 5px;            
+    width: 20px;                  
+    height: 20px;
+    color: #FFFFFF;              
+  }
 
 .Calendar-container {
     display: block;
