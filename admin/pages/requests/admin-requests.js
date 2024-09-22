@@ -154,6 +154,7 @@ function populateTable(users, keys) {
                 var link = document.createElement("a");
                 link.innerHTML= users[i][key];
                 link.setAttribute("href", "../../assets/sample.pdf");
+                link.setAttribute("target", "_blank");
                 td.appendChild(link);
             } else if (key === "mentorDate") {
                 td.innerHTML = users[i][key];
