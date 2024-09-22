@@ -174,34 +174,30 @@ body {
       color: #132B41;
   }
 
-.button{
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  font-family: "Segoe UI";
-}
+  .button {
+    /* Removed unnecessary properties */
+  }
+  
+  .editButton {
+    display: flex;                
+    align-items: center;         
+    justify-content: center;      
+    cursor: pointer;
+    width: 100px;                 
+    height: 30px;                 
+    margin: 10px;
+    margin-left: auto;
+    border: 2px solid #00A3F0;   
+    border-radius: 20px;
+    background-color: #00A3F0;
+    color: #FFFFFF;
+    font-size: 12px;
+  }
+  
+  .editIcon {
+    margin-right: 5px;            
+    width: 15px;                  
+    height: 15px;
+    color: #FFFFFF;              
+  }
 
-.editButton{
-  width: 100px;
-  height: 30px;
-  padding: 10px;
-  margin: 10px;
-
-  border-color: #00A3F0;
-  border-radius: 20px;
-  border-style: double;
-
-  background-color: #00A3F0;
-
-  color: #FFFFFF;
-  font-size: 12px;
-  text-align: right;
-}
-
-.editButton:hover{
-  cursor: pointer;
-
-  background-color: #FFFFFF;
-  border-color: #132B41;
-  color: #00A3F0;
-}
