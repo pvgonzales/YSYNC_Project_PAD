@@ -138,13 +138,13 @@ h1 {
   /* column-gap: 30px; */
 }
 
-.dashboard-left {
+.calendar-left {
   flex: 1;
   float: left;
   width: 70%;
 }
 
-.dashboard-right {
+.calendar-right {
   float: right;
   flex: 1;
   width: 30%;
