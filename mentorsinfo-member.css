@@ -1,0 +1,175 @@
+/* h2 {
+  font-size: 25px;
+  font-weight: normal;
+  font-family: "Segoe UI";
+  font-weight: bold;
+} */
+
+body {
+  margin: 0;
+  background-color: #d6dbea;
+}
+
+
+p{
+    margin: 0px 0;
+}
+
+.left-border,
+.right-border {
+  flex: 1;
+  min-width: 50px;
+}
+.logoname {
+  display: flex;
+  align-items: center;
+}
+
+.parentNav {
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background-color: #132b41;
+  overflow: auto;
+  gap: 1rem;
+  /* flex-wrap: wrap;  */
+}
+
+.navi {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: "Segoe UI";
+  padding: 15px;
+  padding-right: 0;
+}
+
+.navButtons {
+  list-style-type: none;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  text-decoration: none;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.navButtons li {
+  display: inline;
+  /* flex: 1 1 auto; */
+}
+
+.navButtons a {
+  text-decoration: none;
+  color: white;
+}
+
+.navActive{
+  background-color: #00A3F0;
+  padding: 10px 15px; 
+  border-radius: 40px;
+}
+
+.logo {
+  width: 70px;
+}
+
+.profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileContainer {
+    /* justify-content: center; 
+    align-items: center;  */
+
+    /* padding: 40px; */
+    padding-left: 100px;
+    padding-top: 60px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 10px; */
+    row-gap: 90px;
+    /* margin: 100px; */
+}
+
+.profileTile {
+    /* display: flex; */
+
+    position: relative;
+    overflow: visible;
+
+    background: F2F5FF;
+    border: 1.5px solid #132B41;
+    border-radius: 20px;
+    padding: 20px;
+    
+    text-align: center;
+    
+    height: 330px;
+    width: 270px;
+
+    background-color: #F2F5FF;
+
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 3px 3px 10px rgb(188, 188, 188);
+}
+
+.pfp{
+    /* float: left; */
+    position: absolute;
+    /* float: left; */
+
+    /* margin: 100px; */
+
+    border: 1.5px solid #132B41;
+    border-radius: 8px;
+    
+    top: -20px;
+    left: -30px; 
+    width: 110px; /* Set a specific width */
+    height: 110px; /* Set a specific height */
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bodyTextContainer{
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.bodyText{
+    font-family: "Roboto";
+    color: #132B41;
+    font-size: 16px;
+}
+
+.profileTitle{
+    font-family: "Segoe UI";
+    color: #00A3F0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+
+.name{
+    font-family: "Segoe UI";
+    color: #132B41;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nameTitle{
+    font-family: "Segoe UI";
+    color: #132B41;
+}
