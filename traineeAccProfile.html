@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Management Trainee</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        html, body, h1, h2, h3, h4, h5 {font-family: "Segoe UI", Arial, sans-serif;}
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="parentNav">
+        <div class="logoname">
+            <img src="logo.png" alt="YSES Logo" class="logo" />
+            <div class="navi">YSYNC</div>
+        </div>
+
+        <ul class="navButtons">
+            <li id="dashboard"><a href="traineeAccountManagement.html">Dashboard</a></li>
+            <li id="connect"><a href="#">Connect</a></li>
+            <li id="mentors"><a href="#">Mentors</a></li>
+            <li id="residentMembers"><a href="#">Resident Members</a></li>
+        </ul>
+
+        <button onclick="accountDropdown()" class="profile-button"><img src="profile.jpg" alt="profile pic" class="profile"/></button>
+    </div>
+    <!--Dropdown Account Management-->
+    
+    <div class="acc-parentNav" id="drop">
+        <a href="traineeAccProfile.html" id="profile">Profile</a>
+        <a href="traineeAccReport.html" id="report">Report</a>
+        <a href="traineeAccDefer.html" id="defer">Defer</a>
+        <br>
+        <a href="#" class="logout" style="font-weight: bold;">Log Out</a>
+    </div>
+
+    <div class="profile-header">
+        <div class="account-header-container">
+            <h1 class="account-header">Account Management</h1>
+            <h5 class="breadcrumb">/ Profile</h5>
+        </div>
+        <div class="edit-profile">
+            <button class="edit-button" id="editBtn" onclick="toggleEdit()">
+                <i class="material-icons">edit</i>
+                <span>Edit</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="profile-information">
+        <div class="profile-information-1">
+            <div class="profile-information-1-photo">
+                <img src="profile.jpg" alt="profile pic" class="profile2"/>
+                <p id="changePhoto" class="change-photo"><i class="material-icons">edit</i>Change photo</p>
+            </div>
+            <div class="profile-information-1-name">
+                <h1 class="account-header">Surprised Pikachu</h1>
+                <p id="bioDisplay" class="bio">2022 | Reboot</p>
+                <form>
+                    <label class="bio1">Bio</label>
+                    <input type="text" id="bioInput" name="bio" class="bio1" placeholder="Please tell us more about yourself." disabled>
+                </form>
+            </div>
+        </div>
+        <div class="profile-information-2">
+            <br>
+            <p>MENTOR INFORMATION</p>
+            <hr>
+            <div class="add-mentor">
+                <button class="mentor-button">
+                    <i class="material-icons">person_add</i>
+                    <span>Invite Mentor</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function accountDropdown() {
+            var dropdown = document.getElementById("drop");
+            dropdown.classList.toggle("acc-show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                var dropdown = document.getElementById("drop");
+                if (dropdown.classList.contains('acc-show')) {
+                    dropdown.classList.remove('acc-show');
+                }
+            }
+        }
+
+        function toggleEdit() {
+            const editBtn = document.getElementById("editBtn");
+            const bioInput = document.getElementById("bioInput");
+            const changePhoto = document.getElementById("changePhoto");
+            const bioDisplay = document.getElementById("bioDisplay");
+
+            if (bioInput.disabled) {
+                bioInput.disabled = false;
+                bioInput.focus(); 
+                editBtn.innerHTML = '<i class="material-icons">check</i><span>Save</span>';
+                changePhoto.style.display = "block";
+                document.getElementById('bioDisplay').innerText = "Edit Bio"
+            } else {
+                bioInput.disabled = true;
+                editBtn.innerHTML = '<i class="material-icons">edit</i><span>Edit</span>';
+                changePhoto.style.display = "none";
+                document.getElementById('bioDisplay').innerText = "2022 | Reboot"
+            }
+        }
+    </script>
+</body>
+</html>
