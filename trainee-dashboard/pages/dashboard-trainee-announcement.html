@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dashboard-trainee-style.css" />
+    <link rel="stylesheet" href="dashboard-trainee-announcement-style.css" />
+    <script src="dashboard-trainee-announcement-script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -29,7 +30,7 @@
       <div class="subNav">
         <ul class="subNavButtons">
           <li id="announcements"><a href="#">Announcements</a></li>
-          <li id="calendar"><a href="#">Calendar</a></li>
+          <li id="calendar"><a href="dashboard-trainee-calendar.html">Calendar</a></li>
         </ul>
       </div>
 
@@ -78,7 +79,7 @@
                   <ul class="reactionButtons">
                     <li class="heart">
                       <div class="heart-container">
-                        <button id="heartButton" class="heart-icon">❤</button>
+                        <button id="heartButton" class="heart-icon" onclick="toggleHeart()">❤</button>
                         <h2 class="counter">1</h2>
                       </div>
                     </li>
@@ -135,7 +136,7 @@
                   <ul class="reactionButtons">
                     <li class="heart">
                       <div class="heart-container">
-                        <button id="heartButton" class="heart-icon">❤</button>
+                        <button id="heartButton" class="heart-icon" onclick="toggleHeart()">❤</button>
                         <h2 class="counter">1</h2>
                       </div>
                     </li>
@@ -203,7 +204,7 @@
                     <ul class="buttons">
                       <li class="heart">
                         <div class="heart-container">
-                          <button id="heartButton" class="heart-icon">❤</button>
+                          <button id="heartButton" class="heart-icon" onclick="toggleHeart()">❤</button>
                           <h2 class="counter">1</h2>
                         </div>
                       </li>
@@ -280,7 +281,7 @@
                     <ul class="buttons">
                       <li class="heart">
                         <div class="heart-container">
-                          <button id="heartButton" class="heart-icon">❤</button>
+                          <button id="heartButton" class="heart-icon" onclick="toggleHeart()">❤</button>
                           <h2 class="counter">12</h2>
                         </div>
                       </li>
@@ -351,15 +352,11 @@
               </div>
             </div>
             <div class="calendarButton">
-              <a href="#"><h2>View in Calendar</h2></a>
+              <a href="dashboard-trainee-calendar.html"><h2>View in Calendar</h2></a>
             </div>
-            
             </div>
             
           </div>
-          </div>
-        </div>
-      </div>
       <div class="right-border"></div>
   </body>
 </html>

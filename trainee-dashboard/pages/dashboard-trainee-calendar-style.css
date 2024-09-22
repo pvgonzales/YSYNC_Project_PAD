@@ -1,0 +1,167 @@
+p,
+h1,
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Segoe UI";
+}
+
+body {
+  margin: 0;
+  background-color: #d6dbea;
+}
+
+h1 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 23px;
+  color: #1e1e1e;
+}
+
+.left-border,
+.right-border {
+  flex: 1;
+  min-width: 50px;
+}
+.logoname {
+  display: flex;
+  align-items: center;
+}
+
+.parentNav {
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background-color: #132b41;
+  overflow: auto;
+  gap: 1rem;
+}
+
+.navi {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: "Segoe UI";
+  padding: 15px;
+  padding-right: 0;
+}
+
+.navButtons {
+  list-style-type: none;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  text-decoration: none;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.navButtons li {
+  display: inline;
+  /* flex: 1 1 auto; */
+}
+
+.navButtons a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  width: 70px;
+}
+
+.profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subNav {
+  border-bottom: 0.5px solid #565656;
+}
+
+.subNavButtons {
+  list-style-type: none;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  padding-top: 12px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.subNavButtons a {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+.calendar-left {
+    flex: 1;
+    float: left;
+    width: 70%;
+  }
+  
+.calendar-right {
+    float: right;
+    flex: 1;
+    width: 30%;
+  }
+
+.Calendar-container{
+    min-height: 500px;
+    max-width: 1500px;
+    margin: 25px auto 0px 40px;
+    background-color: #f2f5ff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgb(188, 188, 188);
+}
+
+.pinned-Announcements {
+    padding-left: 10px;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    text-decoration: none;
+    color: #f2f5ff;
+  }
+.upcoming-container {
+    min-height: 300px;
+    max-width: 380px;
+    margin: 25px auto 0px 40px;
+    background-color: #f2f5ff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  }
+  
+.upcoming-header {
+    max-width: 380px;
+    max-height: 70px;
+    align-items: center;
+    display: flex;
+    background-color: #132b41;
+    padding-left: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  
+.upcoming-content{
+    padding-top: 5px;
+    max-width: fit-content;
+    margin-left: 30px;
+    margin-right: auto;
+  }
+  
+.taskName{
+    margin-top: -15px;
+  }
+
+.calendarButton{
+    padding-left: 210px;
+    padding-bottom: 10px;
+  }
