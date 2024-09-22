@@ -1,0 +1,151 @@
+p,
+h1,
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Segoe UI";
+}
+
+body {
+  margin: 0;
+  background-color: #d6dbea;
+}
+
+h1 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 23px;
+  color: #1e1e1e;
+}
+
+.left-border,
+.right-border {
+  flex: 1;
+  min-width: 50px;
+}
+.logoname {
+  display: flex;
+  align-items: center;
+}
+
+.parentNav {
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background-color: #132b41;
+  overflow: auto;
+  gap: 1rem;
+  /* flex-wrap: wrap;  */
+}
+
+.navi {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: "Segoe UI";
+  padding: 15px;
+  padding-right: 0;
+}
+
+.navButtons {
+  list-style-type: none;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  text-decoration: none;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.navButtons li {
+  display: inline;
+  /* flex: 1 1 auto; */
+}
+
+.navButtons a {
+  text-decoration: none;
+  color: white;
+}
+
+.navActive{
+  background-color: #00A3F0;
+  padding: 10px 15px; 
+  border-radius: 40px;
+}
+
+.logo {
+  width: 70px;
+}
+
+.profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subNav {
+  /* border-bottom: 0.5px solid #565656; */
+}
+
+.subNavButtons {
+  list-style-type: none;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  padding-top: 12px;
+  text-decoration: none;
+  align-items: center;
+  border-bottom: 0.5px solid #565656;
+}
+
+.subNavButtons a {
+  text-decoration: none;
+  color: #565656;
+}
+
+.subNavActive {
+  border-bottom: 5px solid #3498db;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.subNavActive a {
+  color: rgb(27, 27, 27);
+}
+
+.subNavButtons li {
+  position: relative; /* Ensure all buttons align properly */
+  padding-bottom: 8px; /* Add same padding as subNavActive */
+}
+
+.dashboard {
+  /* display: flex;
+  width: 70rem;
+  height: auto;
+  color: #132b41;
+  background-color: white;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 15px;
+  flex-direction: column; */
+  /* column-gap: 30px; */
+}
+
+.dashboard-left {
+  flex: 1;
+  float: left;
+  width: 70%;
+}
+
+.dashboard-right {
+  float: right;
+  flex: 1;
+  width: 30%;
+}
