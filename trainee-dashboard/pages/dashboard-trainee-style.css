@@ -128,8 +128,8 @@ h1 {
 }
 
 .pinned-container {
-  min-height: 300px;
-  max-width: 1000px;
+  min-height: 400px;
+  max-width: 1500px;
   margin: 25px auto 0px 40px;
   background-color: #f2f5ff;
   border-radius: 30px;
@@ -137,7 +137,7 @@ h1 {
 }
 
 .pinned-header {
-  max-width: 1200px;
+  max-width: 1500px;
   max-height: 70px;
   align-items: center;
   display: flex;
@@ -155,6 +155,67 @@ h1 {
   color: #f2f5ff;
 }
 
+.pinnedAnnInfo{
+  margin-left: 80px;
+  padding-bottom: 4px;
+}
+
+
+.pinned-box{
+  max-width: 500px;
+  display: inline-block;
+  margin-right: 100px;
+  padding-left: 10px;
+
+}
+
+.pinnedAnnBox{
+  min-height: 200px;
+  max-width: 400px;
+  width: 100%;
+  margin-left: 90px;
+  background-color: #ffffff;
+  outline-style: solid;
+  outline-color: #6d6d6d;
+  outline-width: 2px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  margin-bottom: 10px;
+}
+
+.pinnedAnnDetails{
+  padding-top: 3px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pinned-postContent{
+  max-width: 350px;
+}
+
+.pinnedpostDets{
+  padding-top: 4px;
+  padding-left: 85px;
+}
+
+.reactions-pinned{
+  margin-top: -15px;
+  padding-top: 3px;
+  max-width: fit-content;
+  margin-left: 70px;
+  margin-right: auto;
+}
+
+.reactionButtons{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-left: 40px;
+  padding-right: 0px;
+  align-items: center;
+}
+
 .stream-header {
   padding: 0px 90px;
 }
@@ -162,13 +223,13 @@ h1 {
 .stream {
   margin: auto;
   min-height: 200px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 10px 20px 100px 120px;
 }
 
 .posts-box {
   min-height: 200px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 10px 20px 100px 120px;
   background-color: #f2f5ff;
   outline-style: solid;
@@ -231,7 +292,7 @@ h1 {
 .postContent {
   padding-left: 5px;
   padding-bottom: 55px;
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .post-content {
@@ -247,6 +308,7 @@ h1 {
   margin-top: -50px;
   padding-bottom: 1px;
 }
+
 .buttons {
   list-style: none;
   display: flex;
@@ -282,11 +344,8 @@ h1 {
   width: 28px;
 }
 
-.comment-icon-container {
-  padding-right: 140px;
-}
-
 .comment-box {
+  margin-left: 80%;
   margin-top: 15px;
   display: flex;
   align-items: center;
@@ -338,7 +397,7 @@ textarea::placeholder {
 
 .upcoming-container {
   min-height: 300px;
-  max-width: 370px;
+  max-width: 380px;
   margin: 25px auto 0px 40px;
   background-color: #f2f5ff;
   border-radius: 30px;
@@ -346,7 +405,7 @@ textarea::placeholder {
 }
 
 .upcoming-header {
-  max-width: 370px;
+  max-width: 380px;
   max-height: 70px;
   align-items: center;
   display: flex;
@@ -356,7 +415,26 @@ textarea::placeholder {
   border-top-right-radius: 30px;
 }
 
+.upcoming-content{
+  padding-top: 5px;
+  max-width: fit-content;
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.taskName{
+  margin-top: -15px;
+}
+
+.calendarButton{
+  padding-left: 210px;
+  padding-bottom: 10px;
+}
+
 .main {
   width: 100%;
   margin-right: 10px;
 }
+
+
+
