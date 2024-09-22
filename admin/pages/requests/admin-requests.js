@@ -27,7 +27,7 @@ const applications = [
         name: "Bill Gates",
         email: "bgates@up.edu.ph",
         applicationForm: "bgates_appli.pdf",
-        mentorDate: "2023-08-01",
+        mentorDate: "2023-08-01",   
         actions: "..."
     }
 ];
