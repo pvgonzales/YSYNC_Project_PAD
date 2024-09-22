@@ -118,24 +118,19 @@ body {
   
       background-color: #F2F5FF;
   
-      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
       box-shadow: 3px 3px 10px rgb(188, 188, 188);
   }
   
   .pfp{
-      /* float: left; */
       position: absolute;
-      /* float: left; */
-  
-      /* margin: 100px; */
   
       border: 1.5px solid #132B41;
       border-radius: 8px;
       
       top: -20px;
       left: -30px; 
-      width: 110px; /* Set a specific width */
-      height: 110px; /* Set a specific height */
+      width: 110px; 
+      height: 110px; 
   
       border-radius: 50%;
       object-fit: cover;
@@ -159,8 +154,6 @@ body {
       font-weight: bold;
       font-size: 12px;
   }
-  
-  
   
   .name{
       font-family: "Segoe UI";
