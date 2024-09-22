@@ -37,7 +37,7 @@ const deferrals = [
         name: "John Doe",
         email: "jdoe@up.edu.ph",
         dateSubmitted: "2023-09-01",
-        reason: "Personal reasons",
+        reason: "Personal reasons", 
         actions: "..."
     },
     {
