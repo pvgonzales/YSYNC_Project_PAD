@@ -218,6 +218,48 @@ body {
     width:15px;
     height:15px;
 }
+
+.vert-ellipsis{
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-style: none;
+    background-color: transparent;
+}
+
+.vert-ellipsis:hover{
+    background-color: rgba(128, 128, 128, 0.4); 
+    border-radius: 8px;
+}
+/* for the ellipsis lol */
+.pop-up {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 100; 
+    border-radius: 4px;
+}
+
+.pop-up button{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.pop-up button:hover{
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.4); 
+}
+
+.delete-button{
+    color: red;
+}
 /* shapes cuz wth */
 
 .circle {
@@ -227,18 +269,3 @@ body {
     border-radius: 50%;
     margin-right: 10px;
   }
-
-@keyframes tabActivate {
-    from { background-color: #B8B6D2; color: inherit; }
-    to { background-color: #00a3f0; color: white; }
-}
-
-@keyframes tabDeactivate {
-    from { background-color: #00a3f0; color: white; }
-    to { background-color: #B8B6D2; color: inherit; }
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}

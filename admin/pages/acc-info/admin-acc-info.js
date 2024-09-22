@@ -7,28 +7,28 @@ const trainees = [
         email: "jdoe@up.edu.ph",
         batch: 2023,
         mentor: "NA",
-        additionalInfo: "..."
+        additionalInfo: "⋮"
     },
     {
         name: "Ada Lovelace",
         email: "alovelace@up.edu.ph",
         batch: 1999,
         mentor: "NA",
-        additionalInfo: "..."
+        additionalInfo: "⋮"
     },
     {
         name: "George Bool",
         email: "gboole@up.edu.ph",
         batch: 2022,
         mentor: "NA",
-        additionalInfo: "..."
+        additionalInfo: "⋮"
     },
     {
         name: "Bill Gates",
         email: "bgates@up.edu.ph",
         batch: 2010,
         mentor: "NA",
-        additionalInfo: "..."
+        additionalInfo: "⋮"
     }
 ];
 
@@ -38,28 +38,28 @@ const members = [
         email: "jdoe@up.edu.ph",
         batch: 2023,
         orgbatch: "System7",
-        additionalInfo: "..."
+        additionalInfo: "⋮"
     },
     {
         name: "Ada Lovelace",
         email: "alovelace@up.edu.ph",
         batch: 1999,
         orgbatch: "nightMode",
-        additionalInfo: "..."
+        additionalInfo: "⋮"
     },
     {
         name: "George Bool",
         email: "gboole@up.edu.ph",
         batch: 2022,
         orgbatch: "Reboot",
-        additionalInfo: "..."
+        additionalInfo: "⋮"
     },
     {
         name: "Bill Gates",
         email: "bgates@up.edu.ph",
         batch: 2010,
         orgbatch: "Batch from Home",
-        additionalInfo: "..."
+        additionalInfo: "⋮"
     }
 ]
 // function for implementing search functionality
@@ -99,7 +99,7 @@ function switchTab(active){
 function updateTable(type){
 
     if(type === "trainees"){
-        const list = ["NAME", "EMAIL", "BATCH", "MENTOR"]
+        const list = ["NAME", "EMAIL", "BATCH", "MENTOR", ""]
         var table = document.getElementById("account-table-id");
         table.innerHTML=""; 
         var tr = document.createElement("tr");
@@ -114,7 +114,7 @@ function updateTable(type){
         table.appendChild(tbody);
         populateTable(trainees, Object.keys(trainees[0]));
     } else{
-        const list = ["NAME", "EMAIL", "BATCH", "ORG BATCH"]
+        const list = ["NAME", "EMAIL", "BATCH", "ORG BATCH", ""]
         var table = document.getElementById("account-table-id");
         table.innerHTML=""; 
         var tr = document.createElement("tr");
@@ -139,7 +139,55 @@ function populateTable(users, keys){
     for (var i = 0; i < users.length; i++) {
         var tr = document.createElement("tr");
         keys.forEach((key) => {
-            if(key === "additionalInfo"){
+            if (key === "additionalInfo") {
+                var button = document.createElement("button");
+                button.classList.add("vert-ellipsis");
+                button.innerHTML = users[i][key];
+
+                button.addEventListener("click", (event) => {
+                    event.stopPropagation(); 
+                    var popup = document.createElement("div");
+                    popup.classList.add("pop-up");
+                    
+                    var editButton = document.createElement("button");
+                    editButton.innerHTML = "Edit User";
+                    editButton.classList.add("edit-button"); 
+                
+                    var deleteButton = document.createElement("button");
+                    deleteButton.innerHTML = "Delete User";
+                    deleteButton.classList.add("delete-button"); 
+                
+                    popup.appendChild(editButton);
+                    popup.appendChild(deleteButton);
+                
+                    // position the popup
+                    const rect = button.getBoundingClientRect();
+                    const popupWidth = 200; 
+                    popup.style.left = `${rect.right-(popupWidth/2)}px`; 
+                    popup.style.top = `${rect.top - 30}px`;
+                
+                    document.body.appendChild(popup);
+                
+                    // close popup on hover out
+                    popup.addEventListener("mouseleave", () => {
+                        popup.remove();
+                    });
+                
+                    // can also remove popup when clicking outside
+                    function handleClickOutside(event) {
+                        if (!popup.contains(event.target) && event.target !== button) {
+                            popup.remove();
+                            document.removeEventListener("click", handleClickOutside);
+                        }
+                    }
+                
+                    document.addEventListener("click", handleClickOutside);
+                });
+
+                var td = document.createElement("td");
+                td.appendChild(button);
+                tr.appendChild(td);
+                tbody.append(tr);
                 return;
             }
             var td = document.createElement("td");
@@ -180,4 +228,7 @@ document.getElementById("members-tab").addEventListener("click", () => {
     typeFlag = "members";
     updateTable(typeFlag);
 })
+
+updateTable(typeFlag);
+
 
