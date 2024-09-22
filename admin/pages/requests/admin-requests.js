@@ -5,28 +5,28 @@ const applications = [
     {
         name: "John Doe",
         email: "jdoe@up.edu.ph",
-        applicationForm: "Form A",
+        applicationForm: "jdoe_appli.pdf",
         mentorDate: "2023-05-01",
         actions: "..."
     },
     {
         name: "Ada Lovelace",
         email: "alovelace@up.edu.ph",
-        applicationForm: "Form B",
+        applicationForm: "alovelace_appli.pdf",
         mentorDate: "2023-06-01",
         actions: "..."
     },
     {
         name: "George Bool",
         email: "gboole@up.edu.ph",
-        applicationForm: "Form C",
+        applicationForm: "gboole_appli.pdf",
         mentorDate: "2023-07-01",
         actions: "..."
     },
     {
         name: "Bill Gates",
         email: "bgates@up.edu.ph",
-        applicationForm: "Form D",
+        applicationForm: "bgates_appli.pdf",
         mentorDate: "2023-08-01",
         actions: "..."
     }
@@ -151,7 +151,10 @@ function populateTable(users, keys) {
                 return;
             }
             if (key === "applicationForm") {
-                td.innerHTML = users[i][key];
+                var link = document.createElement("a");
+                link.innerHTML= users[i][key];
+                link.setAttribute("href", "../../assets/sample.pdf");
+                td.appendChild(link);
             } else if (key === "mentorDate") {
                 td.innerHTML = users[i][key];
             } else if (key === "email") {
