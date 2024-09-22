@@ -17,6 +17,7 @@ body{
     background-color: #132B41;
     overflow: auto;
     gap: 1rem;
+    min-width: 65rem;
 }
 
 .logoname{
@@ -81,6 +82,7 @@ body{
     display: flex;
     flex-direction: row; 
     align-items: center;
+    position: relative;
 }
 
 .connect-left,
@@ -100,13 +102,13 @@ body{
     font-size: 15px;
     flex-direction: column;
     /* column-gap: 30px; */
-    border-bottom: 0.5px solid #565656;
 }
 
 .chat {
     color: black;
     display: flex; 
     column-gap: 15px;
+    border-bottom: 0.5px solid #565656;
 }
 
 .connectTitle{    
@@ -152,19 +154,86 @@ body{
     margin-right: 8px;
 }
 
+.chatTitle{
+    margin-bottom: 2rem;
+    
+}
+
 .chatT2{
     margin: 0;
 }
 
 .chatInfo{
     margin-right: 5rem;
+    min-width: 55rem;
 }
 
-.heart {
-    font-size: 50px; 
-    color: red;      
+.chatS{
+    margin-left: auto;
 }
 
-.heart:focus{
-    color: blue;
+.chatInfoSetting {
+    margin-top: 15px;
+    margin-left: 8px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.chatInteract{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.heartContainerConnect{
+    display: flex;
+}
+.commentContainerConnect{
+    display: flex;
+}
+.heartIconConnect {
+    margin-top: -13px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00A3F0;
+    transition: color 0.3s ease;
+}
+.counterHeartConnect,
+.counterCommentConnect {
+    margin-top: -3px;
+    float: right;
+    font-size: 15px;
+    font-weight: normal;
+
+}
+
+.commentIconConnect{
+    margin-left: 4px;
+    margin-top: -8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.post-icon {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.postConnect{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.addPostConnect{
+    position: fixed;
+    z-index: 1000;
+    bottom: 2%;
+    left: 85%;
 }
