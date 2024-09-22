@@ -160,8 +160,9 @@ body {
 
 .account-table th, .account-table td {
     font-family: "Roboto", sans-serif;
-    padding: 15px;
+    padding: 12px 20px;
     text-align: left;
+    width: 20%; 
 }
 
 .account-table th {
