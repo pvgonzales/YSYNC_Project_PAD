@@ -133,6 +133,11 @@ h1 {
   height: 100%;
 }
 
+.selected{
+  background-color: #00A3F0;
+  padding: 10px 15px; 
+  border-radius: 40px;
+}
 
 .pinned-Announcements {
     padding-left: 10px;

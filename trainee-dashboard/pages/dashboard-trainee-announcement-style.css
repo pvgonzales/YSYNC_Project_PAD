@@ -102,6 +102,18 @@ h1 {
   color: rgb(27, 27, 27);
 }
 
+.selected{
+  background-color: #00A3F0;
+  padding: 10px 15px; 
+  border-radius: 40px;
+}
+
+.selectedSubNav{
+  font-weight: bolder;
+  margin-bottom: -10px;
+  border-bottom: 8px solid #00A3F0;
+}
+
 .dashboard {
   /* display: flex;
   width: 70rem;

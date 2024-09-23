@@ -1,3 +1,12 @@
+window.onload = () => {
+    let selectedButton = document.querySelector("#dashboard");
+    selectedButton.classList.add("selected");
+
+    let selectedSubNav = document.querySelector("#announcement");
+    selectedSubNav.classList.add("selectedSubNav")
+
+}
+
 
 // Get all elements with the class 'heart-button'
 const heartButtons = document.querySelectorAll('.heart-icon');
