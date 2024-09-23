@@ -154,6 +154,8 @@ h1 {
   min-height: 300px;
   max-width: 1000px;
   margin: 25px auto 0px 40px;
+  border: 1.5px solid #132B41;
+
   background-color: #f2f5ff;
   border-radius: 30px;
   box-shadow: 3px 3px 10px rgb(188, 188, 188);
