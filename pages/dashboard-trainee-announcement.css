@@ -161,6 +161,31 @@ h1 {
   box-shadow: 3px 3px 10px rgb(188, 188, 188);
 }
 
+.top-inputs{
+
+}
+
+.title-box{
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+}
+
+.time-box{
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+}
+
+.date-box{
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+}
+
 
 
 .pinned-container {
