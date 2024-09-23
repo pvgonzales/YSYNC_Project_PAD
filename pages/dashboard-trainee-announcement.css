@@ -161,15 +161,15 @@ h1 {
   margin: 25px auto 0px 40px;
   border: 1.5px solid #132B41;
 
-  background-color: #f2f5ff;
+  background-color: #F2F5FF;
   border-radius: 30px;
   box-shadow: 3px 3px 10px rgb(188, 188, 188);
   
 }
 
 .top-inputs{
-  display: flex; /* Use flexbox layout */
-  flex-direction: row; /* Align items in a row */
+  display: flex; 
+  flex-direction: row; 
   justify-content: space-between;
 
   margin-left: 20px;
@@ -185,21 +185,13 @@ h1 {
   margin-top: 5px;
 }
 
-.bot-inputs{
-  display: flex; /* Use flexbox layout */
-  flex-direction: row; /* Align items in a row */
-  justify-content: space-between;
-
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
 .title-box{
   
   font-size: 16px;
-  border: 2px solid #007BFF;
+  border: 2px solid #565656;
   border-radius: 5px;
+
+  background-color: #D6DBEA;  
 
   height: 15px;
   width: 300px;
@@ -207,11 +199,17 @@ h1 {
   padding: 10px 10px;
 }
 
+.top-right{
+  margin-right: 60px;
+}
+
 .time-box, .date-box{
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #007BFF;
+  border: 2px solid #565656;
   border-radius: 5px;
+
+  background-color: #D6DBEA;  
 }
 
 
@@ -220,26 +218,79 @@ h1 {
   height: 110px;
 
   font-size: 16px;
-  border: 2px solid #007BFF;
+  border: 2px solid #565656;
   border-radius: 5px; 
   resize: none;
 
   padding-top: 20px;
   padding-left: 10px;
 
-  background-color: #f2f5ff;
-
-  /* margin-top: 110px;
-    width:600px;
-    height: 300px;
-    border-radius: 2%;
-    line-height: normal;
-    vertical-align: top;
-    resize: none;
-    padding: 20px;
-    background-color: #D6DBEA; */
+  background-color: #D6DBEA;
 }
 
+.bottom-inputs{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.grouped-icons{
+
+}
+
+.three-icons {
+  margin-left: 10px;            
+  width: 28px;                  
+  height: 28px;
+  color: #FFFFFF;              
+}
+
+.grouped-buttons{
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.post-button{
+  display: flex;                
+  align-items: center;         
+  justify-content: center;      
+  cursor: pointer;
+  width: 120px;                 
+  height: 40px;                 
+  position: relative;
+  border: 2px solid #00A3F0;   
+  border-radius: 40px;
+  background-color: #00A3F0;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+
+  color: #FFFFFF;
+  font-size: 19px;
+}
+
+.cancel-button{
+  display: flex;                
+  align-items: center;         
+  justify-content: center;      
+  cursor: pointer;
+  width: 120px;                 
+  height: 40px;                 
+  position: relative;
+  /* margin: 20px auto; */
+  border: 2px solid #7A7A7A ;   
+  border-radius: 40px;
+  background-color: #7A7A7A ;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+
+  color: #FFFFFF;
+  font-size: 19px;
+}
 
 .pinned-container {
   min-height: 300px;
@@ -267,187 +318,6 @@ h1 {
   font-weight: bold;
   text-decoration: none;
   color: #f2f5ff;
-}
-
-.stream-header {
-  padding: 0px 90px;
-}
-
-.stream {
-  margin: auto;
-  min-height: 200px;
-  max-width: 800px;
-  margin: 10px 20px 100px 120px;
-}
-
-.posts-box {
-  min-height: 200px;
-  max-width: 800px;
-  margin: 10px 20px 100px 120px;
-  background-color: #f2f5ff;
-  outline-style: solid;
-  outline-color: #00a3f0;
-  outline-width: 2px;
-  border-radius: 30px;
-  box-shadow: 3px 3px 10px rgb(188, 188, 188);
-  margin-bottom: 20px;
-}
-
-.profile-picture {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-left: 1.5rem;
-  padding-right: 2px;
-  margin-top: 1rem;
-}
-
-.profilePic {
-  max-width: 50px;
-  float: left;
-}
-
-.postDets {
-  padding-top: 4px;
-  padding-left: 85px;
-}
-
-.author-name {
-  margin-bottom: -16px;
-}
-
-.username {
-  font-size: 22px;
-}
-
-.postTime {
-  margin: 0px;
-}
-.date-time {
-  font-family: "Segoe UI";
-  font-weight: 400;
-  font-size: 13.5px;
-}
-
-.postProper {
-  padding-left: 40px;
-}
-
-.Title {
-  margin-bottom: -10px;
-}
-
-.post-title {
-  font-size: 27px;
-}
-
-.postContent {
-  padding-left: 5px;
-  padding-bottom: 55px;
-  max-width: 700px;
-}
-
-.post-content {
-  font-size: 16px;
-  max-width: fit-content;
-  padding-bottom: 30px;
-  border-bottom: 0.3px solid #a8a8a8;
-  border-bottom-width: 1px;
-  margin-bottom: 0;
-}
-
-.reactions {
-  margin-top: -50px;
-  padding-bottom: 1px;
-}
-.buttons {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  padding-left: 40px;
-  padding-right: 0px;
-  align-items: center;
-}
-
-.counter {
-  margin-top: 0px;
-  float: right;
-  font-size: 20px;
-}
-
-.heart-icon {
-  margin-top: -6px;
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #ccc;
-  transition: color 0.3s ease;
-}
-
-.comment-icon {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.speech-icon {
-  width: 28px;
-}
-
-.comment-icon-container {
-  padding-right: 140px;
-}
-
-.comment-box {
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  background-color: #f7f9fe;
-  border-radius: 50px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 5px;
-  width: 100%;
-  outline: 0.5px solid #939393;
-  max-width: 400px;
-}
-
-.comments-container {
-  margin-top: -70px;
-  max-width: 400px;
-  max-height: 9px;
-  width: 100%;
-  float: right;
-  flex: auto;
-}
-
-/* textarea {
-  background-color: #f7f9fe;
-  margin-top: -10px;
-  border: none;
-  outline: none;
-  max-width: 400px;
-  max-height: 10px;
-  width: 100%;
-  padding: 10px;
-  border-radius: 30px;
-  font-size: 16px;
-  resize: none;
-  overflow: hidden;
-}
-
-textarea::placeholder {
-  color: #aaa;
-  font-family: "Segoe UI";
-} */
-
-.submit-button {
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin-left: 10px;
 }
 
 .upcoming-container {
@@ -486,10 +356,8 @@ textarea::placeholder {
   cursor: pointer;
   width: 370px;                 
   height: 60px;                 
-  /* margin: 10px; */
   position: relative;
   margin: 25px auto;
-  /* margin-left: auto; */
   border: 2px solid #00A3F0;   
   border-radius: 40px;
   background-color: #00A3F0;
