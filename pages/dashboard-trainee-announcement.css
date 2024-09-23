@@ -383,3 +383,35 @@ textarea::placeholder {
   width: 100%;
   margin-right: 10px;
 }
+
+.button {
+  justify-content: center; 
+  align-items: center; 
+}
+
+.editButton {
+  display: flex;                
+  align-items: center;         
+  justify-content: center;      
+  cursor: pointer;
+  width: 370px;                 
+  height: 60px;                 
+  /* margin: 10px; */
+  position: relative;
+  margin: 25px auto;
+  /* margin-left: auto; */
+  border: 2px solid #00A3F0;   
+  border-radius: 40px;
+  background-color: #00A3F0;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.editIcon {
+  margin-right: 5px;            
+  width: 28px;                  
+  height: 28px;
+  color: #FFFFFF;              
+}
