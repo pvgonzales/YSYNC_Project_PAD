@@ -37,6 +37,16 @@ body {
 .logo-img{
     width: 83px;
     height: 83px;
+    transition: all 0.3s ease;
+}
+
+.logo-img:hover{
+    transform: translateY(-2px);
+}
+
+.logo-img:active {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
 }
 
 .menu {
