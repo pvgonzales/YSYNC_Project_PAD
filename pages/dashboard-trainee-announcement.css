@@ -151,7 +151,12 @@ h1 {
 }
 
 .announcementContainer{
-  min-height: 300px;
+  /* min-height: 300px; */
+  /* max-width: 1000px; */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Align items in a row */ 
+
+  height: 300px;
   max-width: 1000px;
   margin: 25px auto 0px 40px;
   border: 1.5px solid #132B41;
@@ -159,45 +164,80 @@ h1 {
   background-color: #f2f5ff;
   border-radius: 30px;
   box-shadow: 3px 3px 10px rgb(188, 188, 188);
-}
-
-.top-inputs{
-
-}
-
-.title-box{
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #007BFF;
-  border-radius: 5px;
-}
-
-.time-box{
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #007BFF;
-  border-radius: 5px;
-}
-
-.date-box{
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #007BFF;
-  border-radius: 5px;
-}
-
-.mid-input{
   
 }
 
-.text-area {
-  width: 500px;
-  height: 400px;
+.top-inputs{
+  display: flex; /* Use flexbox layout */
+  flex-direction: row; /* Align items in a row */
+  justify-content: space-between;
+
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.mid-input{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.bot-inputs{
+  display: flex; /* Use flexbox layout */
+  flex-direction: row; /* Align items in a row */
+  justify-content: space-between;
+
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.title-box{
+  
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+
+  height: 15px;
+  width: 300px;
+
+  padding: 10px 10px;
+}
+
+.time-box, .date-box{
   padding: 10px;
   font-size: 16px;
   border: 2px solid #007BFF;
   border-radius: 5px;
-  resize: none; /* Prevent resizing */
+}
+
+
+.announcement-box{
+  width: 900px;
+  height: 110px;
+
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 5px; 
+  resize: none;
+
+  padding-top: 20px;
+  padding-left: 10px;
+
+  background-color: #f2f5ff;
+
+  /* margin-top: 110px;
+    width:600px;
+    height: 300px;
+    border-radius: 2%;
+    line-height: normal;
+    vertical-align: top;
+    resize: none;
+    padding: 20px;
+    background-color: #D6DBEA; */
 }
 
 
@@ -382,7 +422,7 @@ h1 {
   flex: auto;
 }
 
-textarea {
+/* textarea {
   background-color: #f7f9fe;
   margin-top: -10px;
   border: none;
@@ -400,7 +440,7 @@ textarea {
 textarea::placeholder {
   color: #aaa;
   font-family: "Segoe UI";
-}
+} */
 
 .submit-button {
   background: none;
@@ -431,8 +471,7 @@ textarea::placeholder {
 }
 
 .main {
-  width: 100%;
-  margin-right: 10px;
+   
 }
 
 .button {
@@ -440,7 +479,7 @@ textarea::placeholder {
   align-items: center; 
 }
 
-.editButton {
+.announcement-button {
   display: flex;                
   align-items: center;         
   justify-content: center;      
@@ -460,7 +499,7 @@ textarea::placeholder {
   font-size: 20px;
 }
 
-.editIcon {
+.announcement-icon {
   margin-right: 5px;            
   width: 28px;                  
   height: 28px;
