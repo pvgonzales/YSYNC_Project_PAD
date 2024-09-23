@@ -23,7 +23,6 @@
       <img src="..\assets\profile.jpg" alt="profile pic" class="profile" />
     </div>
 
-    <div class="left-border"></div>
     <div class="main">
       <!--Div for the subNav (Announcements | Calendar)-->
       <div class="subNav">
@@ -32,6 +31,12 @@
           <li id="calendar"><a href="dashboard-calendar-trainee.html">Calendar</a></li>
         </ul>
       </div>
+
+      .calendar-right {
+  float: right;
+  flex: 1;
+  width: 30%;
+}
 
       <!--Div for the left division (Announcements)-->
       <div class="dashboard-left">
@@ -204,6 +209,11 @@
 
       <!--Div for the Upcoming Container-->
       <div class="dashboard-right">
+        <div class="button">
+          <button type class="editButton">
+              <img class="editIcon" src="..\assets\plus.png", alt="editIcon">Add Event</button>
+        </div>
+
         <div class="upcoming-container">
           <div class="upcoming-header">
             <h1 class="pinned-Announcements">Upcoming</h1>

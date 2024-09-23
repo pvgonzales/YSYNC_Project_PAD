@@ -151,9 +151,8 @@ h1 {
 }
 
 .button {
-    /* Removed unnecessary properties */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
   }
   
   .editButton {
