@@ -169,6 +169,8 @@ h1 {
     border: 2px solid #00A3F0;   
     border-radius: 40px;
     background-color: #00A3F0;
+    box-shadow: 3px 3px 10px rgb(188, 188, 188);
+
     color: #FFFFFF;
     font-size: 15px;
   }
