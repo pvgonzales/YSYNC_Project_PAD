@@ -1,4 +1,6 @@
-a{
+a,
+h1,
+h2{
     font-family: 'Segoe UI';
 }
 
@@ -96,17 +98,85 @@ body{
     text-decoration: none;
     color: black;
     margin: 2rem;
+    font-size: 30px;
 }
 
 .postProfile{
+    display: flex;
+    flex-direction: column;
     margin-top: 1rem;
-    color: white;
-    min-width: 700px;
+    background-color: white;
+    min-width: 1000px;
     min-height: 500px;
-    border-radius: 10%;
-    border: 2px solid #132B41;
+    border-radius: 3%;
+    /* border: 1px solid #565656; */
 }
 
 .middle{
     margin-top: 1rem;
+}
+
+.post-pic-bio{
+    display: flex;
+    flex-direction: row;
+}
+
+.postProfilePic{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.postBio{
+    border: 1px solid #565656;
+    min-width: 600px;
+    min-height: 200px;
+    max-width: 600px;
+    max-height: 200px;
+    border-radius: 3%;
+}
+
+.post-bio-area{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.postName{
+    margin-left: 0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.postBioText{
+    font-weight: normal;
+    font-size: small;
+    margin-left: 1rem;
+}
+
+.postBioMessage{
+    margin: 1rem;
+    font-family: 'Segoe UI';
+    color: #565656;
+}
+
+.postMentorInfo{
+    font-family: 'Segoe UI';
+    color: #565656;
+    font-size: small;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.postDivider{
+    border: 1px solid #565656;
+    margin-right: 4rem;
+    margin-left:3rem;
+}
+
+.postMentorInfoMessage{
+    margin-left: 4rem;
+    font-size: medium;
+    font-weight: normal;
 }
