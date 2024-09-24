@@ -23,6 +23,7 @@ h1 {
   flex: 1;
   min-width: 50px;
 }
+
 .logoname {
   display: flex;
   align-items: center;
@@ -138,13 +139,13 @@ h1 {
   /* column-gap: 30px; */
 }
 
-.dashboard-left {
+.dashboardLeft {
   flex: 1;
   float: left;
   width: 70%;
 }
 
-.dashboard-right {
+.dashboardRight {
   float: right;
   flex: 1;
   width: 30%;
@@ -167,7 +168,7 @@ h1 {
   
 }
 
-.top-inputs{
+.topInputs{
   display: flex; 
   flex-direction: row; 
   justify-content: space-between;
@@ -177,7 +178,7 @@ h1 {
   margin-right: 20px;
 }
 
-.mid-input{
+.midInput{
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -185,7 +186,7 @@ h1 {
   margin-top: 5px;
 }
 
-.title-box{
+.titleBox{
   
   font-size: 16px;
   border: 2px solid #565656;
@@ -199,11 +200,11 @@ h1 {
   padding: 10px 10px;
 }
 
-.top-right{
+.topRight{
   margin-right: 60px;
 }
 
-.time-box, .date-box{
+.timeBox, .dateBox{
   padding: 10px;
   font-size: 16px;
   border: 2px solid #565656;
@@ -213,7 +214,7 @@ h1 {
 }
 
 
-.announcement-box{
+.announcementBox{
   width: 900px;
   height: 110px;
 
@@ -228,7 +229,7 @@ h1 {
   background-color: #D6DBEA;
 }
 
-.bottom-inputs{
+.bottomInputs{
   display: flex; 
   flex-direction: row;
   justify-content: space-between;
@@ -238,18 +239,18 @@ h1 {
   margin-right: 20px;
 }
 
-.grouped-icons{
+.groupedIcons{
 
 }
 
-.three-icons {
+.threeIcons {
   margin-left: 10px;            
   width: 28px;                  
   height: 28px;
   color: #FFFFFF;              
 }
 
-.grouped-buttons{
+.groupedButtons{
   margin-right: 15px;
   display: flex;
   flex-direction: row;
@@ -257,7 +258,7 @@ h1 {
   gap: 10px;
 }
 
-.post-button{
+.postButton{
   display: flex;                
   align-items: center;         
   justify-content: center;      
@@ -274,7 +275,7 @@ h1 {
   font-size: 19px;
 }
 
-.cancel-button{
+.cancelButton{
   display: flex;                
   align-items: center;         
   justify-content: center;      
@@ -292,7 +293,7 @@ h1 {
   font-size: 19px;
 }
 
-.pinned-container {
+.pinnedContainer {
   min-height: 300px;
   max-width: 1000px;
   margin: 25px auto 0px 40px;
@@ -301,7 +302,7 @@ h1 {
   box-shadow: 3px 3px 10px rgb(188, 188, 188);
 }
 
-.pinned-header {
+.pinnedHeader {
   max-width: 1200px;
   max-height: 70px;
   align-items: center;
@@ -312,7 +313,7 @@ h1 {
   border-top-right-radius: 30px;
 }
 
-.pinned-Announcements {
+.pinnedAnnouncements {
   padding-left: 10px;
   font-family: "Segoe UI";
   font-weight: bold;
@@ -320,7 +321,7 @@ h1 {
   color: #f2f5ff;
 }
 
-.upcoming-container {
+.upcomingContainer {
   min-height: 300px;
   max-width: 370px;
   margin: 25px auto 0px 40px;
@@ -329,7 +330,7 @@ h1 {
   box-shadow: 3px 3px 10px rgb(188, 188, 188);
 }
 
-.upcoming-header {
+.upcomingHeader {
   max-width: 370px;
   max-height: 70px;
   align-items: center;
@@ -349,7 +350,7 @@ h1 {
   align-items: center; 
 }
 
-.announcement-button {
+.announcementButton {
   display: flex;                
   align-items: center;         
   justify-content: center;      
@@ -367,7 +368,7 @@ h1 {
   font-size: 20px;
 }
 
-.announcement-icon {
+.announcementIcon {
   margin-right: 5px;            
   width: 28px;                  
   height: 28px;
