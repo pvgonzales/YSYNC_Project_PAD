@@ -1,3 +1,4 @@
+let liked = false;
 
 window.onload = () => {
     let selectedButton = document.querySelector("#connect");
@@ -6,6 +7,8 @@ window.onload = () => {
     // to get posts and connect from connect path to different route
     var posts = JSON.parse(sessionStorage.getItem("posts"));
     var connect = document.getElementsByClassName("connect")[0];
+
+    if (!posts) return
 
     for (let index = 0; index < posts.length; index++) { // create a new post each time a user creates post
         var tempPost = document.createElement("div");
@@ -33,8 +36,23 @@ window.onload = () => {
 
         var tempInteract = document.createElement("div");
         tempInteract.className = "chatInteract";
-        tempInteract.innerHTML = "<div class='heartContainerConnect'> <button id='heartButtonConnect' class='heartIconConnect'>❤</button><h2 class='counterHeartConnect'>1</h2> </div> <div class='commentContainerConnect'> <button class='commentIconConnect'> <img src='connect-post-images/speech-bubble.png' alt='Comment Icon' class='speech-icon' /> </button> <h2 class='counterCommentConnect'>1</h2> </div> "
-
+        tempInteract.innerHTML = `<div class="heartContainerConnect">
+                            <button id="heartButtonConnect${index+3}" class="heartIconConnect" onclick="toggleHeart('heartButtonConnect${index+3}')">
+                                ♡
+                                <h2 id="counterHeartConnect${index+3}"" class="counterHeartConnect">0</h2>
+                            </button>
+                        </div>
+                        
+                        <div class="commentContainerConnect">
+                            <button class="commentIconConnect">
+                              <img
+                                src="connect-post-images/speech-bubble.png"
+                                alt="Comment Icon"
+                                class="speech-icon"
+                              />
+                            </button>
+                            <h2 class="counterCommentConnect">1</h2>
+                        </div>`
 
         tempP.appendChild(paragraph);
         tempTitle.appendChild(tempP);
@@ -59,4 +77,15 @@ function createPost(){
     posts.push(textInput.value);    // add to posts
 
     sessionStorage.setItem("posts", JSON.stringify(posts)); //add to session storage when post is created
+}
+
+function toggleHeart(id){
+    console.log("Pressed")
+    liked = !liked;
+    var heartIcon = document.getElementById(id);
+    if (liked) {
+        heartIcon.innerHTML = `<div class="smallHeart">❤</div><h2 id="counterHeartConnect1" class="counterHeartConnect">1</h2>`
+    } else {
+        heartIcon.innerHTML = `♡<h2 id="counterHeartConnect1" class="counterHeartConnect">0</h2>`
+    }
 }

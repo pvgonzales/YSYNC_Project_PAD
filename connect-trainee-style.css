@@ -195,14 +195,25 @@ body{
     display: flex;
 }
 .heartIconConnect {
-    margin-top: -13px;
-    font-size: 30px;
+    font-size: 48px;
     background: none;
     border: none;
     cursor: pointer;
     color: #00A3F0;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 50px;
 }
+.smallHeart {
+    font-size: 36px;
+}
+
+h2 {
+    margin: 0;
+}
+
 .counterHeartConnect,
 .counterCommentConnect {
     margin-top: -3px;
@@ -214,10 +225,14 @@ body{
 
 .commentIconConnect{
     margin-left: 4px;
-    margin-top: -8px;
+    margin-top: 5px;
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.counterCommentConnect{
+    margin-top: 13px;
 }
 
 .post-icon {
