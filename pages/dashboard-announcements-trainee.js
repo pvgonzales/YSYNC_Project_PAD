@@ -6,25 +6,20 @@ const announcementSection = document.getElementById('makeAnnoucementSection');
 // click events
 announcementButton.addEventListener('click', () => {
     // if announcement is visible
-    if (announcementSection.style.display === 'none' || announcementSection.style.display === '') {
-        announcementSection.style.display = 'flex'; // show 
-    } else {
-        announcementSection.style.display = 'none'; // hide 
-    }
+    announcementSection.style.display = 'flex'; // show 
+
 });
 postButton.addEventListener('click', () => {
     // if announcement is visible
-    if (announcementSection.style.display === 'none') {
-        announcementSection.style.display = 'flex'; // show
-    } else {
-        announcementSection.style.display = 'none'; // hide
-    }
+    clearAnnouncementInputs();
+    announcementSection.style.display = 'none'; // hide
 });
 cancelButton.addEventListener('click', () => {
-    // if announcement is visible
-    if (announcementSection.style.display === 'none') {
-        announcementSection.style.display = 'flex'; // show
-    } else {
-        announcementSection.style.display = 'none'; // hide
-    }
+    clearAnnouncementInputs();
+    announcementSection.style.display = 'none'; // hide
 });
+
+function clearAnnouncementInputs() {
+    const inputs = announcementSection.querySelectorAll('input, textarea');
+    inputs.forEach(input => input.value = '');
+}

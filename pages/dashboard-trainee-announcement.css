@@ -1,3 +1,9 @@
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Segoe UI";
+}
+
 h1 {
   font-family: "Segoe UI";
   font-weight: bold;
@@ -308,6 +314,14 @@ body {
   border-top-right-radius: 30px;
 }
 
+    
+.upcomingContent{
+  padding-top: 5px;
+  max-width: fit-content;
+  margin-left: 30px;
+  margin-right: auto;
+}
+
 .main {
    
 }
@@ -340,4 +354,18 @@ body {
   width: 28px;                  
   height: 28px;
   color: #FFFFFF;              
+}
+
+
+.taskName{
+  margin-top: -15px;
+}
+
+.calendarButton{
+  padding-left: 210px;
+  padding-bottom: 10px;
+}
+
+.calendarButton a{
+  color: #00A3F0
 }
