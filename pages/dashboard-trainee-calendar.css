@@ -18,11 +18,7 @@ h1 {
   color: #1e1e1e;
 }
 
-.left-border,
-.right-border {
-  flex: 1;
-  min-width: 50px;
-}
+
 .logoname {
   display: flex;
   align-items: center;
@@ -126,25 +122,16 @@ h1 {
 }
 
 .dashboard {
-  /* display: flex;
-  width: 70rem;
-  height: auto;
-  color: #132b41;
-  background-color: white;
-  font-family: "Segoe UI";
-  font-weight: bold;
-  font-size: 15px;
-  flex-direction: column; */
-  /* column-gap: 30px; */
+
 }
 
-.calendar-left {
+.calendarLeft {
   flex: 1;
   float: left;
   width: 70%;
 }
 
-.calendar-right {
+.calendarRight {
   float: right;
   flex: 1;
   width: 30%;
@@ -155,7 +142,7 @@ h1 {
     align-items: center; 
   }
   
-  .editButton {
+.eventButton {
     display: flex;                
     align-items: center;         
     justify-content: center;      
@@ -173,16 +160,16 @@ h1 {
 
     color: #FFFFFF;
     font-size: 15px;
-  }
-  
-  .editIcon {
-    margin-right: 5px;            
-    width: 20px;                  
-    height: 20px;
-    color: #FFFFFF;              
-  }
+}
 
-.Calendar-container {
+.eventIcon {
+  margin-right: 5px;            
+  width: 20px;                  
+  height: 20px;
+  color: #FFFFFF;              
+}
+
+.calendarContainer {
     display: block;
     width: 950px;
     height: 500px;
@@ -202,14 +189,14 @@ h1 {
   }
   
   
-  .pinned-Announcements {
+  .pinnedAnnouncements {
       padding-left: 10px;
       font-family: "Segoe UI";
       font-weight: bold;
       text-decoration: none;
       color: #f2f5ff;
     }
-  .upcoming-container {
+  .upcomingContainer {
       min-height: 300px;
       max-width: 380px;
       margin: 25px auto 0px 40px;
@@ -218,7 +205,7 @@ h1 {
       box-shadow: 3px 3px 10px rgb(188, 188, 188);
     }
     
-  .upcoming-header {
+  .upcomingHeader {
       max-width: 380px;
       max-height: 70px;
       align-items: center;
@@ -229,7 +216,7 @@ h1 {
       border-top-right-radius: 30px;
     }
     
-  .upcoming-content{
+  .upcomingContent{
       padding-top: 5px;
       max-width: fit-content;
       margin-left: 30px;
