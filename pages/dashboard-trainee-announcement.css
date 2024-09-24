@@ -294,26 +294,6 @@ body {
   color: #f2f5ff;
 }
 
-.topPinned{
-  display: flex; 
-  flex-direction: row; 
-  justify-content: space-between;
-
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
-.topPinnedLeft{
-  display: flex; 
-  flex-direction: row; 
-}
-
-.topPinnedProfileInfo{
-  display: flex; 
-  flex-direction: column; 
-}
-
 .pfp{
   border: 1.5px solid #132B41;
   border-radius: 20px;
@@ -324,14 +304,6 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-
-
-.profileInfo{
-
-}
-
-
-
 
 
 .upcomingContainer {
@@ -363,7 +335,7 @@ body {
 }
 
 .main {
-   
+   width: 100%;
 }
 
 .button {
