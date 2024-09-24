@@ -71,6 +71,21 @@ h1 {
   color: white;
 }
 
+.button{
+  transition: all 0.3s ease;
+}
+.button.active {
+  background-color: #00A3F0;
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+}
+
+.button:hover{
+  background-color: #3c9ecc6b;
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+}
+
 .logo {
   width: 70px;
 }
@@ -442,93 +457,6 @@ textarea::placeholder {
   width: 100%;
 }
 
-
-
-
-/* Mentor Selection Styling */
-.mentor-container {
-  text-align: center;
-  margin: 40px auto;
-}
-
-.mentor-list {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.mentor-card {
-  width: 200px;
-  padding: 20px;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.mentor-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.mentor-img {
-  width: 100%;
-  border-radius: 10px;
-  transition: filter 0.3s ease;
-}
-
-.mentor-name {
-  font-family: "Segoe UI", sans-serif;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.confirm-btn {
-  background-color: #132b41;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.confirm-btn:disabled {
-  background-color: grey;
-  cursor: not-allowed;
-}
-
-.confirm-btn:hover:enabled {
-  background-color: #165a8a;
-}
-
-.button.active {
-  background-color: #00A3F0;
-  border-radius: 20px;
-  padding: 10px 40px 10px 40px;
-}
-
-.intro-container {
-  text-align: center;
-  margin: 20px;
-  padding: 10px;
-  background-color: #e3f2fd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.intro-container h1 {
-  color: #132b41;
-}
-
-.intro-container p {
-  font-size: 18px;
-  color: #333;
-}
-
 .mentor-content{
   position:relative;
 }
@@ -604,6 +532,14 @@ textarea::placeholder {
 
 }
 
+#mentor-cards{
+  padding: 40px 60px 0px 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
 #sort-mentor{
   font-size: 30px;
   text-align: right;
@@ -625,15 +561,81 @@ textarea::placeholder {
 }
 
 #filter-dropdown{
+  margin-top: 20px;
   font-weight: 400;
 }
 #filter-dropdown label{
   margin-left: 25px;
+  font-size: 25px;
 }
 #filter-dropdown input[type="checkbox"]{
   width: 20px;
   height: 20px;
   border: 2px solid;
+}
+
+
+
+/* Style for the custom checkbox */
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Segoe UI", sans-serif;
+  user-select: none;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* On hover, add a shadow effect */
+.custom-checkbox:hover input ~ .checkmark {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* When the checkbox is checked, change the background color */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #00A3F0;
+}
+
+/* Add a tick mark when the checkbox is checked */
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the tick mark */
+.custom-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 /* mentor cards :*/
@@ -658,28 +660,28 @@ textarea::placeholder {
 }
 
 .profileTile {
-  /* display: flex; */
   position: relative;
   border: 1.5px solid #132B41;
   border-radius: 20px;
-  padding: 20px;
-  
+  padding: 0px 10px 10px 0px;
   text-align: center;
-  word-break: break-word;
-  height: 400px;
-  width: 300px;
+  width: 350px;
 
   background-color: #F2F5FF;
 
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  transition: all 0.3s ease;
+}
+
+.profileTile:hover {
+  transform: scale(1.05)
 }
 
 .profileTitle{
   font-family: "Segoe UI";
   color: #00A3F0;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .bodyTextContainer{
@@ -688,10 +690,16 @@ textarea::placeholder {
   padding-left: 20px;
 }
 
+
+
+.body-text-spacing{
+  margin-bottom: 15px;
+}
+
 .bodyText{
   font-family: "Roboto";
   color: #132B41;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .pfp{
@@ -713,4 +721,27 @@ textarea::placeholder {
   object-fit: cover;
 }
 
+.headerText{
+  margin-top: 20px;
+}
+
+.choose-me-button{
+  background-color: #132b41;
+  border-radius: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  cursor:pointer;
+  border-style: none;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  transition: all 0.3s ease;
+}
+
+.choose-me-button:hover{
+  font-size: 22px;
+  transform: scale(1.1);
+}
 /* end of mentor cards */
