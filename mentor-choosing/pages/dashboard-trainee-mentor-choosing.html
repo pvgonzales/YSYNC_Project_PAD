@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dashboard-trainee-mentor-choosing-style.css" />
     <script src="dashboard-trainee-mentor-choosing-script.js"></script>
     <title>Mentor Selection</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="parentNav">
-        <div class="logoname">
-            <img src="../assets/logo.png" alt="YSES Logo" class="logo" />
-            <div class="navi">YSYNC</div>
-        </div>
-        <ul class="navButtons">
-            <li class = "button"><a href="#">Dashboard</a></li>
-            <li class = "button"><a href="#">Connect</a></li>
-            <li class = "button active"><a href="#">Mentors</a></li>
-            <li class = "button"><a href="#">Resident Members</a></li>
-        </ul>
-        <img src="../assets/profile.jpg" alt="profile pic" class="profile" />
+      <div class="logoname">
+        <img src="../assets/logo.png" alt="YSES Logo" class="logo" />
+        <div class="navi">YSYNC</div>
+      </div>
+      <ul class="navButtons">
+        <li class="button"><a href="#">Dashboard</a></li>
+        <li class="button"><a href="#">Connect</a></li>
+        <li class="button active"><a href="#">Mentors</a></li>
+        <li class="button"><a href="#">Resident Members</a></li>
+      </ul>
+      <img src="../assets/profile.jpg" alt="profile pic" class="profile" />
     </div>
 
     <div class="mentor-content">
-        <img id="mentor-content-image" src="../assets/yses.jpg">
-        <div id="mentor-content-overlay">
-          <p id="mentor-content-text">Ready to choose your <span style="font-weight: bold;">mentor?</span></p>
-        </div>
+      <img id="mentor-content-image" src="../assets/yses.jpg" />
+      <div id="mentor-content-overlay">
+        <p id="mentor-content-text">
+          Ready to choose your <span style="font-weight: bold">mentor?</span>
+        </p>
+      </div>
     </div>
-    <div id="intro-text">Tailor your search and connect with the mentor who fits your journey best:</div>
+    <div id="intro-text">
+      Tailor your search and connect with the mentor who fits your journey best:
+    </div>
     <div class="line-divider"></div>
     <div id="mentor-list">
       <div id="mentor-filter">
-          <div id="filter-text">Filter by: </div>
-          <div id="filter-divider">
-            <span style="font-weight: bold;">Field of Expertise:</span>
-              <div id="filter-dropdown">
-                <input type="checkbox" name="Cybersecurity">
-                <label for="Cybersecurity">Cybersecurity</label><br>
-                <input type="checkbox" name="Data-science">
-                <label for="Data-science">Data Science</label><br>
-                <input type="checkbox" name="Machine-learning">
-                <label for="Machine-learning">Machine Learning</label><br>
-                <input type="checkbox" name="Backend-development">
-                <label for="Backend-development">Backend Development</label><br>
-                <input type="checkbox" name="Computer-vision">
-                <label for="Computer-vision">Computer Vision</label><br>
-
-              </div>
+        <div id="filter-text">Filter by:</div>
+        <div id="filter-divider">
+          <span style="font-weight: bold">Field of Expertise:</span>
+          <div id="filter-dropdown">
+            <input type="checkbox" name="Cybersecurity" />
+            <label for="Cybersecurity">Cybersecurity</label><br />
+            <input type="checkbox" name="Data-science" />
+            <label for="Data-science">Data Science</label><br />
+            <input type="checkbox" name="Machine-learning" />
+            <label for="Machine-learning">Machine Learning</label><br />
+            <input type="checkbox" name="Backend-development" />
+            <label for="Backend-development">Backend Development</label><br />
+            <input type="checkbox" name="Computer-vision" />
+            <label for="Computer-vision">Computer Vision</label><br />
           </div>
+        </div>
       </div>
       <div id="mentor-container">
         <div id="sort-mentor">
-          SORT BY: <span class="sort-text" style="font-weight: bold;">ascending</span>
+          SORT BY:
+          <span class="sort-text" style="font-weight: bold">ascending</span>
         </div>
         <div id="mentor-cards">
           <div class="profileContainer">
             <div class="profileTile">
-                <img src="../assets/Ellipse 1123.png" class = "pfp" alt="profile">
-                <div class="headerText">
-                    <p class="name" >John Doe</p>
-                    <p class="nameTitle">2022 | NightMode</p>
-                    <p class="profileTitle">Visuals and Logistics</p>
-                </div>
-                <div class="bodyTextContainer">
-                    <p class="profileTitle">FIELD OF INTEREST</p>
-                    <p class="bodyText">Data Science, Machine Learning</p>
-                    <br>
-                    <p class="profileTitle">WHY YOU SHOULD CHOOSE ME</p>
-                    <p class="bodyText">Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae turpis lorem eget in mus non.</p>
-                    <br>
-                    <p class="profileTitle">WHAT CAN YOU EXPECT</p>
-                    <p class="bodyText">Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae turpis lorem eget in mus non</p>
-                </div>
+              <img src="../assets/Ellipse 1123.png" class="pfp" alt="profile" />
+              <div class="headerText">
+                <p class="name">John Doe</p>
+                <p class="nameTitle">2022 | NightMode</p>
+                <p class="profileTitle">Visuals and Logistics</p>
+              </div>
+              <div class="bodyTextContainer">
+                <p class="profileTitle">FIELD OF INTEREST</p>
+                <p class="bodyText">Data Science, Machine Learning</p>
+                <br />
+                <p class="profileTitle">WHY YOU SHOULD CHOOSE ME</p>
+                <p class="bodyText">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae
+                  turpis lorem eget in mus non.
+                </p>
+                <br />
+                <p class="profileTitle">WHAT CAN YOU EXPECT</p>
+                <p class="bodyText">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae
+                  turpis lorem eget in mus non
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
-    
-</body>
+  </body>
 </html>

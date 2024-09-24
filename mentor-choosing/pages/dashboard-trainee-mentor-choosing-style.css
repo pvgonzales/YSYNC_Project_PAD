@@ -636,6 +636,19 @@ textarea::placeholder {
   border: 2px solid;
 }
 
+/* mentor cards :*/
+.name{
+  font-family: "Segoe UI";
+  color: #132B41;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.nameTitle{
+  font-family: "Segoe UI";
+  color: #132B41;
+}
+
 .profileContainer {
   padding-left: 100px;
   padding-top: 60px;
@@ -646,19 +659,15 @@ textarea::placeholder {
 
 .profileTile {
   /* display: flex; */
-
   position: relative;
-  overflow: visible;
-
-  background: F2F5FF;
   border: 1.5px solid #132B41;
   border-radius: 20px;
   padding: 20px;
   
   text-align: center;
-  
-  height: 330px;
-  width: 270px;
+  word-break: break-word;
+  height: 400px;
+  width: 300px;
 
   background-color: #F2F5FF;
 
@@ -684,3 +693,24 @@ textarea::placeholder {
   color: #132B41;
   font-size: 16px;
 }
+
+.pfp{
+  /* float: left; */
+  position: absolute;
+  /* float: left; */
+
+  /* margin: 100px; */
+
+  border: 1.5px solid #132B41;
+  border-radius: 8px;
+  
+  top: -20px;
+  left: -30px; 
+  width: 110px; /* Set a specific width */
+  height: 110px; /* Set a specific height */
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* end of mentor cards */
