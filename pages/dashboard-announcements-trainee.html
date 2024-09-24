@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dashboard-trainee-announcement.css" />
+    <script src="dashboard-announcements-trainee.js" defer></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -34,7 +36,7 @@
 
       <!--Div for the left division (Announcements)-->
       <div class="dashboardLeft">
-       <div class="announcementContainer">
+       <div class="announcementContainer" id="makeAnnoucementSection">
 
         <div class="topInputs">
           <div class="topLeft">
@@ -53,6 +55,7 @@
         </div>
 
         <div class="bottomInputs">
+
           <div class="botLeft">
             <div class="groupedIcons">
               <img class="threeIcons" src="..\assets\bullets.png" alt="megaphoneIcon">
@@ -63,15 +66,14 @@
 
           <div class="botRight">
             <div class="groupedButtons">
-              <button type="button" class="postButton">Post</button>
-              <button type="button" class="cancelButton">Cancel</button>
+              <button type="button" id="postButton" class="postButton">Post</button>
+              <button type="button" id="cancelButton" class="cancelButton">Cancel</button>
             </div>
           </div>
 
-
         </div>
 
-      </div> 
+        </div> 
 
 
 
@@ -87,8 +89,8 @@
       <!--Div for the Upcoming Container-->
       <div class="dashboardRight">
         <div class="button">
-          <button type="button" class="announcementButton">
-              <img class="announcementIcon" src="..\assets\megaphone.png" alt="megaphoneIcon">Make an Announcement</button>
+          <button type="button" id="announcementButton" class="announcementButton">
+              <img class="announcementIcon"  src="..\assets\megaphone.png" alt="megaphoneIcon">Make an Announcement</button>
         </div>
 
         <div class="upcomingContainer">

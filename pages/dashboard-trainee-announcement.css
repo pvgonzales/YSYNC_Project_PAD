@@ -154,7 +154,8 @@ h1 {
 .announcementContainer{
   /* min-height: 300px; */
   /* max-width: 1000px; */
-  display: flex; /* Use flexbox layout */
+  display: none;
+
   flex-direction: column; /* Align items in a row */ 
 
   height: 300px;
