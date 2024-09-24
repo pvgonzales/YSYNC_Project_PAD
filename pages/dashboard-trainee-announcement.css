@@ -294,6 +294,19 @@ body {
   color: #f2f5ff;
 }
 
+.topPinned{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+
+
 .upcomingContainer {
   min-height: 300px;
   max-width: 370px;
