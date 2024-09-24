@@ -3,34 +3,28 @@ const postButton = document.getElementById('postButton');
 const cancelButton = document.getElementById('cancelButton');
 const announcementSection = document.getElementById('makeAnnoucementSection');
 
-// Add click event to the button
+// click events
 announcementButton.addEventListener('click', () => {
-    // Check if the announcement section is currently visible
+    // if announcement is visible
     if (announcementSection.style.display === 'none' || announcementSection.style.display === '') {
-        // If hidden, show it
-        announcementSection.style.display = 'flex';
+        announcementSection.style.display = 'flex'; // show 
     } else {
-        // If visible, hide it
-        announcementSection.style.display = 'none';
+        announcementSection.style.display = 'none'; // hide 
     }
 });
 postButton.addEventListener('click', () => {
-    // Check if the announcement section is currently visible
+    // if announcement is visible
     if (announcementSection.style.display === 'none') {
-        // If hidden, show it
-        announcementSection.style.display = 'flex';
+        announcementSection.style.display = 'flex'; // show
     } else {
-        // If visible, hide it
-        announcementSection.style.display = 'none';
+        announcementSection.style.display = 'none'; // hide
     }
 });
 cancelButton.addEventListener('click', () => {
-    // Check if the announcement section is currently visible
+    // if announcement is visible
     if (announcementSection.style.display === 'none') {
-        // If hidden, show it
-        announcementSection.style.display = 'flex';
+        announcementSection.style.display = 'flex'; // show
     } else {
-        // If visible, hide it
-        announcementSection.style.display = 'none';
+        announcementSection.style.display = 'none'; // hide
     }
 });
