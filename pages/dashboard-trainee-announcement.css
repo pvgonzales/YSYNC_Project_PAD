@@ -1,4 +1,4 @@
-h2 {
+p, h2 {
   font-size: 15px;
   font-weight: normal;
   font-family: "Segoe UI";
@@ -302,8 +302,15 @@ body {
 }
 
 .pinnedAnnInfo{
-  margin-left: 80px;
+  margin-left: 50px;
   padding-bottom: 4px;
+}
+
+
+
+.pinnedMainContent{
+  display: flex; 
+  flex-direction: row; 
 }
 
 .pinnedpostDets{
@@ -312,20 +319,67 @@ body {
 }
 
 .authorName {
+  margin-top: -78px;
   margin-bottom: -16px;
 }
 
+.postTime {
+  margin: 0px;
+}
+
+.dateTime {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 13.5px;
+}
+
+.username {
+  font-size: 22px;
+}
+
 .pfp{
-  border: 1.5px solid #132B41;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 1.5rem;
+  padding-right: 2px;
+  margin-top: 1rem;
+
+  /* border: 1.5px solid #132B41;
   border-radius: 20px;
   
   width: 60px; 
   height: 60px; 
 
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: cover; */
 }
 
+.pinnedAnnBox{
+  min-height: 200px;
+  max-width: 400px;
+  width: 100%;
+  margin-left: 90px;
+  background-color: #ffffff;
+  outline-style: solid;
+  outline-color: #6d6d6d;
+  outline-width: 2px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  margin-bottom: 10px;
+}
+
+.pinnedAnnDetails{
+  padding-top: 3px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pinned-postContent{
+  max-width: 350px;
+}
 
 .upcomingContainer {
   min-height: 300px;
