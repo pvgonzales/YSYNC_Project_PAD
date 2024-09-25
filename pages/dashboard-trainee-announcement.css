@@ -16,6 +16,26 @@ body {
   background-color: #d6dbea;
 }
 
+#commentSection {
+  background-color: #f7f9fe;
+  margin-top: -10px;
+  border: none;
+  outline: none;
+  max-width: 400px;
+  max-height: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  resize: none;
+  overflow: hidden;
+}
+
+textarea::placeholder {
+  color: #aaa;
+  font-family: "Segoe UI";
+}
+
 .logoName {
   display: flex;
   align-items: center;
@@ -318,8 +338,18 @@ body {
   padding-left: 85px;
 }
 
+.postDets {
+  padding-top: 4px;
+  padding-left: 85px;
+}
+
 .authorName {
   margin-top: -78px;
+  margin-bottom: -16px;
+}
+
+.authorNameAnnounce {
+  margin-top: -76px;
   margin-bottom: -16px;
 }
 
@@ -379,6 +409,142 @@ body {
 
 .pinned-postContent{
   max-width: 350px;
+}
+
+.reactions-pinned{
+  margin-top: -15px;
+  padding-top: 3px;
+  max-width: fit-content;
+  margin-left: 70px;
+  margin-right: auto;
+}
+
+.reactionButtons{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-left: 40px;
+  padding-right: 0px;
+  align-items: center;
+}
+
+.heart-icon {
+  margin-top: -6px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.heart-icon.active {
+  color: red;
+}
+
+.counter {
+  margin-top: 0px;
+  float: right;
+  font-size: 20px;
+}
+
+.comment-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.comments-container {
+  margin-top: -70px;
+  max-width: 400px;
+  max-height: 9px;
+  width: 100%;
+  float: right;
+  flex: auto;
+}
+
+.comment-box {
+  margin-left: 80%;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #f7f9fe;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  width: 100%;
+  outline: 0.5px solid #939393;
+  max-width: 300px;
+}
+
+.stream-header {
+  padding: 0px 90px;
+}
+
+.posts-box {
+  min-height: 200px;
+  max-width: 1000px;
+  margin: 10px 20px 100px 120px;
+  background-color: #f2f5ff;
+  outline-style: solid;
+  outline-color: #00a3f0;
+  outline-width: 2px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.postProper {
+  padding-left: 40px;
+}
+
+.Title {
+  margin-bottom: -10px;
+}
+
+.post-title {
+  font-size: 27px;
+}
+
+.postContent {
+  padding-left: 5px;
+  padding-bottom: 55px;
+  max-width: 900px;
+}
+
+.post-content {
+  font-size: 16px;
+  max-width: fit-content;
+  padding-bottom: 30px;
+  border-bottom: 0.3px solid #a8a8a8;
+  border-bottom-width: 1px;
+  margin-bottom: 0;
+}
+
+.buttons {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 40px;
+  padding-right: 0px;
+  align-items: center;
+}
+
+.speech-icon {
+  width: 28px;
+}
+
+.reactions {
+  margin-top: -50px;
+  padding-bottom: 1px;
 }
 
 .upcomingContainer {
