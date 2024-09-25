@@ -7,6 +7,30 @@ body {
     margin: 0;
     background-color: #d6dbea;
 }
+
+.mentor-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 175px;
+    background-color: #2A9CD4;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    gap: 5px; 
+}
+
+.mentor-button i {
+    font-size: 18px; 
+}
+
+.mentor-button:hover {
+    background-color: #1e85b6; 
+}
   
 h1 {
     font-family: "Segoe UI", Arial, sans-serif;

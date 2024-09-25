@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard-trainee-mentor-choosing-style.css" />
+    <script src="dashboard-trainee-mentor-choosing-script.js"></script>
+    <title>Mentor Selection</title>
+  </head>
+  <body>
+    <div class="parentNav">
+      <div class="logoname">
+        <img src="../assets/logo.png" alt="YSES Logo" class="logo" />
+        <div class="navi">YSYNC</div>
+      </div>
+      <ul class="navButtons">
+        <li class="button"><a href="../../dashboard/pages/dashboard-trainee-announcement.html">Dashboard</a></li>
+        <li class="button"><a href="../../connect/connect-trainee.html">Connect</a></li>
+        <li class="button active"><a href="#">Mentors</a></li>
+        <li class="button"><a href="../../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+      </ul>
+      <button onclick="accountDropdown()" class="profile-button"><img src="../../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+    </div>
+
+    <div class="acc-parentNav" id="drop">
+      <a href="../../account-management/profile.html" id="profile">Profile</a>
+      <a href="../../account-management/report.html" id="report">Report</a>
+      <a href="../../account-management/report.html" id="defer">Defer</a>
+      <p></p>
+      <a href="../../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
+    </div>
+
+    <div class="mentor-content">
+      <img id="mentor-content-image" src="../assets/yses.jpg" />
+      <div id="mentor-content-overlay">
+        <p id="mentor-content-text">
+          Ready to choose your <span class ="mentor-span-text" style="font-weight: bold">mentor?</span>
+        </p>
+      </div>
+    </div>
+    <div id="intro-text">
+      Tailor your search and connect with the mentor who fits your journey best:
+    </div>
+    <div class="line-divider"></div>
+    <div id="mentor-list">
+      <div id="mentor-filter">
+        <div id="filter-text">Filter by:</div>
+        <div id="filter-divider">
+          <span style="font-weight: bold">Field of Expertise:</span>
+          <div id="filter-dropdown">
+              <label class="custom-checkbox">
+                <input type="checkbox" name="Cybersecurity" />
+                <span class="checkmark"></span>
+                Cybersecurity
+              </label><br />
+            
+            
+            <label class="custom-checkbox">
+              <input type="checkbox" name="Data-science" />
+              <span class="checkmark"></span>
+              Data Science
+            </label><br />
+            
+            <label class="custom-checkbox">
+              <input type="checkbox" name="Machine-learning" />
+              <span class="checkmark"></span>
+              Machine Learning
+            </label><br />
+            
+            <label class="custom-checkbox">
+              <input type="checkbox" name="Backend-development" />
+              <span class="checkmark"></span>
+              Backend Development
+            </label><br />
+            
+            <label class="custom-checkbox">
+              <input type="checkbox" name="Computer-vision" />
+              <span class="checkmark"></span>
+              Computer Vision
+            </label><br />
+          </div>
+        </div>
+      </div>
+      <div id="mentor-container">
+        <div id="sort-mentor">
+          SORT BY:
+          <span class="sort-text" style="font-weight: bold">ascending</span>
+        </div>
+        <div id="mentor-cards">
+          <!-- Sample profile tiles -->
+          <div class="profileTile">
+            <img src="../assets/Ellipse 1123.png" class="pfp" alt="profile" />
+            <div class="headerText">
+              <span class="name">John Doe</span><br />
+              <span class="nameTitle">2022 | NightMode</span><br />
+              <span class="profileTitle">Visuals and Logistics</span>
+            </div>
+            <div class="bodyTextContainer">
+              <div class="body-text-spacing">
+                <span class="profileTitle">FIELD OF INTEREST</span><br />
+                <span class="bodyText">Data Science, Machine Learning</span>
+              </div>
+
+              <br />
+              <div class="body-text-spacing">
+                <span class="profileTitle">WHY YOU SHOULD CHOOSE ME</span><br />
+                <span class="bodyText">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae
+                  turpis lorem eget in mus non.
+                </span>
+              </div>
+              <br />
+              <div class="body-text-spacing">
+                <span class="profileTitle">WHAT CAN YOU EXPECT</span><br />
+                <span class="bodyText">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae
+                  turpis lorem eget in mus non
+                </span>
+              </div>
+            </div>
+            <button type="button" class="choose-me-button">Choose me!</button>
+          </div>
+
+          <div class="profileTile">
+            <img src="../assets/Ellipse 1123.png" class="pfp" alt="profile" />
+            <div class="headerText">
+              <span class="name">John Doe</span><br />
+              <span class="nameTitle">2022 | NightMode</span><br />
+              <span class="profileTitle">Visuals and Logistics</span>
+            </div>
+            <div class="bodyTextContainer">
+              <div class="body-text-spacing">
+                <span class="profileTitle">FIELD OF INTEREST</span><br />
+                <span class="bodyText">Data Science, Machine Learning</span>
+              </div>
+
+              <br />
+              <div class="body-text-spacing">
+                <span class="profileTitle">WHY YOU SHOULD CHOOSE ME</span><br />
+                <span class="bodyText">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae
+                  turpis lorem eget in mus non.
+                </span>
+              </div>
+              <br />
+              <div class="body-text-spacing">
+                <span class="profileTitle">WHAT CAN YOU EXPECT</span><br />
+                <span class="bodyText">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae
+                  turpis lorem eget in mus non
+                </span>
+              </div>
+            </div>
+            <button type="button" class="choose-me-button">Choose me!</button>
+          </div>
+
+          <div class="profileTile">
+            <img src="../assets/Ellipse 1123.png" class="pfp" alt="profile" />
+            <div class="headerText">
+              <span class="name">John Doe</span><br />
+              <span class="nameTitle">2022 | NightMode</span><br />
+              <span class="profileTitle">Visuals and Logistics</span>
+            </div>
+            <div class="bodyTextContainer">
+              <div class="body-text-spacing">
+                <span class="profileTitle">FIELD OF INTEREST</span><br />
+                <span class="bodyText">Data Science, Machine Learning</span>
+              </div>
+
+              <br />
+              <div class="body-text-spacing">
+                <span class="profileTitle">WHY YOU SHOULD CHOOSE ME</span><br />
+                <span class="bodyText">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae
+                  turpis lorem eget in mus non.
+                </span>
+              </div>
+              <br />
+              <div class="body-text-spacing">
+                <span class="profileTitle">WHAT CAN YOU EXPECT</span><br />
+                <span class="bodyText">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae
+                  turpis lorem eget in mus non
+                </span>
+              </div>
+            </div>
+            <button type="button" class="choose-me-button">Choose me!</button>
+          </div>
+
+          <div class="profileTile">
+            <img src="../assets/Ellipse 1123.png" class="pfp" alt="profile" />
+            <div class="headerText">
+              <span class="name">John Doe</span><br />
+              <span class="nameTitle">2022 | NightMode</span><br />
+              <span class="profileTitle">Visuals and Logistics</span>
+            </div>
+            <div class="bodyTextContainer">
+              <div class="body-text-spacing">
+                <span class="profileTitle">FIELD OF INTEREST</span><br />
+                <span class="bodyText">Data Science, Machine Learning</span>
+              </div>
+
+              <br />
+              <div class="body-text-spacing">
+                <span class="profileTitle">WHY YOU SHOULD CHOOSE ME</span><br />
+                <span class="bodyText">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae
+                  turpis lorem eget in mus non.
+                </span>
+              </div>
+              <br />
+              <div class="body-text-spacing">
+                <span class="profileTitle">WHAT CAN YOU EXPECT</span><br />
+                <span class="bodyText">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae
+                  turpis lorem eget in mus non
+                </span>
+              </div>
+            </div>
+            <button type="button" class="choose-me-button">Choose me!</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function accountDropdown() {
+            var dropdown = document.getElementById("drop");
+            dropdown.classList.toggle("acc-show");
+        }
+  
+        window.onclick = function(event) {
+            if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                var dropdown = document.getElementById("drop");
+                if (dropdown.classList.contains('acc-show')) {
+                    dropdown.classList.remove('acc-show');
+                }
+            }
+        }
+  </script>
+</html>

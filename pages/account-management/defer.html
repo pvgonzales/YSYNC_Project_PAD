@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account Management Trainee</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            html, body, h1, h2, h3, h4, h5 {font-family: "Segoe UI", Arial, sans-serif;}
+        </style>
+    </head>
+    <body style="background-color: white;">
+        <!--Navigation Bar-->
+        <div class="parentNav">
+            <div class="logoname">
+              <img src="../../assets/logo.png" alt="YSES Logo" class="logo" />
+              <div class="navi">YSYNC</div>
+            </div>
+      
+            <ul class="navButtons">
+              <li id="dashboard"><a href="../dashboard/pages/dashboard-trainee-announcement.html">Dashboard</a></li>
+              <li id="connect"><a href="../connect/connect-trainee.html">Connect</a></li>
+              <li id="mentors"><a href="../mentor info/pages/dashboard-trainee-mentor-choosing.html">Mentors</a></li>
+              <li id="residentMembers"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+            </ul>
+      
+            <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+        </div>
+        <!--Dropdown Account Management-->
+        
+        <div class="acc-parentNav" id="drop">
+              <a href="../account-management/profile.html" id="profile">Profile</a>
+              <a href="../account-management/report.html" id="report">Report</a>
+              <a href="../account-management/defer.html" id="defer">Defer</a>
+              <p></p>
+              <a href="../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
+        </div>
+
+        <div class="profile-header">
+            <div class="account-header-container">
+                <h1 class="account-header">Account Management</h1>
+                <h5 class="breadcrumb">/ Defer</h5>
+            </div>
+        </div>
+
+        <div class="rep-def-container">
+            <br>
+            <br>
+            <h1 class="account-header">DEFER</h1>
+            <form>
+                <input type="text" id="deferInput" name="defer" class="defer" placeholder="State your reasons.">
+            </form>
+            <div class="choice-buttons">
+                <button class="submit-button">
+                    <i class="material-icons">check</i>
+                    <span>Submit</span>
+                </button>
+                <button class="cancel-button">
+                    <i class="material-icons">close</i>
+                    <span>Cancel</span>
+                </button>
+            </div>
+        </div>
+
+    </body>
+    <script>
+        function accountDropdown() {
+                var dropdown = document.getElementById("drop");
+                dropdown.classList.toggle("acc-show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                    var dropdown = document.getElementById("drop");
+                    if (dropdown.classList.contains('acc-show')) {
+                        dropdown.classList.remove('acc-show');
+                    }
+                }
+            }
+    </script>
+</html>

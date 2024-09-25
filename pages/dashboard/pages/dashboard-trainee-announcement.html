@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard-trainee-announcement-style.css" />
+    <script src="dashboard-trainee-announcement-script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parentNav">
+      <div class="logoname">
+        <img src="../../../assets/logo.png" alt="YSES Logo" class="logo" />
+        <div class="navi">YSYNC</div>
+      </div>
+      <ul class="navButtons">
+        <li class="button active"><a href="#">Dashboard</a></li>
+        <li class="button"><a href="../../connect/connect-trainee.html">Connect</a></li>
+        <li class="button"><a href="../../mentor info/pages/dashboard-trainee-mentor-choosing.html">Mentors</a></li>
+        <li class="button"><a href="../../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+      </ul>
+      <button onclick="accountDropdown()" class="profile-button"><img src="../../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+    </div>
+    
+    <div class="acc-parentNav" id="drop">
+        <a href="../../account-management/profile.html" id="profile">Profile</a>
+        <a href="../../account-management/style.css" id="report">Report</a>
+        <a href="../../account-management/defer.html" id="defer">Defer</a>
+        <br>
+        <a href="../../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
+    </div>
+
+    <div class="left-border"></div>
+    <div class="main">
+      <!--Div for the subNav (Announcements | Calendar)-->
+      <div class="subNav">
+        <ul class="subNavButtons">
+          <li id="announcements" class="selectedSubNav"><a href="#">Announcements</a></li>
+          <li id="calendar"><a href="dashboard-trainee-calendar.html">Calendar</a></li>
+        </ul>
+      </div>
+
+      <!--Div for the left division (Announcements)-->
+      <div class="dashboard-left">
+        <div class="pinned-container">
+          <div class="pinned-header">
+            <img src="../assets/pin.png" alt="pin-icon" class="icon" />
+            <h1 class="pinned-Announcements">Pinned Announcements</h1>
+          </div>
+          <div class="pinned-ann-container">
+            <div class="pinned-box">
+              <div class="pinnedAnnInfo">
+                <div class="profilePic">
+                  <img
+                    src="../assets/Snorlax.png"
+                    alt="profile-photo"
+                    class="profile-picture"
+                  />
+                </div>
+                <div class="pinnedpostDets">
+                  <div class="author-name">
+                    <h1 class="username">John Doe</h1>
+                  </div>
+                  <div class="postTime"></div>
+                  <h2 class="date-time">September 9, 2024 | 12:30pm</h2>
+                </div>
+              </div>
+              <div class="pinnedAnnBox">
+                <div class="pinnedAnnDetails">
+                  <div class="pinnedTitle">
+                    <h1 class="pinned-post-title">Welcome to YSYNC Trainees!</h1>
+                  </div>
+                  <div class="pinned-postContent">
+                    <p class="pinned-post-content">
+                      Hello YSES Trainees! This is the official YSES Website for
+                      the training process. Always check the announcement stream
+                      to be updated of the latest happenings, schedules, and
+                      updates regarding the training process. Goodluck!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="pinned-reaction-container">
+                <div class="reactions-pinned">
+                  <ul class="reactionButtons">
+                    <li class="heart">
+                      <div class="heart-container">
+                        <button id="heartButton" class="heart-icon" onclick="toggleHeart()">❤</button>
+                        <h2 class="counter">1</h2>
+                      </div>
+                    </li>
+                    <li class="comments"></li>
+                      <div class="comment-icon-container">
+                        <button class="comment-icon">
+                          <img
+                            src="../assets/speech-bubble.png"
+                            alt="Comment Icon"
+                            class="speech-icon"
+                          />
+                        </button>
+                        <h2 class="counter">1</h2>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="pinned-box">
+              <div class="pinnedAnnInfo">
+                <div class="profilePic">
+                  <img
+                    src="../assets/Snorlax.png"
+                    alt="profile-photo"
+                    class="profile-picture"
+                  />
+                </div>
+                <div class="pinnedpostDets">
+                  <div class="author-name">
+                    <h1 class="username">John Doe</h1>
+                  </div>
+                  <div class="postTime"></div>
+                  <h2 class="date-time">September 9, 2024 | 12:30pm</h2>
+                </div>
+              </div>
+              <div class="pinnedAnnBox">
+                <div class="pinnedAnnDetails">
+                  <div class="pinnedTitle">
+                    <h1 class="pinned-post-title">Welcome to YSYNC Trainees!</h1>
+                  </div>
+                  <div class="pinned-postContent">
+                    <p class="pinned-post-content">
+                      Hello YSES Trainees! This is the official YSES Website for
+                      the training process. Always check the announcement stream
+                      to be updated of the latest happenings, schedules, and
+                      updates regarding the training process. Goodluck!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="pinned-reaction-container">
+                <div class="reactions-pinned">
+                  <ul class="reactionButtons">
+                    <li class="heart">
+                      <div class="heart-container">
+                        <button id="heartButton" class="heart-icon" onclick="toggleHeart()">❤</button>
+                        <h2 class="counter">1</h2>
+                      </div>
+                    </li>
+                    <li class="comments"></li>
+                      <div class="comment-icon-container">
+                        <button class="comment-icon">
+                          <img
+                            src="../assets/speech-bubble.png"
+                            alt="Comment Icon"
+                            class="speech-icon"
+                          />
+                        </button>
+                        <h2 class="counter">1</h2>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="announcement-stream">
+          <div class="stream-header">
+            <h1>Announcements</h1>
+          </div>
+
+          <div class="posts-container">
+            <div class="posts-box">
+              <div class="post">
+                <div class="postInfo">
+                  <div class="profilePic">
+                    <img
+                      src="../assets/Snorlax.png"
+                      alt="profile-photo"
+                      class="profile-picture"
+                    />
+                  </div>
+                  <div class="postDets">
+                    <div class="author-name">
+                      <h1 class="username">John Doe</h1>
+                    </div>
+                    <div class="postTime"></div>
+                    <h2 class="date-time">September 9, 2024 | 12:30pm</h2>
+                  </div>
+                </div>
+
+                <div class="postProper">
+                  <div class="Title">
+                    <h1 class="post-title">Welcome to YSYNC Trainees!</h1>
+                  </div>
+                  <div class="postContent">
+                    <p class="post-content">
+                      Hello YSES Trainees! This is the official YSES Website for
+                      the training process. Always check the announcement stream
+                      to be updated of the latest happenings, schedules, and
+                      updates regarding the training process. Goodluck!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="user-Interaction">
+                  <div class="reactions">
+                    <ul class="buttons">
+                      <li class="heart">
+                        <div class="heart-container">
+                          <button id="heartButton" class="heart-icon" onclick="toggleHeart()">❤</button>
+                          <h2 class="counter">1</h2>
+                        </div>
+                      </li>
+                      <li class="comments">
+                        <div class="comment-icon-container">
+                          <button class="comment-icon">
+                            <img
+                              src="../assets/speech-bubble.png"
+                              alt="Comment Icon"
+                              class="speech-icon"
+                            />
+                          </button>
+                          <h2 class="counter">1</h2>
+                        </div>
+                      </li>
+                      <li class="comments-container">
+                          <div class="comment-box">
+                            <textarea
+                              id="commentSection"
+                              placeholder="Add a comment..."
+                            ></textarea>
+                            <button class="submit-button">
+                              <img
+                                src="../assets/submit.png"
+                                alt="submit-button"
+                                class="send-icon"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="posts-container">
+            <div class="posts-box">
+              <div class="post">
+                <div class="postInfo">
+                  <div class="profilePic">
+                    <img
+                      src="../assets/Snorlax.png"
+                      alt="profile-photo"
+                      class="profile-picture"
+                    />
+                  </div>
+                  <div class="postDets">
+                    <div class="author-name">
+                      <h1 class="username">John Doe</h1>
+                    </div>
+                    <div class="postTime"></div>
+                    <h2 class="date-time">September 9, 2024 | 12:30pm</h2>
+                  </div>
+                </div>
+
+                <div class="postProper">
+                  <div class="Title">
+                    <h1 class="post-title">Welcome to YSYNC Trainees!</h1>
+                  </div>
+                  <div class="postContent">
+                    <p class="post-content">
+                      Hello YSES Trainees! This is the official YSES Website for
+                      the training process. Always check the announcement stream
+                      to be updated of the latest happenings, schedules, and
+                      updates regarding the training process. Goodluck!
+                    </p>
+                  </div>
+                </div>
+                <div class="user-Interaction"></div>
+                  <div class="reactions">
+                    <ul class="buttons">
+                      <li class="heart">
+                        <div class="heart-container">
+                          <button id="heartButton" class="heart-icon" onclick="toggleHeart()">❤</button>
+                          <h2 class="counter">12</h2>
+                        </div>
+                      </li>
+                      <li class="comments">
+                        <div class="comment-icon-container">
+                          <button class="comment-icon">
+                            <img
+                              src="../assets/speech-bubble.png"
+                              alt="Comment Icon"
+                              class="speech-icon"
+                            />
+                          </button>
+                          <h2 class="counter">1</h2>
+                        </div>
+                      </li>
+                      <li class="comments-container">
+                          <div class="comment-box">
+                            <textarea
+                              id="commentSection"
+                              placeholder="Add a comment..."
+                            ></textarea>
+                            <button class="submit-button">
+                              <img
+                                src="../assets/submit.png"
+                                alt="submit-button"
+                                class="send-icon"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!--Div for the Upcoming Container-->
+      <div class="dashboard-right">
+        <div class="upcoming-container">
+          <div class="upcoming-header">
+            <h1 class="pinned-Announcements">Upcoming</h1>
+          </div>
+          <div class="upcoming-content">
+            <div class="upcoming-tasks">
+              <div class="task">
+                <h2 class="taskDate">September 11, 2024 | 7:30 pm</h2>
+                <h1 class="taskName">HR Orientation</h1>
+              </div>
+            </div>
+            <div class="upcoming-tasks">
+              <div class="task">
+                <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                <h1 class="taskName">PAD Meeting</h1>
+              </div>
+            </div>
+            <div class="upcoming-tasks">
+              <div class="task">
+                <h2 class="taskDate">September 1, 2024 | 7:30 pm</h2>
+                <h1 class="taskName">Mentor Choosing</h1>
+              </div>
+            </div>
+            <div class="upcoming-tasks"></div>
+              <div class="task">
+                <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                <h1 class="taskName">PAD Meeting</h1>
+              </div>
+            </div>
+            <div class="calendarButton">
+              <a href="dashboard-trainee-calendar.html"><h2>View in Calendar</h2></a>
+            </div>
+            </div>
+            
+          </div>
+      <div class="right-border"></div>
+  </body>
+  <script>
+    function accountDropdown() {
+            var dropdown = document.getElementById("drop");
+            dropdown.classList.toggle("acc-show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                var dropdown = document.getElementById("drop");
+                if (dropdown.classList.contains('acc-show')) {
+                    dropdown.classList.remove('acc-show');
+                }
+            }
+        }
+  </script>
+</html>
