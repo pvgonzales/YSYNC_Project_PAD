@@ -1,0 +1,271 @@
+
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Segoe UI";
+}
+
+body {
+  margin: 0;
+  background-color: #d6dbea;
+}
+
+h1 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 23px;
+  color: #1e1e1e;
+}
+
+.profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-button {
+  background: none;
+  border: none;
+}
+
+.acc-parentNav {
+  display: none;
+  position: absolute;
+  right: 80px;
+  background-color: #d6dbea;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  min-width: 250px;
+  z-index: 1;
+  border-radius: 20px;
+  padding: 15px;
+}
+.acc-parentNav a {
+  color: #132b41;
+  padding: 10px 40px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.acc-parentNav a:hover {
+  background-color: #e1e5f2;
+  border-radius: 10px;
+}
+.acc-show {
+  display: block;
+}
+
+
+.logoname {
+  display: flex;
+  align-items: center;
+}
+
+.parentNav {
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background-color: #132b41;
+  overflow: auto;
+  gap: 1rem;
+  /* flex-wrap: wrap;  */
+}
+
+.navi {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: "Segoe UI";
+  padding: 15px;
+  padding-right: 0;
+}
+
+.navButtons {
+  list-style-type: none;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  text-decoration: none;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.navButtons li {
+  display: inline;
+  /* flex: 1 1 auto; */
+}
+
+.navButtons a {
+  text-decoration: none;
+  color: white;
+}
+
+.navActive{
+  background-color: #00A3F0;
+  padding: 10px 15px; 
+  border-radius: 40px;
+}
+
+.logo {
+  width: 70px;
+}
+
+.profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subNav {
+  /* border-bottom: 0.5px solid #565656; */
+}
+
+.subNavButtons {
+  list-style-type: none;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  padding-top: 12px;
+  text-decoration: none;
+  align-items: center;
+  border-bottom: 0.5px solid #565656;
+}
+
+.subNavButtons a {
+  text-decoration: none;
+  color: #565656;
+}
+
+.subNavActive {
+  border-bottom: 5px solid #3498db;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.subNavActive a {
+  color: rgb(27, 27, 27);
+}
+
+.subNavButtons li {
+  position: relative; /* Ensure all buttons align properly */
+  padding-bottom: 8px; /* Add same padding as subNavActive */
+}
+
+.dashboard {
+
+}
+
+.calendarLeft {
+  flex: 1;
+  float: left;
+  width: 70%;
+}
+
+.calendarRight {
+  float: right;
+  flex: 1;
+  width: 30%;
+}
+
+.button {
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+.eventButton {
+    display: flex;                
+    align-items: center;         
+    justify-content: center;      
+    cursor: pointer;
+    width: 170px;                 
+    height: 60px;                 
+    /* margin: 10px; */
+    position: relative;
+    margin: 25px auto 0 150px;
+    /* margin-left: auto; */
+    border: 2px solid #00A3F0;   
+    border-radius: 40px;
+    background-color: #00A3F0;
+    box-shadow: 3px 3px 10px rgb(188, 188, 188);
+
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.eventIcon {
+  margin-right: 5px;            
+  width: 20px;                  
+  height: 20px;
+  color: #FFFFFF;              
+}
+
+.calendarContainer {
+    display: block;
+    width: 950px;
+    height: 500px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    overflow: scroll;
+    position: relative;
+    margin: 25px auto 0 40px;
+    background-color: #f2f5ff;
+    box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  }
+  
+  #google-calendar {
+    border-style: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .pinnedAnnouncements {
+      padding-left: 10px;
+      font-family: "Segoe UI";
+      font-weight: bold;
+      text-decoration: none;
+      color: #f2f5ff;
+    }
+  .upcomingContainer {
+      min-height: 300px;
+      max-width: 380px;
+      margin: 25px auto 0px 40px;
+      background-color: #f2f5ff;
+      border-radius: 30px;
+      box-shadow: 3px 3px 10px rgb(188, 188, 188);
+    }
+    
+  .upcomingHeader {
+      max-width: 380px;
+      max-height: 70px;
+      align-items: center;
+      display: flex;
+      background-color: #132b41;
+      padding-left: 30px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+    
+  .upcomingContent{
+      padding-top: 5px;
+      max-width: fit-content;
+      margin-left: 30px;
+      margin-right: auto;
+    }
+    
+  .taskName{
+      margin-top: -15px;
+    }
+  
+  .calendarButton{
+      padding-left: 210px;
+      padding-bottom: 10px;
+    }
+  

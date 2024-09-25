@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard-trainee-calendar.css" />
+    <title>CALENDAR</title>
+  </head>
+  <body>
+    <div class="parentNav">
+        <div class="logoname">
+            <img src="..\assets\logo.png" alt="YSES Logo" class="logo" />
+        <div class="navi"> YSYNC </div>
+        </div>
+    <ul class="navButtons">
+        <li class="navActive" id="dashboard"><a href="#">Dashboard</a></li>
+        <li id="connect"><a href="#">Connect</a></li>
+        <li id="mentors"><a href="#">Mentors</a></li>
+        <li id="residentMembers"><a href="#">Resident Members</a></li>
+    </ul>
+    
+    <img src="..\assets\profile.jpg" alt="profile pic" class="profile" />
+    </div>
+
+    
+    <div class="main">
+      <!--Div for the subNav (Announcements | Calendar)-->
+      <div class="subNav">
+        <ul class="subNavButtons">
+          <li id="announcements"><a href="dashboard-announcements-trainee.html">Announcements</a></li>
+          <li class="subNavActive" id="calendar"><a href="dashboard-calendar-trainee.html">Calendar</a></li>
+        </ul>
+      </div>
+
+      <div class="calendarLeft">
+        <div class="calendarContainer">
+          <iframe id="google-calendar" src="https://embed.styledcalendar.com/#df7MWiI0sSO2G6JMhmam" title="Styled Calendar" class="styled-calendar-container" data-cy="calendar-embed-iframe"></iframe>
+          <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+        </div>
+      </div>
+      
+        <div class="calendarRight">
+
+          <div class="button">
+            <button type class="eventButton">
+                <img class="eventIcon" src="..\assets\plus.png", alt="eventIcon">Add Event</button>
+          </div>
+
+          <div class="upcomingContainer">
+              <div class="upcomingHeader">
+                <h1 class="pinnedAnnouncements">Upcoming</h1>
+              </div>
+              <div class="upcomingContent">
+                <div class="upcomingTasks">
+                  <div class="task">
+                    <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                    <h1 class="taskName">PAD Meeting</h1>
+                  </div>
+                </div>
+                <div class="upcomingTasks">
+                  <div class="task">
+                    <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                    <h1 class="taskName">PAD Meeting</h1>
+                  </div>
+                </div>
+                <div class="upcomingTasks">
+                  <div class="task">
+                    <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                    <h1 class="taskName">PAD Meeting</h1>
+                  </div>
+                </div>
+                <!-- Not really needed in this page -->
+                <!-- <div class="calendarButton">
+                  <a href="#"><h2>View in Calendar</h2></a>
+                </div> -->
+                </div>
+            </div>
+      </div> 
+    </div>
+   </body>
+</html>

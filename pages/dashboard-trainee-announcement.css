@@ -1,0 +1,421 @@
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Segoe UI";
+}
+
+h1 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 23px;
+  color: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  background-color: #d6dbea;
+}
+
+.logoName {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-button {
+  background: none;
+  border: none;
+}
+
+.acc-parentNav {
+  display: none;
+  position: absolute;
+  right: 80px;
+  background-color: #d6dbea;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  min-width: 250px;
+  z-index: 1;
+  border-radius: 20px;
+  padding: 15px;
+}
+.acc-parentNav a {
+  color: #132b41;
+  padding: 10px 40px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.acc-parentNav a:hover {
+  background-color: #e1e5f2;
+  border-radius: 10px;
+}
+.acc-show {
+  display: block;
+}
+
+.parentNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background-color: #132b41;
+  overflow: auto;
+}
+
+.navi {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: "Segoe UI";
+  padding: 15px;
+  padding-right: 0;
+}
+
+.navButtons {
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  align-items: center;
+}
+
+.navButtons li {
+  display: inline;
+}
+
+.navButtons a {
+  text-decoration: none;
+  color: white;
+}
+
+.navActive{
+  background-color: #00A3F0;
+  padding: 10px 15px; 
+  border-radius: 40px;
+}
+
+.logo {
+  width: 70px;
+}
+
+.profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subNav {
+  /* border-bottom: 0.5px solid #565656; */
+}
+
+.subNavButtons {
+  list-style-type: none;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  padding: 0px 80px;
+  padding-top: 12px;
+  text-decoration: none;
+  align-items: center;
+  border-bottom: 0.5px solid #565656;
+}
+
+.subNavButtons a {
+  text-decoration: none;
+  color: #565656;
+}
+
+.subNavActive {
+  border-bottom: 5px solid #3498db;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.subNavActive a {
+  color: rgb(27, 27, 27);
+}
+
+.subNavButtons li {
+  position: relative; /* Ensure all buttons align properly */
+  padding-bottom: 8px; /* Add same padding as subNavActive */
+}
+
+/* Size of left dashboard */
+.dashboardLeft {
+  flex: 1;
+  float: left;
+  width: 70%;
+}
+
+/* Size of right dashboard */
+.dashboardRight {
+  float: right;
+  flex: 1;
+  width: 30%;
+}
+
+.announcementContainer{ 
+  display: none;
+
+  flex-direction: column; /* Align items in a row */ 
+
+  height: 300px;
+  max-width: 1000px;
+  margin: 25px auto 0px 40px;
+  border: 1.5px solid #132B41;
+
+  background-color: #F2F5FF;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  
+}
+
+.topInputs{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.midInput{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.titleBox{
+  
+  font-size: 16px;
+  border: 2px solid #565656;
+  border-radius: 5px;
+
+  background-color: #D6DBEA;  
+
+  height: 15px;
+  width: 300px;
+
+  padding: 10px 10px;
+}
+
+.topRight{
+  margin-right: 60px;
+}
+
+.timeBox, .dateBox{
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #565656;
+  border-radius: 5px;
+
+  background-color: #D6DBEA;  
+}
+
+
+.announcementBox{
+  width: 900px;
+  height: 110px;
+
+  font-size: 16px;
+  border: 2px solid #565656;
+  border-radius: 5px; 
+  resize: none;
+
+  padding-top: 20px;
+  padding-left: 10px;
+
+  background-color: #D6DBEA;
+}
+
+.bottomInputs{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.groupedIcons{
+
+}
+
+.threeIcons {
+  margin-left: 10px;            
+  width: 28px;                  
+  height: 28px;
+  color: #FFFFFF;              
+}
+
+.groupedButtons{
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.postButton{
+  display: flex;                
+  align-items: center;         
+  justify-content: center;      
+  cursor: pointer;
+  width: 120px;                 
+  height: 40px;                 
+  position: relative;
+  border: 2px solid #00A3F0;   
+  border-radius: 40px;
+  background-color: #00A3F0;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+
+  color: #FFFFFF;
+  font-size: 19px;
+}
+
+.cancelButton{
+  display: flex;                
+  align-items: center;         
+  justify-content: center;      
+  cursor: pointer;
+  width: 120px;                 
+  height: 40px;                 
+  position: relative;
+  /* margin: 20px auto; */
+  border: 2px solid #7A7A7A ;   
+  border-radius: 40px;
+  background-color: #7A7A7A ;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+
+  color: #FFFFFF;
+  font-size: 19px;
+}
+
+.pinnedContainer {
+  min-height: 300px;
+  max-width: 1000px;
+  margin: 25px auto 0px 40px;
+  background-color: #f2f5ff;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+}
+
+.pinnedHeader {
+  max-width: 1200px;
+  max-height: 70px;
+  align-items: center;
+  display: flex;
+  background-color: #132b41;
+  padding-left: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.pinnedAnnouncements {
+  padding-left: 10px;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  text-decoration: none;
+  color: #f2f5ff;
+}
+
+.pfp{
+  border: 1.5px solid #132B41;
+  border-radius: 20px;
+  
+  width: 60px; 
+  height: 60px; 
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.upcomingContainer {
+  min-height: 300px;
+  max-width: 370px;
+  margin: 25px auto 0px 40px;
+  background-color: #f2f5ff;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+}
+
+.upcomingHeader {
+  max-width: 370px;
+  max-height: 70px;
+  align-items: center;
+  display: flex;
+  background-color: #132b41;
+  padding-left: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+    
+.upcomingContent{
+  padding-top: 5px;
+  max-width: fit-content;
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.main {
+   width: 100%;
+}
+
+.button {
+  justify-content: center; 
+  align-items: center; 
+}
+
+.announcementButton {
+  display: flex;                
+  align-items: center;         
+  justify-content: center;      
+  cursor: pointer;
+  width: 370px;                 
+  height: 60px;                 
+  position: relative;
+  margin: 25px auto;
+  border: 2px solid #00A3F0;   
+  border-radius: 40px;
+  background-color: #00A3F0;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.announcementIcon {
+  margin-right: 5px;            
+  width: 28px;                  
+  height: 28px;
+  color: #FFFFFF;              
+}
+
+
+.taskName{
+  margin-top: -15px;
+}
+
+.calendarButton{
+  padding-left: 210px;
+  padding-bottom: 10px;
+}
+
+.calendarButton a{
+  color: #00A3F0
+}
