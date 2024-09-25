@@ -1,0 +1,225 @@
+p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    background-color: #D6DBEA; 
+    height: 100%;
+}
+
+.parentNav {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #132B41;
+    overflow: auto;
+    gap: 1rem;
+    min-width: 65rem;
+}
+
+.logoname{
+    display: flex;
+    align-items: center;
+}
+
+.navi {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Segoe UI';
+    padding: 15px;
+    padding-right: 0;
+}
+
+.navButtons {
+    list-style-type: none;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    display: flex;
+    gap: 4rem;
+    padding: 0px 80px;
+    text-decoration: none;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.navButtons li {
+    display: inline;
+    /* flex: 1 1 auto; */
+}
+
+.navButtons a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 70px;
+}
+
+.profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.selected{
+    background-color: #00A3F0;
+    padding: 10px 15px; 
+    border-radius: 40px;
+}
+
+.postCreate {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.post-connect-left,
+.post-connect-right {
+    flex: 1; 
+    min-width: 50px;
+}
+
+.post-connect{
+    display: flex;
+    width: 70rem;
+    height: auto;
+    color: #132B41;
+    background-color: white;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+.post-connectTitleT{       
+    margin-left: 20px;
+    color: #132B41;
+}
+
+.post-connect{
+    display: flex;
+    flex-direction: column;
+}
+
+.post-connectTitle{
+    display: flex;
+    flex-direction: row;
+}
+
+.post-connectTitleR{
+    margin-left: 0.5rem;
+    margin-top: 2.5rem;
+    font-weight: normal;
+    font-size: large;
+}
+
+.post-make-connect{
+    background-color: white;
+    /* min-height: 585px; */
+    display: flex;
+    flex-direction: row;
+    margin-top: -1rem;
+}
+
+.postProfileChat{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 2px;
+    margin-top: 1rem;
+}
+
+.post-chatProfile{
+    margin-right: 3px;
+    margin-left: 9rem;
+    margin-top: 3.5rem;
+}
+
+.inputSize{
+    margin-top: 110px;
+    width:600px;
+    height: 300px;
+    border-radius: 2%;
+    line-height: normal;
+    vertical-align: top;
+    resize: none;
+    padding: 20px;
+    background-color: #D6DBEA;
+}
+
+.inputSize::placeholder {
+    color: #565656; 
+    opacity: 1; 
+}
+
+.post-create{
+    margin-left: 3rem;
+    margin-top: -3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.post-paperClip,
+.post-bullets,
+.post-share{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.paperclipImage{
+    width: 50px;
+}
+
+.bulletImage{
+    width: 45px;
+}
+
+.shareImage{
+    width: 70px;
+}
+
+.post-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: flex-end;
+    overflow: auto;
+}
+
+.post-create-button,
+.post-cancel-button{
+    padding-top: 2rem;
+    margin-top:1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    background: none;
+    background-color: #a4a3a3;
+    border: none;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.post-create-button:hover,
+.post-cancel-button:hover {
+    background-color: #00A3F0; 
+}

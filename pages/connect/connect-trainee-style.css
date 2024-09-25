@@ -1,0 +1,297 @@
+*{
+    font-family: 'Segoe UI';
+}
+
+p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    background-color: #D6DBEA; 
+}
+
+.profile {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-button {
+    background: none;
+    border: none;
+  }
+  
+  .acc-parentNav {
+    display: none;
+    position: absolute;
+    right: 80px;
+    background-color: #d6dbea;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    min-width: 250px;
+    z-index: 1;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .acc-parentNav a {
+    color: #132b41;
+    padding: 10px 40px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .acc-parentNav a:hover {
+    background-color: #e1e5f2;
+    border-radius: 10px;
+  }
+  .acc-show {
+    display: block;
+  }
+
+.parentNav {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #132B41;
+    overflow: auto;
+    gap: 1rem;
+    min-width: 65rem;
+}
+
+.logoname{
+    display: flex;
+    align-items: center;
+}
+
+.navi {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Segoe UI';
+    padding: 15px;
+    padding-right: 0;
+}
+
+.navButtons {
+    list-style-type: none;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    display: flex;
+    gap: 4rem;
+    padding: 0px 80px;
+    text-decoration: none;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.navButtons li {
+    display: inline;
+    /* flex: 1 1 auto; */
+}
+
+.navButtons a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .navButtons a:hover {
+    text-decoration: underline;
+} */
+
+
+.logo{
+    width: 70px;
+}
+
+.profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.selected{
+    background-color: #00A3F0;
+    padding: 10px 15px; 
+    border-radius: 40px;
+}
+
+.message {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    position: relative;
+}
+
+.connect-left,
+.connect-right {
+    flex: 1; 
+    min-width: 50px;
+}
+
+.connect {
+    display: flex;
+    width: 70rem;
+    height: auto;
+    color: #132B41;
+    background-color: white;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 15px;
+    flex-direction: column;
+    /* column-gap: 30px; */
+}
+
+.chat {
+    color: black;
+    display: flex; 
+    column-gap: 15px;
+    border-bottom: 0.5px solid #565656;
+}
+
+.connectTitle{    
+    border-bottom: 0.5px solid #565656;
+}
+
+.connectTitleT{       
+    margin-left: 20px;
+}
+
+.profileChat{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 2px;
+    margin-top: 1rem;
+}
+
+.chatProfile{
+    margin: 1rem;
+    margin-right: 3px;
+    margin-left: 5rem;
+}
+
+.chatName{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3px;
+    margin-top: 1.5rem;
+}
+
+.chatD{
+    font-size: 10px;
+}
+
+.chatD2{
+    margin: 2rem;
+}
+
+.chatN{
+    align-items: center;
+    margin-right: 8px;
+}
+
+.chatTitle{
+    margin-bottom: 2rem;
+    
+}
+
+.chatT2{
+    margin: 0;
+}
+
+.chatInfo{
+    margin-right: 5rem;
+    min-width: 55rem;
+}
+
+.chatS{
+    margin-left: auto;
+}
+
+.chatInfoSetting {
+    margin-top: 15px;
+    margin-left: 8px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.chatInteract{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.heartContainerConnect{
+    display: flex;
+}
+.commentContainerConnect{
+    display: flex;
+}
+.heartIconConnect {
+    font-size: 48px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00A3F0;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 50px;
+}
+.smallHeart {
+    font-size: 36px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.counterHeartConnect,
+.counterCommentConnect {
+    margin-top: -3px;
+    float: right;
+    font-size: 15px;
+    font-weight: normal;
+
+}
+
+.commentIconConnect{
+    margin-left: 4px;
+    margin-top: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.counterCommentConnect{
+    margin-top: 13px;
+}
+
+.post-icon {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.postConnect{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.addPostConnect{
+    position: fixed;
+    z-index: 1000;
+    bottom: 2%;
+    left: 85%;
+}

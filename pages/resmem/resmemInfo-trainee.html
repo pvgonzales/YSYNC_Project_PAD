@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="mentorinfo-trainee-style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="parentNav">
+            <div class="logoname">
+                <img src="logo.png" alt="YSES Logo" class="logo" />
+                <div class="navi">YSYNC</div>
+            </div>
+        <ul class="navButtons">
+            <li id="dashboard"><a href="../dashboard/pages/dashboard-trainee-announcement.html">Dashboard</a></li>
+            <li id="connect"><a href="../connect/connect-trainee.html">Connect</a></li>
+            <li id="mentors"><a href="../mentor info/pages/dashboard-trainee-mentor-choosing.html">Mentors</a></li>
+            <li class="navActive" id="residentMembers"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+        </ul>
+        <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+    </div>
+    
+    <div class="acc-parentNav" id="drop">
+        <a href="../account-management/profile.html" id="profile">Profile</a>
+        <a href="../account-management/report.html" id="report">Report</a>
+        <a href="../account-management/defer.html" id="defer">Defer</a>
+        <br>
+        <a href="../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
+    </div>
+        <div class="search-bar">
+            <div class="search-container">
+                <input type="text" placeholder="Search" id="search-input">
+                <button type="submit" id="submit">
+                    <img class="search-img" src="magnifying-glass.png"></button>
+            </div>
+        </div>
+
+        </div>
+        <div class="typeMember">
+            <div class="navButtons-container">
+                <ul class="navButtons-members">
+                    <li>
+                        <input type="radio" id="active" name="membership" checked="checked"/>
+                        <label for="active">Active</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="inactive" name="membership" />
+                        <label for="inactive">Inactive</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="alumni" name="membership" />
+                        <label for="alumni">Alumni</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="infoLabels">
+            <div class="infoLabels-container">
+                <li id="name">NAME</li>
+                <li id="email">EMAIL</li>
+                <li id="department">DEPARTMENT</li>
+                <li id="batch">BATCH</li>
+                <li id="orgbatch">ORG BATCH</li>
+            </div>
+        </div>
+        <div class="memInfo">
+            <div class="memInfo-container">
+                <li id="nameDets">John Doe</li>
+                <li id="emailDets">jdoe@up.edu.ph</li>
+                <li id="departmentDets">Executive Department </li>
+                <li id="batchDets">2023 </li>
+                <li id="orgbatchDets">Reboot</li>
+            </div>
+        </div>
+
+        <div class="memInfo">
+            <div class="memInfo-container">
+                <li id="nameDets">John Doe</li>
+                <li id="emailDets">jdoe@up.edu.ph</li>
+                <li id="departmentDets">Executive Department </li>
+                <li id="batchDets">2023 </li>
+                <li id="orgbatchDets">Reboot</li>
+            </div>
+        </div>
+
+        <div class="memInfo">
+            <div class="memInfo-container">
+                <li id="nameDets">John Doe</li>
+                <li id="emailDets">jdoe@up.edu.ph</li>
+                <li id="departmentDets">Executive Department </li>
+                <li id="batchDets">2023 </li>
+                <li id="orgbatchDets">Reboot</li>
+            </div>
+        </div>
+
+    </body>
+    <script>
+        function accountDropdown() {
+                var dropdown = document.getElementById("drop");
+                dropdown.classList.toggle("acc-show");
+            }
+      
+            window.onclick = function(event) {
+                if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                    var dropdown = document.getElementById("drop");
+                    if (dropdown.classList.contains('acc-show')) {
+                        dropdown.classList.remove('acc-show');
+                    }
+                }
+            }
+      </script>
+</html>
