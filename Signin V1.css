@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI';
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg::before {
+    content: "";
+    top: -52px;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    position: absolute;
+    background-image: linear-gradient(90deg, #0B1E30 0%, rgba(17, 46, 74, 0.64) 28.9%, rgba(23, 58, 90, 0.410464) 65.9%, rgba(35, 94, 149, 0) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.bg::after {
+    content: "";
+    top: -52px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-image: url("YSESgroup.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 100;
+    z-index: -2;
+}
+
+.rectangle {
+    width: 80%;
+    height: 8%;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+    background-image: linear-gradient(90deg, #132B41 0%, #00A3F0 100%);
+    z-index: 1;
+}
+
+.contact {
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    display: flex;
+}
+
+.contact img {
+    size: 30px;
+    padding: 20px;
+    transition: transform 0.1s ease, filter 0.3s ease;
+}
+
+.contact a:hover img {
+    transform: scale(1.5);
+    filter: brightness(1.2);
+}
+
+.logo {
+    filter: drop-shadow(0px 4px 4px rgba(19, 43, 65, 0.16));
+    padding: 10px;
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text h1 {
+    font-weight: 700;
+    font-size: 600%;
+    margin-top: -8%;
+}
+
+.text p {
+    font-size: 100%;
+    margin-top: -25%;
+}
+
+.login {
+    text-align: center;
+    z-index: 2;
+}
+
+.login button {
+    font-size: 130%;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 60px;
+    color: white;
+    background-color: #00A3F0;
+    transition: transform 0.1s ease, filter 0.3s ease;
+    box-shadow: 0 4px 3px rgba(0, 163, 240, 0.2);
+}
+
+.login button:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.login p {
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+.login p a {
+    color: #FFFFFF  
+}
