@@ -4,6 +4,7 @@ p {
 }
   
 body {
+    zoom: 80%;
     margin: 0;
     background-color: #d6dbea;
 }
@@ -66,7 +67,7 @@ h1 {
 
 .navButtons {
     list-style-type: none;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Segoe UI";
     font-size: 20px;
     display: flex;
     gap: 4rem;
@@ -74,17 +75,32 @@ h1 {
     text-decoration: none;
     align-items: center;
     /* flex-wrap: wrap; */
-}
-
-.navButtons li {
+  }
+  
+  .navButtons li {
     display: inline;
     /* flex: 1 1 auto; */
-}
-
-.navButtons a {
+  }
+  
+  .navButtons a {
     text-decoration: none;
     color: white;
-}
+  }
+  
+  .button{
+    transition: all 0.3s ease;
+  }
+  .button.active {
+    background-color: #00A3F0;
+    border-radius: 20px;
+    padding: 10px 40px 10px 40px;
+  }
+  
+  .button:hover{
+    background-color: #3c9ecc6b;
+    border-radius: 20px;
+    padding: 10px 40px 10px 40px;
+  }
 
 .logo {
     width: 70px;

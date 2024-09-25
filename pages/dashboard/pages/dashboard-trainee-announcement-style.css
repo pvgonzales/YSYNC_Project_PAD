@@ -11,6 +11,7 @@ h2 {
 }
 
 body {
+  zoom: 80%;
   margin: 0;
   background-color: #d6dbea;
 }
@@ -158,6 +159,15 @@ h1 {
 .subNavButtons a {
   text-decoration: none;
   color: rgb(27, 27, 27);
+}
+
+.subNavButtons li{
+  transition: all 0.3s ease;
+}
+.subNavButtons li:hover{
+  font-weight: bolder;
+  margin-bottom: -10px;
+  border-bottom: 8px solid #00a4f090;
 }
 
 .selected{

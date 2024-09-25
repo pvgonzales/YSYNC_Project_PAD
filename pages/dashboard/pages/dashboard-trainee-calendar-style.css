@@ -11,6 +11,7 @@ h2 {
 }
 
 body {
+  zoom: 80%;
   margin: 0;
   background-color: #d6dbea;
 }
@@ -153,6 +154,7 @@ h1 {
   padding-top: 12px;
   text-decoration: none;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .subNavButtons a {
@@ -160,10 +162,20 @@ h1 {
   color: rgb(27, 27, 27);
 }
 
+
 .selectedSubNav{
   font-weight: bolder;
   margin-bottom: -10px;
   border-bottom: 8px solid #00A3F0;
+}
+
+.subNavButtons li{
+  transition: all 0.3s ease;
+}
+.subNavButtons li:hover{
+  font-weight: bolder;
+  margin-bottom: -10px;
+  border-bottom: 8px solid #00a4f090;
 }
 
 .calendar-left {

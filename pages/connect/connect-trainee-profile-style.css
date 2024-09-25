@@ -10,6 +10,8 @@ p {
 }
 
 body{
+
+    zoom: 80%;
     margin: 0;
     background-color: #D6DBEA; 
     height: 100%;
