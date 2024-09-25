@@ -3,42 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../pages/dashboard-trainee-announcement.css" />
-    <script src="dashboard-announcements-trainee.js" defer></script>
+    <link rel="stylesheet" href="../dashboard/dashboard-trainee-announcement.css" />
+    <script src="../dashboard/dashboard-announcements-trainee.js" defer></script>
 
     <title>DASHBOARD</title>
   </head>
   <body>
     <div class="parentNav">
       <div class="logoName">
-        <img src="..\assets\logo.png" alt="YSES Logo" class="logo" />
+        <img src="../../assets/logo.png" alt="YSES Logo" class="logo" />
         <div class="navi">YSYNC</div>
       </div>
 
       <ul class="navButtons">
-        <li class="navActive" id="dashboard"><a href="#">Dashboard</a></li>
-        <li id="connect"><a href="#">Connect</a></li>
-        <li id="mentors"><a href="#">Mentors</a></li>
-        <li id="residentMembers"><a href="#">Resident Members</a></li>
-
-        <button onclick="accountDropdown()" class="profile-button"><img src="../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+        <li class="navActive" id="dashboard"><a href="../dashboard/dashboard-announcements-trainee.html">Dashboard</a></li>
+        <li id="connect"><a href="../connect/connect-trainee.html">Connect</a></li>
+        <li id="mentors"><a href="../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
+        <li id="residentMembers"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
       </ul>
-
-      <div class="acc-parentNav" id="drop">
-        <a href="../pages/profile.html" id="profile">Profile</a>
-        <a href="../pages/report.html" id="report">Report</a>
-        <!-- <a href="defer.html" id="defer">Defer</a> -->
-        <p></p>
-        <a href="#" class="logout" style="font-weight: bold;">Log Out</a>
+      <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
     </div>
+
+    <div class="acc-parentNav" id="drop">
+      <a href="../account-management/profile.html" id="profile">Profile</a>
+      <a href="../account-management/report.html" id="report">Report</a>
+      <!-- <a href="defer.html" id="defer">Defer</a> -->
+      <p></p>
+      <a href="../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
     </div>
 
     <div class="main">
       <!--Div for the subNav (Announcements | Calendar)-->
       <div class="subNav">
         <ul class="subNavButtons">
-          <li class="subNavActive" id="announcements"><a href="../pages/dashboard-announcements-trainee.html">Announcements</a></li>
-          <li id="calendar"><a href="../pages/dashboard-calendar-trainee.html">Calendar</a></li>
+          <li class="subNavActive" id="announcements"><a href="../dashboard/dashboard-announcements-trainee.html">Announcements</a></li>
+          <li id="calendar"><a href="../dashboard/dashboard-calendar-trainee.html">Calendar</a></li>
         </ul>
       </div>
 
@@ -68,9 +67,9 @@
 
           <div class="botLeft">
             <div class="groupedIcons">
-              <img class="threeIcons" src="..\assets\bullets.png" alt="megaphoneIcon">
-              <img class="threeIcons" src="..\assets\paperclip.png" alt="megaphoneIcon">
-              <img class="threeIcons" src="..\assets\share.png" alt="megaphoneIcon">
+              <img class="threeIcons" src="../../assets/bullets.png" alt="megaphoneIcon">
+              <img class="threeIcons" src="../../assets/paperclip.png" alt="megaphoneIcon">
+              <img class="threeIcons" src="../../assets/share.png" alt="megaphoneIcon">
             </div>
           </div>
 
@@ -88,7 +87,7 @@
         <!-- Contains the Pinned Container -->
         <div class="pinnedContainer">
           <div class="pinnedHeader">
-            <img src="..\assets\pin.png" alt="pin-icon" class="icon" />
+            <img src="../../assets/pin.png" alt="pin-icon" class="icon" />
             <h1 class="pinnedAnnouncements">Pinned Announcements</h1>
           </div>
 
@@ -105,7 +104,7 @@
       <div class="dashboardRight">
         <div class="button">
           <button type="button" id="announcementButton" class="announcementButton">
-              <img class="announcementIcon"  src="..\assets\megaphone.png" alt="megaphoneIcon">Make an Announcement</button>
+              <img class="announcementIcon"  src="../../assets/megaphone.png" alt="megaphoneIcon">Make an Announcement</button>
         </div>
 
         <div class="upcomingContainer">
@@ -132,7 +131,7 @@
               </div>
             </div>
             <div class="calendarButton">
-              <a href="dashboard-calendar-trainee.html"><h2>View in Calendar</h2></a>
+              <a href="../dashboard/dashboard-calendar-trainee.html"><h2>View in Calendar</h2></a>
             </div>
 
           </div>

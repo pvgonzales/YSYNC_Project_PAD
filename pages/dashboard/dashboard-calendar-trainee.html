@@ -3,23 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dashboard-trainee-calendar.css" />
+    <link rel="stylesheet" href="../dashboard/dashboard-trainee-calendar.css" />
     <title>CALENDAR</title>
   </head>
   <body>
     <div class="parentNav">
         <div class="logoname">
-            <img src="..\assets\logo.png" alt="YSES Logo" class="logo" />
+            <img src="../../assets/logo.png" alt="YSES Logo" class="logo" />
         <div class="navi"> YSYNC </div>
         </div>
-    <ul class="navButtons">
-        <li class="navActive" id="dashboard"><a href="#">Dashboard</a></li>
-        <li id="connect"><a href="#">Connect</a></li>
-        <li id="mentors"><a href="#">Mentors</a></li>
-        <li id="residentMembers"><a href="#">Resident Members</a></li>
-    </ul>
-    
-    <img src="..\assets\profile.jpg" alt="profile pic" class="profile" />
+        <ul class="navButtons">
+            <li class="navActive" id="dashboard"><a href="#">Dashboard</a></li>
+            <li id="connect"><a href="../connect/connect-trainee.html">Connect</a></li>
+            <li id="mentors"><a href="../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
+            <li id="residentMembers"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+        </ul>
+        
+        <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+    </div>
+
+    <div class="acc-parentNav" id="drop">
+      <a href="../account-management/profile.html" id="profile">Profile</a>
+      <a href="../account-management/report.html" id="report">Report</a>
+      <!-- <a href="defer.html" id="defer">Defer</a> -->
+      <p></p>
+      <a href="../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
     </div>
 
     
@@ -43,7 +51,7 @@
 
           <div class="button">
             <button type class="eventButton">
-                <img class="eventIcon" src="..\assets\plus.png", alt="eventIcon">Add Event</button>
+                <img class="eventIcon" src="../../assets/plus.png", alt="eventIcon">Add Event</button>
           </div>
 
           <div class="upcomingContainer">
@@ -78,4 +86,21 @@
       </div> 
     </div>
    </body>
+
+  <script>
+    function accountDropdown() {
+                var dropdown = document.getElementById("drop");
+                dropdown.classList.toggle("acc-show");
+            }
+
+            // Close dropdown if the user clicks outside
+            window.onclick = function(event) {
+                if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                    var dropdown = document.getElementById("drop");
+                    if (dropdown.classList.contains('acc-show')) {
+                        dropdown.classList.remove('acc-show');
+                    }
+                }
+            }
+  </script>
 </html>

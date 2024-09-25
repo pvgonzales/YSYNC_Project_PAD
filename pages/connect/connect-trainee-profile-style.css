@@ -1,0 +1,182 @@
+a,
+h1,
+h2{
+    font-family: 'Segoe UI';
+}
+
+p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    background-color: #D6DBEA; 
+    height: 100%;
+}
+
+.parentNav {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #132B41;
+    overflow: auto;
+    gap: 1rem;
+    min-width: 65rem;
+}
+
+.logoname{
+    display: flex;
+    align-items: center;
+}
+
+.navi {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Segoe UI';
+    padding: 15px;
+    padding-right: 0;
+}
+
+.navButtons {
+    list-style-type: none;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    display: flex;
+    gap: 4rem;
+    padding: 0px 80px;
+    text-decoration: none;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.navButtons li {
+    display: inline;
+    /* flex: 1 1 auto; */
+}
+
+.navButtons a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 70px;
+}
+
+.profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.selected{
+    background-color: #00A3F0;
+    padding: 10px 15px; 
+    border-radius: 40px;
+}
+
+.connect-profile-info {
+    width: 100%; 
+    margin: 0; 
+    display: flex;
+    flex-direction: row; 
+    position: relative;
+}
+
+.left-side-connect-profile,
+.right-side-connect-profile {
+    flex: 1; 
+    min-width: 50px;
+}
+
+.connect-go-back{
+    text-decoration: none;
+    color: black;
+    margin: 2rem;
+    font-size: 30px;
+}
+
+.postProfile{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: white;
+    min-width: 1000px;
+    min-height: 500px;
+    border-radius: 3%;
+    /* border: 1px solid #565656; */
+}
+
+.middle{
+    margin-top: 1rem;
+}
+
+.post-pic-bio{
+    display: flex;
+    flex-direction: row;
+}
+
+.postProfilePic{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.postBio{
+    border: 1px solid #565656;
+    min-width: 600px;
+    min-height: 200px;
+    max-width: 600px;
+    max-height: 200px;
+    border-radius: 3%;
+}
+
+.post-bio-area{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.postName{
+    margin-left: 0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.postBioText{
+    font-weight: normal;
+    font-size: small;
+    margin-left: 1rem;
+}
+
+.postBioMessage{
+    margin: 1rem;
+    font-family: 'Segoe UI';
+    color: #565656;
+}
+
+.postMentorInfo{
+    font-family: 'Segoe UI';
+    color: #565656;
+    font-size: small;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.postDivider{
+    border: 1px solid #565656;
+    margin-right: 4rem;
+    margin-left:3rem;
+}
+
+.postMentorInfoMessage{
+    margin-left: 4rem;
+    font-size: medium;
+    font-weight: normal;
+}

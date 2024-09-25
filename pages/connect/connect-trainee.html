@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YSYNC</title>
+    <link rel="stylesheet" href="connect-trainee-style.css">
+    <script src="connect-trainee-js.js"></script>
+</head>
+<body>
+    <div class="parentNav">
+        
+        <div class="logoname">
+            <img src="connect-post-images/logo.png" alt="YSES Logo" class="logo">
+            <div class="navi">YSYNC</div>
+        </div>
+
+
+        <ul class="navButtons">
+            <li id="dashboard"><a href="../dashboard/dashboard-announcements-trainee.html">Dashboard</a></li>
+            <li id="connect"><a href="../connect/connect-trainee.html">Connect</a></li>
+            <li id="mentors"><a href="../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
+            <li id="residentMembers"><a href="../resmem/resmemInfo-trainee.html">ResidentMembers</a></li>
+        </ul>
+        
+        <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+    </div>
+
+    <div class="acc-parentNav" id="drop">
+      <a href="../account-management/profile.html" id="profile">Profile</a>
+      <a href="../account-management/report.html" id="report">Report</a>
+      <!-- <a href="defer.html" id="defer">Defer</a> -->
+      <p></p>
+      <a href="../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
+    </div>
+
+    <div class="message">
+        
+        <div class="connect-left"></div>
+
+        <div class="connect">
+
+            <div class="connectTitle">
+                <h1 class="connectTitleT">Connect</h1>
+            </div>
+
+            <div class="chat">
+                
+                <div class="chatProfile">
+                    <img src="connect-post-images/profile.jpg" alt="profile pic" class="profileChat">
+                </div>
+
+                <div class="chatInfo">
+                    <div class="chatName">
+                        <div class="chatN">
+                            <h1>Pikachu</h1>
+                        </div>
+                        <div class="chatD">
+                            <h2 class="chatD2">September 9, 2024 | 12:30pm</h2>
+                        </div>
+                        <div class="chatS">
+                            <a id="chatInfoSettings" class="chatInfoSetting" href="connect-trainee-profile.html">...</a>
+                        </div>
+                    </div>
+
+                    <div class="chatTitle">
+                        <div class="chatT">
+                            <h1 class="chatT2">EME EME EME</h1>
+                        </div>
+
+                        <div class="chatP">
+                            <p>When I was a young boy my father took me into the city to see a marching band.... he said son when 
+                                you grow up will you be the saviour of the broken, the beaten and the damned?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="chatInteract">
+                        <div class="heartContainerConnect">
+                            <button id="heartButtonConnect1" class="heartIconConnect" onclick="toggleHeart('heartButtonConnect1')">
+                                ♡
+                                <h2 id="counterHeartConnect1" class="counterHeartConnect">0</h2>
+                            </button>
+                        </div>
+
+                        <div class="commentContainerConnect">
+                            <button class="commentIconConnect">
+                              <img
+                                src="connect-post-images/speech-bubble.png"
+                                alt="Comment Icon"
+                                class="speech-icon"
+                              />
+                            </button>
+                            <h2 class="counterCommentConnect">1</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="chat">
+                
+                <div class="chatProfile">
+                    <img src="connect-post-images/profile.jpg" alt="profile pic" class="profileChat">
+                </div>
+
+                <div class="chatInfo">
+                    <div class="chatName">
+                        <div class="chatN">
+                            <h1>Pikachu</h1>
+                        </div>
+                        <div class="chatD">
+                            <h2 class="chatD2">September 9, 2024 | 12:30pm</h2>
+                        </div>
+                        <div class="chatS">
+                            <a id="chatInfoSettings" class="chatInfoSetting" href="connect-trainee-profile.html">...</a>
+                        </div>
+                    </div>
+
+                    <div class="chatTitle">
+                        <div class="chatImageConnect">
+                            <img src="connect-post-images/sadPepe.png" alt="chat image" class="chatImage">
+                        </div>
+                    </div>
+
+                    <div class="chatInteract">
+                        <div class="heartContainerConnect">
+                            <button id="heartButtonConnect2" class="heartIconConnect" onclick="toggleHeart('heartButtonConnect2')">
+                                ♡
+                                <h2 id="counterHeartConnect2" class="counterHeartConnect">0</h2>
+                            </button>
+                        </div>
+
+                        <div class="commentContainerConnect">
+                            <button class="commentIconConnect">
+                              <img
+                                src="connect-post-images/speech-bubble.png"
+                                alt="Comment Icon"
+                                class="speech-icon"
+                              />
+                            </button>
+                            <h2 class="counterCommentConnect">1</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="connect-right"></div>
+
+    </div>
+
+    <div class="addPostConnect">
+        <a class="postConnect" href="connect-trainee-post.html">
+            <img
+              src="connect-post-images/post2.png"
+              alt="post icon"
+              class="post-icon"
+            />
+        </a>
+    </div>
+
+</body>
+<script>
+    function accountDropdown() {
+                var dropdown = document.getElementById("drop");
+                dropdown.classList.toggle("acc-show");
+            }
+
+            // Close dropdown if the user clicks outside
+            window.onclick = function(event) {
+                if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                    var dropdown = document.getElementById("drop");
+                    if (dropdown.classList.contains('acc-show')) {
+                        dropdown.classList.remove('acc-show');
+                    }
+                }
+            }
+  </script>
+</html>
