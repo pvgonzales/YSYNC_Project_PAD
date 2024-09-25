@@ -268,7 +268,7 @@ body {
 
 .pinnedContainer {
   min-height: 300px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 25px auto 0px 40px;
   background-color: #f2f5ff;
   border-radius: 30px;
@@ -292,6 +292,27 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: #f2f5ff;
+}
+
+.pinnedBox{
+  max-width: 500px;
+  display: inline-block;
+  margin-right: 100px;
+  padding-left: 10px;
+}
+
+.pinnedAnnInfo{
+  margin-left: 80px;
+  padding-bottom: 4px;
+}
+
+.pinnedpostDets{
+  padding-top: 4px;
+  padding-left: 85px;
+}
+
+.authorName {
+  margin-bottom: -16px;
 }
 
 .pfp{
