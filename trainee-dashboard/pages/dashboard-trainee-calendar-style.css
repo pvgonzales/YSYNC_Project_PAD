@@ -70,6 +70,21 @@ h1 {
   color: white;
 }
 
+.button{
+  transition: all 0.3s ease;
+}
+.button.active {
+  background-color: #00A3F0;
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+}
+
+.button:hover{
+  background-color: #3c9ecc6b;
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+}
+
 .logo {
   width: 70px;
 }
@@ -100,6 +115,12 @@ h1 {
 .subNavButtons a {
   text-decoration: none;
   color: rgb(27, 27, 27);
+}
+
+.selectedSubNav{
+  font-weight: bolder;
+  margin-bottom: -10px;
+  border-bottom: 8px solid #00A3F0;
 }
 
 .calendar-left {
