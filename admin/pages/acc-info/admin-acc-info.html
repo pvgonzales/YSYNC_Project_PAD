@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information - Trainees</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./admin-acc-info.css">
+    <script src="./admin-acc-info.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="../acc-info/admin-acc-info.html"><img class="logo-img" src="../../assets/logo.png" alt="YSYNC Logo"></a>
+                <h2>YSYNC</h2>
+            </div>
+            <nav class="menu">
+                <div class="menu-container active">
+                    <img class="menu-img" src="../../assets/Group_fill.png"><a href="../acc-info/admin-acc-info.html" class="menu-item">Account Information</a><br>
+                </div>
+                <div class="menu-container">
+                    <img class="menu-img" src="../../assets/Bell_pin.png"><a href="../requests/admin-requests.html" class="menu-item">Requests</a><br>
+                </div>
+                <div class="menu-container">
+                    <img class="menu-img" src="../../assets/Flag.png"><a href="../reports/admin-reports.html" class="menu-item">Reports</a>
+                </div>
+
+            </nav>
+            <div class="admin-account">
+                <p>ADMIN ACCOUNT</p>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1><span class="header-main-title">Account Information</span> <span class="header-main-secondary">/ Trainees</span></h1>
+                
+            </header>
+        <div class="table-content">
+            <div class="search-bar">
+                <div class="search-container">
+                    <input type="text" placeholder="Search" id="search-input">
+                    <button type="submit" id="submit">
+                        <img class="search-img" src="../../assets/magnifying-glass.png"></button>
+                </div>
+            </div>
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active" id="trainees-tab" onclick="switchTab()">Trainees</button>
+                <button class="tab" id="members-tab" onclick="switchTab()">Members</button>
+            </div>
+            
+            <!-- Table -->
+            <div class="table-textfields">
+                <table class="account-table" id="account-table-id">
+                    <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th>EMAIL</th>
+                            <th>BATCH</th>
+                            <th>MENTOR</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-values">
+                        <tr>
+                            <td><div class="table-align-picture"><div class="circle"></div>John Doe</div></td>
+                            <td>jdoe@up.edu.ph</td>
+                            <td>2023</td>
+                            <td>NA</td>
+                            <td>⋮</td>
+                        </tr>
+                        <tr>
+                            <td><div class="table-align-picture"><div class="circle"></div>Ada Lovelace</div></td>
+                            <td>alovelace@up.edu.ph</td>
+                            <td>1999</td>
+                            <td>NA</td>
+                            <td>⋮</td>
+                        </tr>
+                        <tr>
+                            <td><div class="table-align-picture"><div class="circle"></div>George Bool</div></td>
+                            <td>gboole@up.edu.ph</td>
+                            <td>2022</td>
+                            <td>NA</td>
+                            <td>⋮</td>
+                        </tr>
+                        <tr>
+                            <td><div class="table-align-picture"><div class="circle"></div>Bill Gates</div></td>
+                            <td>bgates@up.edu.ph</td>
+                            <td>2010</td>
+                            <td>NA</td>
+                            <td>⋮</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        </main>
+    </div>
+</body>
+</html>
