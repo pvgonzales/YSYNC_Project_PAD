@@ -2,6 +2,8 @@ body {
     font-family: 'Segoe UI';
     color: #FFFFFF;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg::before {
@@ -33,11 +35,23 @@ body {
     z-index: -2;
 }
 
+.rectangle {
+    width: 80%;
+    height: 8%;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+    background-image: linear-gradient(90deg, #132B41 0%, #00A3F0 100%);
+    z-index: 1;
+}
+
 .contact {
-    position: absolute;
-    bottom: -20%;
+    position: fixed;
+    top: 5%;
+    right: 3%;
     display: flex;
-    right: 15%;
 }
 
 .contact img {
@@ -57,15 +71,14 @@ body {
 }
 
 .logo-text-container {
-    position: fixed;
-    text-align: center;
-    top: 30%;
-    left: 20%
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text h1 {
     font-weight: 700;
-    font-size: 400%;
+    font-size: 600%;
     margin-top: -8%;
 }
 
@@ -74,76 +87,32 @@ body {
     margin-top: -25%;
 }
 
-.container {
-    top: 48%;
-    right: 0%;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    color: #132B41;
-    box-shadow: 0px 4px 10px 3px rgba(19, 43, 65, 0.1);
-    align-items: center;
+.login {
     text-align: center;
-    
+    z-index: 2;
 }
 
-.card {
-    padding: 60px 120px 40px 120px;
-    background-color: #F2F5FF;
-    border-radius: 20px;
-    color: black;
-}
-
-.card h1 {
-    font-size: 210%;
-}
-
-.card a {
-    color: black;
-}
-
-#email,  #password {
-    width: 80%;
-    border: none;
-    background: transparent;
-    border-bottom: 1px solid #00A3F0;
-    padding: 6px;
-    margin-bottom: 15px;
-    color: black
-}
-
-#submit-btn {
-    border-radius: 60px;
+.login button {
+    font-size: 130%;
     padding: 20px 60px;
-    background-color: #00A3F0;
-    color: white;
-    margin-top: 30px;
-    font-weight: 700;
-    font-size: 120%;
     border: none;
-    outline: none;
+    border-radius: 60px;
+    color: white;
+    background-color: #00A3F0;
     transition: transform 0.1s ease, filter 0.3s ease;
     box-shadow: 0 4px 3px rgba(0, 163, 240, 0.2);
 }
 
-#submit-btn:hover {
+.login button:hover {
     transform: scale(1.2);
     filter: brightness(1.2);
 }
 
-.rectangle {
-    width: 100%;
-    height: 15%;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    position: fixed;
-    transform: translateX(-50%);
-    background-image: linear-gradient(90deg, #132B41 0%, #00A3F0 100%);
-    z-index: 1;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.login p {
+    margin-top: 10px;
+    color: #FFFFFF;
 }
 
-.error {
-    color: red;
+.login p a {
+    color: #FFFFFF  
 }
