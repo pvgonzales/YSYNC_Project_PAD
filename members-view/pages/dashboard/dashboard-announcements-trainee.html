@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dashboard/dashboard-trainee-announcement.css" />
+    <script src="../dashboard/dashboard-announcements-trainee.js" defer></script>
+
+    <title>DASHBOARD</title>
+  </head>
+  <body>
+    <div class="parentNav">
+      <div class="logoName">
+        <img src="../../assets/logo.png" alt="YSES Logo" class="logo" />
+        <div class="navi">YSYNC</div>
+      </div>
+
+      <ul class="navButtons">
+        <li class="button active" id="dashboard"><a href="../dashboard/dashboard-announcements-trainee.html">Dashboard</a></li>
+        <li id="connect" class="button"><a href="../connect/connect-trainee.html">Connect</a></li>
+        <li id="mentors" class="button"><a href="../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
+        <li id="residentMembers" class="button"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+      </ul>
+      <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+    </div>
+
+    <div class="acc-parentNav" id="drop">
+      <a href="../account-management/profile.html" id="profile">Profile</a>
+      <a href="../account-management/report.html" id="report">Report</a>
+      <!-- <a href="defer.html" id="defer">Defer</a> -->
+      <p></p>
+      <a href="../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
+    </div>
+
+    <div class="main">
+      <!--Div for the subNav (Announcements | Calendar)-->
+      <div class="subNav">
+        <ul class="subNavButtons">
+          <li class="selectedSubNav" id="announcements"><a href="../dashboard/dashboard-announcements-trainee.html">Announcements</a></li>
+          <li id="calendar"><a href="../dashboard/dashboard-calendar-trainee.html">Calendar</a></li>
+        </ul>
+      </div>
+
+      <!--Div for the left division (Announcements)-->
+      <div class="dashboardLeft">
+
+        <!-- contains the Make Announcement Section -->
+       <div class="announcementContainer" id="makeAnnoucementSection">
+
+        <div class="topInputs">
+          <div class="topLeft">
+            <input type="text" class="titleBox" placeholder="Title">
+          </div>
+          <div class="topRight">
+            <input type = "time" class="timeBox" placeholder="Time">
+            <input type = "date" class="dateBox" placeholder="Date">
+          </div>
+        </div>
+
+        <div class="midInput">
+          <div class="entryArea">
+            <textarea class="announcementBox" placeholder="Announcement..."></textarea>
+          </div>
+        </div>
+
+        <div class="bottomInputs">
+
+          <div class="botLeft">
+            <div class="groupedIcons">
+              <img class="threeIcons" src="../../assets/bullets.png" alt="megaphoneIcon">
+              <img class="threeIcons" src="../../assets/paperclip.png" alt="megaphoneIcon">
+              <img class="threeIcons" src="../../assets/share.png" alt="megaphoneIcon">
+            </div>
+          </div>
+
+          <div class="botRight">
+            <div class="groupedButtons">
+              <button type="button" id="postButton" class="postButton">Post</button>
+              <button type="button" id="cancelButton" class="cancelButton">Cancel</button>
+            </div>
+          </div>
+
+        </div>
+
+        </div> 
+
+        <!-- Contains the Pinned Container -->
+        <div class="pinnedContainer">
+          <div class="pinnedHeader">
+            <img src="../../assets/pin.png" alt="pin-icon" class="icon" />
+            <h1 class="pinnedAnnouncements">Pinned Announcements</h1>
+          </div>
+
+          <!-- first post -->
+          <div class="pinnedPost">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--Div for the Upcoming Container-->
+      <div class="dashboardRight">
+        <div class="buttonAnnouncement">
+          <button type="button" id="announcementButton" class="announcementButton">
+              Make an Announcement</button>
+        </div>
+
+        <div class="upcomingContainer">
+          <div class="upcomingHeader">
+            <h1 class="pinnedAnnouncements">Upcoming</h1>
+          </div>
+          <div class="upcomingContent">
+            <div class="upcomingTasks">
+              <div class="task">
+                <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                <h1 class="taskName">PAD Meeting</h1>
+              </div>
+            </div>
+            <div class="upcomingTasks">
+              <div class="task">
+                <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                <h1 class="taskName">PAD Meeting</h1>
+              </div>
+            </div>
+            <div class="upcomingTasks">
+              <div class="task">
+                <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                <h1 class="taskName">PAD Meeting</h1>
+              </div>
+            </div>
+            <div class="calendarButton">
+              <a href="../dashboard/dashboard-calendar-trainee.html"><h2>View in Calendar</h2></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </body>
+  <script>
+    function accountDropdown() {
+                var dropdown = document.getElementById("drop");
+                dropdown.classList.toggle("acc-show");
+            }
+
+            // Close dropdown if the user clicks outside
+            window.onclick = function(event) {
+                if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                    var dropdown = document.getElementById("drop");
+                    if (dropdown.classList.contains('acc-show')) {
+                        dropdown.classList.remove('acc-show');
+                    }
+                }
+            }
+  </script>
+</html>

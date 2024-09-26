@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dashboard/dashboard-trainee-calendar.css" />
+    <title>CALENDAR</title>
+  </head>
+  <body>
+    <div class="parentNav">
+        <div class="logoname">
+            <img src="../../assets/logo.png" alt="YSES Logo" class="logo" />
+        <div class="navi"> YSYNC </div>
+        </div>
+        <ul class="navButtons">
+          <li class="button active" id="dashboard"><a href="../dashboard/dashboard-announcements-trainee.html">Dashboard</a></li>
+          <li id="connect" class="button"><a href="../connect/connect-trainee.html">Connect</a></li>
+          <li id="mentors" class="button"><a href="../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
+          <li id="residentMembers" class="button"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+        </ul>
+        
+        <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+    </div>
+
+    <div class="acc-parentNav" id="drop">
+      <a href="../account-management/profile.html" id="profile">Profile</a>
+      <a href="../account-management/report.html" id="report">Report</a>
+      <!-- <a href="defer.html" id="defer">Defer</a> -->
+      <p></p>
+      <a href="../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
+    </div>
+
+    
+    <div class="main">
+      <!--Div for the subNav (Announcements | Calendar)-->
+      <div class="subNav">
+        <ul class="subNavButtons">
+          <li id="announcements"><a href="dashboard-announcements-trainee.html">Announcements</a></li>
+          <li class="selectedSubNav" id="calendar"><a href="dashboard-calendar-trainee.html">Calendar</a></li>
+        </ul>
+      </div>
+
+      <div class="calendarLeft">
+        <div class="calendarContainer">
+          <iframe id="google-calendar" src="https://embed.styledcalendar.com/#df7MWiI0sSO2G6JMhmam" title="Styled Calendar" class="styled-calendar-container" data-cy="calendar-embed-iframe"></iframe>
+          <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+        </div>
+      </div>
+      
+        <div class="calendarRight">
+
+          <div class="buttonEvent">
+            <button type class="eventButton">
+                <img class="eventIcon" src="../../assets/plus.png", alt="eventIcon">Add Event</button>
+          </div>
+
+          <div class="upcomingContainer">
+              <div class="upcomingHeader">
+                <h1 class="pinnedAnnouncements">Upcoming</h1>
+              </div>
+              <div class="upcomingContent">
+                <div class="upcomingTasks">
+                  <div class="task">
+                    <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                    <h1 class="taskName">PAD Meeting</h1>
+                  </div>
+                </div>
+                <div class="upcomingTasks">
+                  <div class="task">
+                    <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                    <h1 class="taskName">PAD Meeting</h1>
+                  </div>
+                </div>
+                <div class="upcomingTasks">
+                  <div class="task">
+                    <h2 class="taskDate">September 12, 2024 | 7:30 pm</h2>
+                    <h1 class="taskName">PAD Meeting</h1>
+                  </div>
+                </div>
+                <!-- Not really needed in this page -->
+                <!-- <div class="calendarButton">
+                  <a href="#"><h2>View in Calendar</h2></a>
+                </div> -->
+                </div>
+            </div>
+      </div> 
+    </div>
+   </body>
+
+  <script>
+    function accountDropdown() {
+                var dropdown = document.getElementById("drop");
+                dropdown.classList.toggle("acc-show");
+            }
+
+            // Close dropdown if the user clicks outside
+            window.onclick = function(event) {
+                if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                    var dropdown = document.getElementById("drop");
+                    if (dropdown.classList.contains('acc-show')) {
+                        dropdown.classList.remove('acc-show');
+                    }
+                }
+            }
+  </script>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Management</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../account-management/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        html, body, h1, h2, h3, h4, h5 {font-family: "Segoe UI", Arial, sans-serif;}
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="parentNav">
+        <div class="logoname">
+            <img src="../../assets/logo.png" alt="YSES Logo" class="logo" />
+            <div class="navi">YSYNC</div>
+        </div>
+
+        <ul class="navButtons">
+            <li id="dashboard"><a href="../dashboard/dashboard-announcements-trainee.html">Dashboard</a></li>
+            <li id="connect"><a href="../connect/connect-trainee.html">Connect</a></li>
+            <li id="mentors"><a href="../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
+            <li id="residentMembers"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+        </ul>
+
+        <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+    </div>
+    
+    <div class="acc-parentNav" id="drop">
+        <a href="profile.html" id="profile">Profile</a>
+        <a href="report.html" id="report">Report</a>
+        <!-- <a href="traineeAccDefer.html" id="defer">Defer</a> -->
+        <br>
+        <a href="../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
+    </div>
+
+    <div class="profile-header">
+        <div class="account-header-container">
+            <h1 class="account-header">Account Management</h1>
+            <h5 class="text2">/ Profile</h5>
+        </div>
+        <div class="edit-profile">
+            <button class="edit-button" id="editBtn" onclick="toggleEdit()">
+                <i class="material-symbols-outlined">edit</i>
+                <span>Edit</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="profile-information">
+        <div class="profile-information-1">
+            <div class="profile-information-1-photo">
+                <img src="../../assets/profile.jpg" alt="profile pic" class="profile2"/>
+                <p id="changePhoto" class="change-photo"><i class="material-symbols-outlined">photo_camera</i>  Change photo</p>
+            </div>
+            <div class="profile-information-1-name">
+                <h1 class="account-header">Surprised Pikachu</h1>
+                <p id="bioDisplay" class="bio">2022 | Reboot</p>
+                <div id="bioEditFields" style="display: none;">
+                    <label for="univBatchInput" class="bio1">University Batch:</label>
+                    <input type="text" id="univBatchInput" name="univBatch" placeholder="Enter University Batch" value="2022">
+            
+                    <label for="orgBatchInput" class="bio1">Organization Batch:</label>
+                    <input type="text" id="orgBatchInput" name="orgBatch" placeholder="Enter Organization Batch" value="Reboot">
+                </div>
+                <form>
+                    <label class="bio1" id="bio1">Bio</label>
+                    <input type="text" id="bioInput" name="bio" class="bio1" placeholder="Please tell us more about yourself." disabled>
+                </form>
+            </div>
+        </div>
+
+        <div class="profile-information-2">
+            <p>MENTEE INFORMATION</p>
+            <hr>
+            <div class="mentee-container" id="mentee-container">
+                <i class="material-symbols-outlined mentee-icon">notifications_active</i>
+                <div class="mentee-invite-box">
+                    <p class="invite-title"><i class="material-symbols-outlined">waving_hand</i>MENTOR INVITE</p>
+                    <p class="invite-text">John Doe invited you to be their mentee.</p>
+                    <div class="mentee-buttons">
+                        <button class="accept-btn" onclick="showMenteeInfo(true)">Accept</button>
+                        <button class="decline-btn" onclick="showMenteeInfo(false)">Decline</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mentee-profile" id="menteeProfile">
+                <img id="menteePic" src="../../assets/profile-pic-2.png" alt="Mentee Profile Picture" class="menteePic">
+                <p id="menteeName"></p>
+            </div>
+        </div>               
+    </div>
+
+    <script>
+        function accountDropdown() {
+            var dropdown = document.getElementById("drop");
+            dropdown.classList.toggle("acc-show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                var dropdown = document.getElementById("drop");
+                if (dropdown.classList.contains('acc-show')) {
+                    dropdown.classList.remove('acc-show');
+                }
+            }
+        }
+
+        function toggleEdit() {
+            const editBtn = document.getElementById("editBtn");
+            const bioDisplay = document.getElementById("bioDisplay");
+            const bioEditFields = document.getElementById("bioEditFields");
+            const univBatchInput = document.getElementById("univBatchInput");
+            const orgBatchInput = document.getElementById("orgBatchInput");
+
+            if (bioEditFields.style.display === "none") {
+                bioEditFields.style.display = "block";
+                bioDisplay.style.display = "none"; 
+                editBtn.innerHTML = '<i class="material-icons">check</i><span>Save</span>';
+                bioInput.disabled = false;
+                bioInput.focus(); 
+                changePhoto.style.display = "block";
+                changePhoto.style.color = "#1e85b6";
+                document.getElementById('bio1').innerText = "Edit Bio"
+            } else {
+                const univBatch = univBatchInput.value;
+                const orgBatch = orgBatchInput.value;
+                bioInput.disabled = true;
+                editBtn.innerHTML = '<i class="material-icons">edit</i><span>Edit</span>';
+                changePhoto.style.display = "block";
+                changePhoto.style.color = "#ffff";
+                document.getElementById('bio1').innerText = "Bio"
+                bioDisplay.innerText = `${univBatch} | ${orgBatch}`;
+                bioEditFields.style.display = "none";
+                bioDisplay.style.display = "block";
+                editBtn.innerHTML = '<i class="material-icons">edit</i><span>Edit</span>';
+            }
+        }
+
+        function showMenteeInfo(isAccepted) {
+            const menteeContainer = document.getElementById("mentee-container");
+            menteeContainer.style.display = "none";
+            const menteeProfile = document.getElementById("menteeProfile");
+            menteeProfile.style.display = "flex";
+            const menteeName = document.getElementById("menteeName");
+            const menteePic = document.getElementById("menteePic");
+
+            if (!isAccepted) {
+                menteePic.style.display = "none";
+                menteeName.innerHTML = "-- NO MENTEE --";
+            }else{
+                menteeName.innerHTML = "John Doe | Trainee | Batch 2022";
+            }
+        }
+
+    </script>
+</body>
+</html>
