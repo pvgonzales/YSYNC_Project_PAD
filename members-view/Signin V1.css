@@ -148,11 +148,16 @@ body {
 }
 
 
-.switch {
+.switch.trainee {
     position: absolute;
     top: 0;
     left: 0;
     
+}
+.switch.admin{
+    position: absolute;
+    top: 60;
+    left: 0;
 }
 .switch button{
     font-size: 80%;
