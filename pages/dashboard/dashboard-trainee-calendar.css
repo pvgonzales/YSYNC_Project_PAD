@@ -9,6 +9,7 @@ h2 {
 }
 
 body {
+  zoom: 80%;
   margin: 0;
   background-color: #d6dbea;
 }
@@ -106,10 +107,26 @@ h1 {
   color: white;
 }
 
-.navActive{
+.button{
+  transition: all 0.3s ease;
+}
+.button.active {
   background-color: #00A3F0;
-  padding: 10px 15px; 
-  border-radius: 40px;
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+}
+
+.button:hover{
+  background-color: #3c9ecc6b;
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+}
+
+.eventButton{
+  transition: all 0.3s ease;
+}
+.eventButton:hover{
+  transform: scale(1.1)
 }
 
 .logo {
@@ -124,7 +141,7 @@ h1 {
 }
 
 .subNav {
-  /* border-bottom: 0.5px solid #565656; */
+  border-bottom: 0.5px solid #565656;
 }
 
 .subNavButtons {
@@ -137,27 +154,26 @@ h1 {
   padding-top: 12px;
   text-decoration: none;
   align-items: center;
-  border-bottom: 0.5px solid #565656;
 }
 
 .subNavButtons a {
   text-decoration: none;
-  color: #565656;
-}
-
-.subNavActive {
-  border-bottom: 5px solid #3498db;
-  font-weight: bold;
-  padding-bottom: 8px;
-}
-
-.subNavActive a {
   color: rgb(27, 27, 27);
 }
 
-.subNavButtons li {
-  position: relative; /* Ensure all buttons align properly */
-  padding-bottom: 8px; /* Add same padding as subNavActive */
+.subNavButtons li{
+  transition: all 0.3s ease;
+}
+.subNavButtons li:hover{
+  font-weight: bolder;
+  margin-bottom: -10px;
+  border-bottom: 8px solid #00a4f090;
+}
+
+.selectedSubNav{
+  font-weight: bolder;
+  margin-bottom: -10px;
+  border-bottom: 8px solid #00A3F0;
 }
 
 .dashboard {

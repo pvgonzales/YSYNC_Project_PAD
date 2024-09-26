@@ -16,10 +16,10 @@
       </div>
 
       <ul class="navButtons">
-        <li class="navActive" id="dashboard"><a href="../dashboard/dashboard-announcements-trainee.html">Dashboard</a></li>
-        <li id="connect"><a href="../connect/connect-trainee.html">Connect</a></li>
-        <li id="mentors"><a href="../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
-        <li id="residentMembers"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+        <li class="button active" id="dashboard"><a href="../dashboard/dashboard-announcements-trainee.html">Dashboard</a></li>
+        <li id="connect" class="button"><a href="../connect/connect-trainee.html">Connect</a></li>
+        <li id="mentors" class="button"><a href="../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
+        <li id="residentMembers" class="button"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
       </ul>
       <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
     </div>
@@ -36,7 +36,7 @@
       <!--Div for the subNav (Announcements | Calendar)-->
       <div class="subNav">
         <ul class="subNavButtons">
-          <li class="subNavActive" id="announcements"><a href="../dashboard/dashboard-announcements-trainee.html">Announcements</a></li>
+          <li class="selectedSubNav" id="announcements"><a href="../dashboard/dashboard-announcements-trainee.html">Announcements</a></li>
           <li id="calendar"><a href="../dashboard/dashboard-calendar-trainee.html">Calendar</a></li>
         </ul>
       </div>
@@ -102,9 +102,9 @@
 
       <!--Div for the Upcoming Container-->
       <div class="dashboardRight">
-        <div class="button">
+        <div class="buttonAnnouncement">
           <button type="button" id="announcementButton" class="announcementButton">
-              <img class="announcementIcon"  src="../../assets/megaphone.png" alt="megaphoneIcon">Make an Announcement</button>
+              Make an Announcement</button>
         </div>
 
         <div class="upcomingContainer">

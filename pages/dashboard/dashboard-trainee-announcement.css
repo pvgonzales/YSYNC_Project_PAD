@@ -16,6 +16,7 @@ h1 {
 }
 
 body {
+  zoom: 80%;
   margin: 0;
   background-color: #d6dbea;
 }
@@ -82,16 +83,20 @@ body {
 }
 
 .navButtons {
+  list-style-type: none;
   font-family: "Segoe UI";
   font-size: 20px;
   display: flex;
   gap: 4rem;
   padding: 0px 80px;
+  text-decoration: none;
   align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .navButtons li {
   display: inline;
+  /* flex: 1 1 auto; */
 }
 
 .navButtons a {
@@ -99,10 +104,33 @@ body {
   color: white;
 }
 
+.button{
+  transition: all 0.3s ease;
+}
+.button.active {
+  background-color: #00A3F0;
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+}
+
+.button:hover{
+  background-color: #3c9ecc6b;
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+}
+
 .navActive{
   background-color: #00A3F0;
   padding: 10px 15px; 
   border-radius: 40px;
+}
+
+.announcementButton{
+  transition: all 0.3s ease;
+}
+
+.announcementButton:hover{
+  transform: scale(1.1);
 }
 
 .logo {
@@ -117,7 +145,7 @@ body {
 }
 
 .subNav {
-  /* border-bottom: 0.5px solid #565656; */
+  border-bottom: 0.5px solid #565656;
 }
 
 .subNavButtons {
@@ -130,27 +158,26 @@ body {
   padding-top: 12px;
   text-decoration: none;
   align-items: center;
-  border-bottom: 0.5px solid #565656;
 }
 
 .subNavButtons a {
   text-decoration: none;
-  color: #565656;
-}
-
-.subNavActive {
-  border-bottom: 5px solid #3498db;
-  font-weight: bold;
-  padding-bottom: 8px;
-}
-
-.subNavActive a {
   color: rgb(27, 27, 27);
 }
 
-.subNavButtons li {
-  position: relative; /* Ensure all buttons align properly */
-  padding-bottom: 8px; /* Add same padding as subNavActive */
+.subNavButtons li{
+  transition: all 0.3s ease;
+}
+.subNavButtons li:hover{
+  font-weight: bolder;
+  margin-bottom: -10px;
+  border-bottom: 8px solid #00a4f090;
+}
+
+.selectedSubNav{
+  font-weight: bolder;
+  margin-bottom: -10px;
+  border-bottom: 8px solid #00A3F0;
 }
 
 /* Size of left dashboard */

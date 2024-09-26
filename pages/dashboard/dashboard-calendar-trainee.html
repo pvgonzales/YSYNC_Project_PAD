@@ -13,10 +13,10 @@
         <div class="navi"> YSYNC </div>
         </div>
         <ul class="navButtons">
-            <li class="navActive" id="dashboard"><a href="#">Dashboard</a></li>
-            <li id="connect"><a href="../connect/connect-trainee.html">Connect</a></li>
-            <li id="mentors"><a href="../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
-            <li id="residentMembers"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+          <li class="button active" id="dashboard"><a href="../dashboard/dashboard-announcements-trainee.html">Dashboard</a></li>
+          <li id="connect" class="button"><a href="../connect/connect-trainee.html">Connect</a></li>
+          <li id="mentors" class="button"><a href="../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
+          <li id="residentMembers" class="button"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
         </ul>
         
         <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
@@ -36,7 +36,7 @@
       <div class="subNav">
         <ul class="subNavButtons">
           <li id="announcements"><a href="dashboard-announcements-trainee.html">Announcements</a></li>
-          <li class="subNavActive" id="calendar"><a href="dashboard-calendar-trainee.html">Calendar</a></li>
+          <li class="selectedSubNav" id="calendar"><a href="dashboard-calendar-trainee.html">Calendar</a></li>
         </ul>
       </div>
 
@@ -49,7 +49,7 @@
       
         <div class="calendarRight">
 
-          <div class="button">
+          <div class="buttonEvent">
             <button type class="eventButton">
                 <img class="eventIcon" src="../../assets/plus.png", alt="eventIcon">Add Event</button>
           </div>

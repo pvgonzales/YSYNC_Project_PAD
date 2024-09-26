@@ -15,13 +15,21 @@
                 <div class="navi">YSYNC</div>
             </div>
         <ul class="navButtons">
-            <li id="dashboard"><a href="../../dashboard/dashboard-announcements-trainee.html">Dashboard</a></li>
-            <li id="connect"><a href="../../connect/connect-trainee.html">Connect</a></li>
-            <li class="navActive" id="mentors"><a href="../pages/mentorsinfo-member.html">Mentors</a></li>
-            <li id="residentMembers"><a href="../../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+            <li class="button" id="dashboard"><a href="../../dashboard/dashboard-announcements-trainee.html">Dashboard</a></li>
+            <li id="connect" class="button"><a href="../../connect/connect-trainee.html">Connect</a></li>
+            <li id="mentors" class="button active"><a href="../../mentor info/pages/mentorsinfo-member.html">Mentors</a></li>
+            <li id="residentMembers" class="button"><a href="../../resmem/resmemInfo-trainee.html">Resident Members</a></li>
         </ul>
-        <img src="../assets/Snorlax.png" alt="profile pic" class="profile" />
+        <button onclick="accountDropdown()" class="profile-button"><img src="../assets/Snorlax.png" alt="profile pic" class="profile"/></button>
         </div>
+
+        <div class="acc-parentNav" id="drop">
+            <a href="../account-management/profile.html" id="profile">Profile</a>
+            <a href="../account-management/report.html" id="report">Report</a>
+            <!-- <a href="defer.html" id="defer">Defer</a> -->
+            <p></p>
+            <a href="../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
+          </div>
 
         <div class="profileContainer">
             <div class="profileTile">
@@ -79,7 +87,7 @@
                     <p class="profileTitle">WHAT CAN YOU EXPECT</p>
                     <p class="bodyText">Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae turpis lorem eget in mus non</p>
                 </div>
-                <div class="button">
+                <div class="buttonEdit">
                     <button type class="editButton">
                         <img class="editIcon" src="../assets/pen.png", alt="editIcon">Edit</button>
                 </div>
@@ -125,4 +133,20 @@
         </div>
 
     </body>
+    <script>
+        function accountDropdown() {
+                    var dropdown = document.getElementById("drop");
+                    dropdown.classList.toggle("acc-show");
+                }
+    
+                // Close dropdown if the user clicks outside
+                window.onclick = function(event) {
+                    if (!event.target.matches('.acc-buttonDrop') && !event.target.matches('.profile')) {
+                        var dropdown = document.getElementById("drop");
+                        if (dropdown.classList.contains('acc-show')) {
+                            dropdown.classList.remove('acc-show');
+                        }
+                    }
+                }
+      </script>
 </html>
