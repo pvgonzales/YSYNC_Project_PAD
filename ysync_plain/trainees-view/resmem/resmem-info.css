@@ -1,0 +1,275 @@
+*{
+    font-family: "Segoe UI";
+  }
+  body {
+    zoom: 80%;
+  }
+  p {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Segoe UI";
+    margin: 0px 0;
+  }
+  
+  .profile {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-button {
+    background: none;
+    border: none;
+  }
+  
+  .acc-parentNav {
+    display: none;
+    position: absolute;
+    right: 80px;
+    background-color: #d6dbea;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    min-width: 250px;
+    z-index: 1;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .acc-parentNav a {
+    color: #132b41;
+    padding: 10px 40px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .acc-parentNav a:hover {
+    background-color: #e1e5f2;
+    border-radius: 10px;
+  }
+  .acc-show {
+    display: block;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #d6dbea;
+  }
+  
+  h1 {
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 23px;
+    color: #1e1e1e;
+  }
+  
+  .logoname {
+    display: flex;
+    align-items: center;
+  }
+body {
+    margin: 0;
+    background-color: #d6dbea;
+  }
+
+  
+.parentNav {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #132b41;
+    overflow: auto;
+    gap: 1rem;
+  }
+  .acc-parentNav {
+    display: none;
+    position: absolute;
+    right: 80px;
+    background-color: #d6dbea;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    min-width: 250px;
+    z-index: 1;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .acc-parentNav a {
+    color: #132b41;
+    padding: 10px 40px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .acc-parentNav a:hover {
+    background-color: #e1e5f2;
+    border-radius: 10px;
+  }
+  .acc-show {
+    display: block;
+  }
+
+  .navi {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: "Segoe UI";
+    padding: 15px;
+    padding-right: 0;
+  }
+
+  .navActive{
+    background-color: #00A3F0;
+    padding: 10px 15px; 
+    border-radius:20px;
+  }
+
+  .navButtons {
+    list-style-type: none;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    display: flex;
+    gap: 4rem;
+    padding: 0px 80px;
+    text-decoration: none;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  
+  .navButtons li {
+    display: inline;
+    /* flex: 1 1 auto; */
+  }
+  
+  .navButtons a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .button{
+    transition: all 0.3s ease;
+  }
+  .button.active {
+    background-color: #00A3F0;
+    border-radius: 20px;
+    padding: 10px 40px 10px 40px;
+  }
+  
+  .button:hover{
+    background-color: #3c9ecc6b;
+    border-radius: 20px;
+    padding: 10px 40px 10px 40px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+  .search-bar {
+    display: flex;
+    justify-content: end;
+    right:0;
+    gap: 10px;
+    background-color: #d6dbea;
+    /*padding: 20px;*/
+  }
+  .search-container input {
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-container button {
+    position: relative;
+    padding: 0;
+    border: none;
+    background: none;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .search-img{
+    cursor: pointer;
+    margin-top: 5px;
+    width:15px;
+    height:15px;
+   }
+
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.tab {
+    padding: 15px 40px 5px 40px;
+    border: none;
+    background-color: #B8B6D2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+}
+
+.tab:hover{
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    background-color: #00a3f0;
+    color: white;
+}
+.tab.active p{
+    font-weight: bold;
+}
+
+.table-textfields{
+    font-family: "Roboto", sans-serif;
+    color: #565656;
+    font-weight:300;
+}
+
+.table-align-picture{
+    align-items: center;
+    display: flex;
+}
+
+.table-content{
+    margin-top: 30px;
+}
+.account-table {    
+    left: 0px;
+    position: relative;
+    width:105%;
+    border-collapse: collapse;
+    background-color: white;
+    overflow: hidden;
+}
+
+.account-table th, .account-table td {
+    font-family: "Roboto", sans-serif;
+    padding: 12px 20px;
+    text-align: left;
+    max-width: 90px;
+    /* break word enables us to wrap the text into the width of the cell */
+    word-wrap: break-word; 
+}
+
+
+.account-table th {
+    background-color: #00a3f0;
+    color: white;
+    font-weight:400;
+}
+
+.account-table td {
+    
+    border-bottom: 1px solid #D6DBEA    ;
+}
+
+
+.account-table tr:hover {
+    background-color: #F1F1F1;
+}

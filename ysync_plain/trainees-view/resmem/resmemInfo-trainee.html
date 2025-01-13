@@ -4,23 +4,23 @@
         <meta charset="UTF-8" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="mentorinfo-trainee-style.css" />
+        <link rel="stylesheet" href="resmem-info.css" />
         <title>Document</title>
     </head>
     <body>
         <div class="parentNav">
             <div class="logoname">
-                <img src="logo.png" alt="YSES Logo" class="logo" />
+                <img src="" alt="YSES Logo" class="logo" />
                 <div class="navi">YSYNC</div>
             </div>
-        <ul class="navButtons">
-            <li id="dashboard" class="button"><a href="../dashboard/pages/dashboard-trainee-announcement.html">Dashboard</a></li>
-            <li id="connect" class="button"><a href="../connect/connect-trainee.html">Connect</a></li>
-            <li id="mentors" class="button"><a href="../mentor info/pages/dashboard-trainee-mentor-choosing.html">Mentors</a></li>
-            <li class="navActive" id="residentMembers" class="button active"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
-        </ul>
-        <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
-    </div>
+            <ul class="navButtons">
+                <li id="dashboard" class="button"><a href="../dashboard/pages/dashboard-trainee-announcement.html">Dashboard</a></li>
+                <li id="connect" class="button"><a href="../connect/connect-trainee.html">Connect</a></li>
+                <li id="mentors" class="button"><a href="../mentor info/pages/dashboard-trainee-mentor-choosing.html">Mentors</a></li>
+                <li class="navActive" id="residentMembers" class="button active"><a href="../resmem/resmemInfo-trainee.html">Resident Members</a></li>
+            </ul>
+            <button onclick="accountDropdown()" class="profile-button"><img src="../../assets/profile.jpg" alt="profile pic" class="profile"/></button>
+        </div>
     
     <div class="acc-parentNav" id="drop">
         <a href="../account-management/profile.html" id="profile">Profile</a>
@@ -29,74 +29,70 @@
         <br>
         <a href="../../index.html" class="logout" style="font-weight: bold;">Log Out</a>
     </div>
-        <div class="search-bar">
-            <div class="search-container">
-                <input type="text" placeholder="Search" id="search-input">
-                <button type="submit" id="submit">
-                    <img class="search-img" src="magnifying-glass.png"></button>
+        
+    <main class="main-content">
+        <div class="table-content">
+            <div class="search-bar">
+                <div class="search-container">
+                    <input type="text" placeholder="Search" id="search-input">
+                    <button type="submit" id="submit">
+                        <img class="search-img" src="../../trainees-view/resmem/magnifying-glass.png"></button>
+                </div>
+            </div>
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active" id="activeMem-tab" onclick="switchTab()"><p>Active</h1></button>
+                <button class="tab" id="inactiveMem-tab" onclick="switchTab()"><p>Inactive</h1></button>
+                <button class="tab" id="alumni-tab" onclick="switchTab()"><p>Alumni</h1></button>
+            </div>
+            
+            <!-- Table -->
+            <div class="table-textfields">
+                <table class="account-table" id="account-table-id">
+                    <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th>EMAIL</th>
+                            <th>BATCH</th>
+                            <th>ORG BATCH</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-values">
+                        <tr>
+                            <td><div class="table-align-picture"><div class="circle"></div>John Doe</div></td>
+                            <td>jdoe@up.edu.ph</td>
+                            <td>2023</td>
+                            <td>NA</td>
+                            <td>⋮</td>
+                        </tr>
+                        <tr>
+                            <td><div class="table-align-picture"><div class="circle"></div>Ada Lovelace</div></td>
+                            <td>alovelace@up.edu.ph</td>
+                            <td>1999</td>
+                            <td>NA</td>
+                            <td>⋮</td>
+                        </tr>
+                        <tr>
+                            <td><div class="table-align-picture"><div class="circle"></div>George Bool</div></td>
+                            <td>gboole@up.edu.ph</td>
+                            <td>2022</td>
+                            <td>NA</td>
+                            <td>⋮</td>
+                        </tr>
+                        <tr>
+                            <td><div class="table-align-picture"><div class="circle"></div>Bill Gates</div></td>
+                            <td>bgates@up.edu.ph</td>
+                            <td>2010</td>
+                            <td>NA</td>
+                            <td>⋮</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
-        </div>
-        <div class="typeMember">
-            <div class="navButtons-container">
-                <ul class="navButtons-members">
-                    <li>
-                        <input type="radio" id="active" name="membership" checked="checked"/>
-                        <label for="active">Active</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="inactive" name="membership" />
-                        <label for="inactive">Inactive</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="alumni" name="membership" />
-                        <label for="alumni">Alumni</label>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div class="infoLabels">
-            <div class="infoLabels-container">
-                <li id="name">NAME</li>
-                <li id="email">EMAIL</li>
-                <li id="department">DEPARTMENT</li>
-                <li id="batch">BATCH</li>
-                <li id="orgbatch">ORG BATCH</li>
-            </div>
-        </div>
-        <div class="memInfo">
-            <div class="memInfo-container">
-                <li id="nameDets">John Doe</li>
-                <li id="emailDets">jdoe@up.edu.ph</li>
-                <li id="departmentDets">Executive Department </li>
-                <li id="batchDets">2023 </li>
-                <li id="orgbatchDets">Reboot</li>
-            </div>
-        </div>
-
-        <div class="memInfo">
-            <div class="memInfo-container">
-                <li id="nameDets">John Doe</li>
-                <li id="emailDets">jdoe@up.edu.ph</li>
-                <li id="departmentDets">Executive Department </li>
-                <li id="batchDets">2023 </li>
-                <li id="orgbatchDets">Reboot</li>
-            </div>
-        </div>
-
-        <div class="memInfo">
-            <div class="memInfo-container">
-                <li id="nameDets">John Doe</li>
-                <li id="emailDets">jdoe@up.edu.ph</li>
-                <li id="departmentDets">Executive Department </li>
-                <li id="batchDets">2023 </li>
-                <li id="orgbatchDets">Reboot</li>
-            </div>
-        </div>
-
+        </main>
     </body>
     <script>
         function accountDropdown() {
@@ -112,5 +108,257 @@
                     }
                 }
             }
+
+            var typeFlag = "activeMem"
+            const activeMem = [
+                {
+                    name: "John Doe",
+                    email: "jdoe@up.edu.ph",
+                    batch: 2023,
+                    mentor: "NA",
+                    additionalInfo: "⋮"
+                },
+                {
+                    name: "Ada Lovelace",
+                    email: "alovelace@up.edu.ph",
+                    batch: 1999,
+                    mentor: "NA",
+                    additionalInfo: "⋮"
+                },
+                {
+                    name: "George Bool",
+                    email: "gboole@up.edu.ph",
+                    batch: 2022,
+                    mentor: "NA",
+                    additionalInfo: "⋮"
+                },
+                {
+                    name: "Bill Gates",
+                    email: "bgates@up.edu.ph",
+                    batch: 2010,
+                    mentor: "NA",
+                    additionalInfo: "⋮"
+                }
+            ];
+
+            const inactiveMem = [
+                {
+                    name: "John Doe",
+                    email: "jdoe@up.edu.ph",
+                    batch: 2023,
+                    orgbatch: "System7",
+                    additionalInfo: "⋮"
+                },
+                {
+                    name: "Ada Lovelace",
+                    email: "alovelace@up.edu.ph",
+                    batch: 1999,
+                    orgbatch: "nightMode",
+                    additionalInfo: "⋮"
+                },
+                {
+                    name: "George Bool",
+                    email: "gboole@up.edu.ph",
+                    batch: 2022,
+                    orgbatch: "Reboot",
+                    additionalInfo: "⋮"
+                },
+                {
+                    name: "Bill Gates",
+                    email: "bgates@up.edu.ph",
+                    batch: 2010,
+                    orgbatch: "Batch from Home",
+                    additionalInfo: "⋮"
+                }
+            ]
+            const alumni = [
+                {
+                    name: "John Doe",
+                    email: "jdoe@up.edu.ph",
+                    batch: 2023,
+                    orgbatch: "Charter",
+                    additionalInfo: "⋮"
+                },
+                {
+                    name: "Ada Lovelace",
+                    email: "alovelace@up.edu.ph",
+                    batch: 1999,
+                    orgbatch: "nightMode",
+                    additionalInfo: "⋮"
+                },
+                {
+                    name: "George Bool",
+                    email: "gboole@up.edu.ph",
+                    batch: 2022,
+                    orgbatch: "Reboot",
+                    additionalInfo: "⋮"
+                },
+                {
+                    name: "Bill Gates",
+                    email: "bgates@up.edu.ph",
+                    batch: 2010,
+                    orgbatch: "Batch from Home",
+                    additionalInfo: "⋮"
+                }
+            ]
+            // function for implementing search functionality
+            function search(){
+                // check what type of user is clicked
+                var keys = Object.keys(trainees[0]);
+                var users = trainees;   
+                if(typeFlag == "members"){
+                    keys = Object.keys(members[0]);
+                    users = members;
+                }
+
+                var search_input = document.getElementById("search-input").value;
+                var filtered_result = users.filter((user) => { // filter the results
+                    return user["name"].toLowerCase().includes(search_input.toLowerCase());
+                })
+                console.log(filtered_result)
+                populateTable(filtered_result, keys)
+            }
+
+            function switchTab(active){
+                let tabs = ["activeMem-tab", "inactiveMem-tab", "alumni-tab"];
+
+                tabs.forEach((tabId) => {
+                    const tab = document.getElementById(tabId);
+                    if (tabId === active){
+                        tab.classList.add("active");
+                    }
+                    else{
+                        tab.classList.remove("active");
+                    }
+                })
+
+            }
+
+            // function for updating the table based on its column data
+            function updateTable(type){
+                const list = ["NAME", "EMAIL", "BATCH", "ORG BATCH", ""]
+                    var table = document.getElementById("account-table-id");
+                    table.innerHTML=""; 
+                    var tr = document.createElement("tr");
+                    list.forEach((column) => {
+                        var th = document.createElement("th");
+                        th.innerHTML=column;
+                        tr.appendChild(th);
+                    })
+                    var tbody = document.createElement("tbody");
+                    tbody.setAttribute("id", "table-values");
+                    table.appendChild(tr);
+                    table.appendChild(tbody);
+                if(type === "activeMem"){
+                    populateTable(activeMem, Object.keys(activeMem[0]));
+                }else if(type === "inactiveMem"){
+                    populateTable(inactiveMem, Object.keys(inactiveMem[0]));
+                }else{
+                    populateTable(alumni, Object.keys(alumni[0]));
+                }
+                    
+            }
+
+            // function for populating the table when switching tabs
+            function populateTable(users, keys){
+                var tbody = document.getElementById("table-values");
+                tbody.innerHTML = '' // remove the existing values since we want to search
+                for (var i = 0; i < users.length; i++) {
+                    var tr = document.createElement("tr");
+                    keys.forEach((key) => {
+                        if (key === "additionalInfo") {
+                            var button = document.createElement("button");
+                            button.classList.add("vert-ellipsis");
+                            button.innerHTML = users[i][key];
+
+                            button.addEventListener("click", (event) => {
+                                event.stopPropagation(); 
+                                var popup = document.createElement("div");
+                                popup.classList.add("pop-up");
+                                
+                                var editButton = document.createElement("button");
+                                editButton.innerHTML = "Edit User";
+                                editButton.classList.add("edit-button"); 
+                            
+                                var deleteButton = document.createElement("button");
+                                deleteButton.innerHTML = "Delete User";
+                                deleteButton.classList.add("delete-button"); 
+                            
+                                popup.appendChild(editButton);
+                                popup.appendChild(deleteButton);
+                            
+                                // position the popup
+                                const rect = button.getBoundingClientRect();
+                                const popupWidth = 200; 
+                                popup.style.left = `${rect.right-(popupWidth/2)}px`; 
+                                popup.style.top = `${rect.top - 30}px`;
+                            
+                                document.body.appendChild(popup);
+                            
+                                // close popup on hover out
+                                popup.addEventListener("mouseleave", () => {
+                                    popup.remove();
+                                });
+                            
+                                // can also remove popup when clicking outside
+                                function handleClickOutside(event) {
+                                    if (!popup.contains(event.target) && event.target !== button) {
+                                        popup.remove();
+                                        document.removeEventListener("click", handleClickOutside);
+                                    }
+                                }
+                            
+                                document.addEventListener("click", handleClickOutside);
+                            });
+
+                            var td = document.createElement("td");
+                            td.appendChild(button);
+                            tr.appendChild(td);
+                            tbody.append(tr);
+                            return;
+                        }
+                        var td = document.createElement("td");
+                        if(key === "name"){
+                            var circle = document.createElement("div");
+                            circle.classList.add("circle");
+
+                            var align = document.createElement("div");
+                            align.classList.add("table-align-picture");
+                            align.appendChild(circle);
+                            align.appendChild(document.createTextNode(users[i]["name"]));
+
+                            td.appendChild(align);
+                            tr.appendChild(td);
+                            return;
+                        }
+                        td.innerHTML = users[i][key];
+                        tr.appendChild(td);
+                    })
+                    tbody.append(tr);
+                }
+            }
+            // search listener
+            document.getElementById("search-input").addEventListener("input", search);
+
+            // document listeners for the tabs
+            document.getElementById("activeMem-tab").addEventListener("click", () => {
+                switchTab("activeMem-tab");
+                var secondary = document.getElementsByClassName("header-main-secondary")
+                secondary[0].innerHTML="/ Trainees";
+                typeFlag = "activeMem";
+                updateTable(typeFlag);
+            })
+            document.getElementById("inactiveMem-tab").addEventListener("click", () => {
+                switchTab("inactiveMem-tab");
+                typeFlag = "inactiveMem";
+                updateTable(typeFlag);
+            })
+            document.getElementById("alumni-tab").addEventListener("click", () => {
+                switchTab("alumni-tab");
+                typeFlag = "alumni";
+                updateTable(typeFlag);
+            })
+
+            updateTable(typeFlag);     
       </script>
 </html>

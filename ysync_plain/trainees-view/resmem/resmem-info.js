@@ -67,8 +67,8 @@ function search(){
     // check what type of user is clicked
     var keys = Object.keys(trainees[0]);
     var users = trainees;   
-    if(typeFlag === "members"){
-        keys = Object.keys(members[0]);
+    if(typeFlag === "trainees"){
+        keys = Object.keys(trainees[0]);
         users = members;
     }
 

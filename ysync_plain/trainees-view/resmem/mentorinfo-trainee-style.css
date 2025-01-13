@@ -423,4 +423,5 @@ h1 {
 .tab.active {
   background-color: #00a3f0;
   color: white;
+  font-weight: bold;
 }
