@@ -1,15 +1,24 @@
 import "./Login.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import AuthContext from '../../context/AuthProvider.jsx';
 import api from "../../api/axios.js";
+import { Navigate, useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const { auth, setAuth } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState(""); // State for error message
+  const navigate = useNavigate();
 
   useEffect(() => {
     setErrorMessage('')
   }, [email,password]);
+
+  // debug auth:
+  // useEffect(() => {
+  //   console.log("Updated auth state: ", auth);
+  // }, [auth]);
 
   // regex for accepting only upmails
   const isValidEmail = (email) => {
@@ -54,8 +63,26 @@ export default function Login() {
       });
       if (response){
         alert("Login successful!");
-        return await response.data;
-      } 
+
+        // save access token and role in memory
+        const accessToken = response?.data?.accessToken;
+        const role = response?.data?.role;
+
+        setAuth({email, password, accessToken, role});
+
+        if (role === "trainee") {
+          navigate("/test");
+        } else if (role === "residentMember") {
+          navigate("/test");
+        } else if (role === "admin") {
+          navigate("/admin/acc-info");
+        }
+        else{
+          // How did it go here? Well, for some reason, they got a response with an invalid rol
+          console.log("Invalid role: ", role);
+          throw new Error("Invalid role.");
+        }
+      }
     } catch (error) {
       if (error.response) {
         console.log("Error response status: ", error.response.status);
@@ -67,7 +94,7 @@ export default function Login() {
       }
       else{
         console.error("Error message: ", error.message);
-        setErrorMessage("A network error has occurred.");
+        setErrorMessage("No response from the server.");
       }
     }
   }

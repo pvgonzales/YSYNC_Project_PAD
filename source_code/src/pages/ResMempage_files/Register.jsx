@@ -62,8 +62,7 @@ export default function Register() {
             password: password,
             firstName: firstName,
             lastName: lastName,
-            middleName: middleName,
-            userType: "trainee"
+            middleName: middleName
         }
 
         try {

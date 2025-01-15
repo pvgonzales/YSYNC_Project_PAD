@@ -2,3 +2,12 @@
     height: 100%;
     width: 100%;
 }
+
+/* literally do not remove this, makes the site so much better  */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }

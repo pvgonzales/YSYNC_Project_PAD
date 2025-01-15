@@ -1,0 +1,66 @@
+.container-admin-dashboard {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    width: 100vw;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+}
+
+.sidebar-admin-dashboard {
+    /* z-index basically pinapataas yung panel, something like navbar */
+    z-index: 10; 
+    background-color: #132B41;
+    color: white;
+    width: 316px;
+    padding: 20px;
+}
+
+.logo-admin-dashboard {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.logo-admin-dashboard h2 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.menu-admin-dashboard{
+    margin-left: 30px;
+    margin-bottom: 100px;    
+}
+
+.menu-container-admin-dashboard{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.menu-container-admin-dashboard.active {
+    font-weight: bold;
+    background-position: left center;
+    background-image: url("./assets/highlight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu-container-admin-dashboard:hover {
+    font-weight: bold;
+    background-image: url("./assets/highlight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.admin-account {
+    position: absolute;
+    font-size: 14px;
+    color: #90A4AE;
+    bottom: 0;
+    transform: translate(75%, 0);
+}
