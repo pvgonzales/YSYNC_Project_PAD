@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage_files/Homepage.jsx"
 import Login from "./pages/Loginpage_files/Login.jsx";
 import Register from "./pages/Registerpage_files/Register.jsx";
 import ResMem from "./pages/ResMempage_files/Resmem.jsx";
+import AccInfo from "./pages/AccInfo_files/AccInfo.jsx";
 
 function App() {
   const routes = [
@@ -22,7 +23,12 @@ function App() {
     {
       path: "/residentmem",
       element:<ResMem/>
+    },
+    {
+      path: "/accinfo",
+      element:<AccInfo/>
     }
+
   ]
   const router = createBrowserRouter(routes)
   return (

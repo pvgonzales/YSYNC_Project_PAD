@@ -1,5 +1,5 @@
 import React from "react";
-import "./SearchBar.css"; // Assuming you have a CSS file for styling
+import "./SearchBar.css";
 import searchIcon from "./assets/magnifying-glass.png";
 
 const dataMap = {

@@ -37,10 +37,11 @@ function ResMem() {
   );
 
   return (
-    <div className="body">
+    <body>
+        <div className="resmem-body">
       <div className="parentNav">
         <div className="logoname">
-          <img src="" alt="YSES Logo" className="logo" />
+          <img src="" alt="YSES Logo" className="resmem-logo" />
           <div className="navi">YSYNC</div>
         </div>
         <ul className="navButtons">
@@ -57,7 +58,7 @@ function ResMem() {
             }}
             className="profile-button"
             >
-            <img src="../../assets/profile.jpg" alt="profile pic" className="profile" />
+            <img src="./assets/profile.jpg" alt="profile pic" className="profile" />
 
         </button>
       </div>
@@ -70,6 +71,8 @@ function ResMem() {
 
       <Table/>
     </div>
+    </body>
+    
   );
 }
 

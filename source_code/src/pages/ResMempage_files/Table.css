@@ -1,0 +1,79 @@
+.resmem-table-textfields{
+    font-family: "Roboto", sans-serif;
+    color: #565656;
+    font-weight:300;
+}
+
+.resmem-table-align-picture{
+    align-items: center;
+    display: flex;
+}
+
+.resmem-table-content{
+    margin-top: 30px;
+}
+
+.resmem-tabs {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.resmem-tab {
+    padding: 15px 40px 10px 40px;
+    border: none;
+    background-color: #B8B6D2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+}
+
+.resmem-tab:hover{
+    transition: all 0.3s ease;
+}
+
+.resmem-tab.active {
+    background-color: #00a3f0;
+    color: white;
+}
+.resmem-tab.active p{
+    font-weight: bold;
+}
+
+
+.resmem-account-table {    
+    left: 0px;
+    right: 0px;
+    position: relative;
+    width:99%;
+    border-radius: 10px;
+    border-collapse: collapse;
+    background-color: white;
+    overflow: hidden;
+}
+
+.resmem-account-table th, .resmem-account-table td {
+    font-family: "Roboto", sans-serif;
+    padding: 12px 20px;
+    text-align: left;
+    max-width: 90px;
+    /* break word enables us to wrap the text into the width of the cell */
+    word-wrap: break-word; 
+}
+
+
+.resmem-account-table th {
+    background-color: #00a3f0;
+    color: white;
+    font-weight:400;
+}
+
+.resmem-account-table td {
+    
+    border-bottom: 1px solid #D6DBEA    ;
+}
+
+
+.resmem-account-table tr:hover {
+    background-color: #F1F1F1;
+}

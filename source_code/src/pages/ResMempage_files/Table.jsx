@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Table.css"; // Import your styles
-import SearchBar from "./SearchBar";
+import "./Table.css"
+import SearchBar from "./SearchBar.jsx";
 
 const dataMap = {
   activeMem: [
@@ -36,25 +36,25 @@ function Table() {
 
   return (
     <>
-    <div className="table-content">
+    <div className="resmem-table-content">
     <SearchBar
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
       />
-    <div className="table-textfields">
-      <div className="tabs">
+    <div className="resmem-table-textfields">
+      <div className="resmem-tabs">
         {Object.keys(dataMap).map((tab) => (
           <button
             key={tab}
-            className={`tab ${type === tab ? "active" : ""}`}
+            className={`resmem-tab ${type === tab ? "active" : ""}`}
             onClick={() => setType(tab)}
           >
-            {capitalize(tab.replace("Mem", " Members").replace("alumni", "Alumni"))}
+            {capitalize(tab.replace("Mem", "").replace("alumni", "Alumni"))}
           </button>
         ))}
       </div>
 
-      <table className="account-table" id="account-table-id">
+      <table className="resmem-account-table" id="account-table-id">
         <thead>
           <tr>
             <th>NAME</th>
