@@ -49,7 +49,7 @@ function Table() {
             className={`resmem-tab ${type === tab ? "active" : ""}`}
             onClick={() => setType(tab)}
           >
-            {capitalize(tab.replace("Mem", "").replace("alumni", "Alumni"))}
+            <p>{capitalize(tab.replace("Mem", "").replace("alumni", "Alumni"))}</p> 
           </button>
         ))}
       </div>

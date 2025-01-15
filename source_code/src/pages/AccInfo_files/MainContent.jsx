@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./MainContent.css"; // Assuming you have a CSS file for styles
+import "./MainContent.css";
 import searchIcon from "./assets/magnifying-glass.png";
 
 const trainees = [
@@ -20,8 +20,8 @@ const MainContent = () => {
   const [activeTab, setActiveTab] = useState("trainees");
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState(trainees);
+  const [popupData, setPopupData] = useState(null);
 
-  // Update filtered data based on active tab and search term
   useEffect(() => {
     const data = activeTab === "trainees" ? trainees : members;
     const keys = Object.keys(data[0]);
@@ -31,12 +31,59 @@ const MainContent = () => {
     setFilteredData(results);
   }, [activeTab, searchTerm]);
 
-  // Render the table headers based on the active tab
+  const handleEditUser = (user) => {
+    alert(`Edit User: ${user.name}`);
+  };
+
+  const handleDeleteUser = (user) => {
+    const confirmDelete = window.confirm(`Are you sure you want to delete ${user.name}?`);
+    if (confirmDelete) {
+      setFilteredData((prevData) => prevData.filter((u) => u !== user));
+    }
+  };
+
   const renderHeaders = () => {
     if (activeTab === "trainees") {
       return ["NAME", "EMAIL", "BATCH", "MENTOR", ""];
     }
     return ["NAME", "EMAIL", "BATCH", "ORG BATCH", ""];
+  };
+
+  const renderPopup = () => {
+    if (!popupData) return null;
+
+    const { user, position } = popupData;
+
+    return (
+      <div
+        className="popup-menu"
+        style={{
+          position: "absolute",
+          top: position.y,
+          left: position.x,
+        }}
+        onMouseLeave={() => setPopupData(null)}
+      >
+        <button
+          className="edit-button"
+          onClick={() => {
+            handleEditUser(user);
+            setPopupData(null);
+          }}
+        >
+          Edit User
+        </button>
+        <button
+          className="delete-button"
+          onClick={() => {
+            handleDeleteUser(user);
+            setPopupData(null);
+          }}
+        >
+          Delete User
+        </button>
+      </div>
+    );
   };
 
   return (
@@ -49,7 +96,6 @@ const MainContent = () => {
       </header>
 
       <div className="table-content">
-        {/* Search Bar */}
         <div className="accinfo-search-bar">
           <div className="accinfo-search-container">
             <input
@@ -64,23 +110,21 @@ const MainContent = () => {
           </div>
         </div>
 
-        {/* Tabs */}
         <div className="accinfo-tabs">
           <button
             className={`accinfo-tab ${activeTab === "trainees" ? "active" : ""}`}
             onClick={() => setActiveTab("trainees")}
           >
-            Trainees
+            <p>Trainees</p>
           </button>
           <button
             className={`accinfo-tab ${activeTab === "members" ? "active" : ""}`}
             onClick={() => setActiveTab("members")}
           >
-            Members
+            <p>Members</p>
           </button>
         </div>
 
-        {/* Table */}
         <div className="accinfo-table-textfields">
           <table className="accinfo-account-table">
             <thead>
@@ -102,12 +146,30 @@ const MainContent = () => {
                   <td>{row.email}</td>
                   <td>{row.batch}</td>
                   <td>{activeTab === "trainees" ? row.mentor : row.orgbatch}</td>
-                  <td>{row.additionalInfo}</td>
+                  <td>
+                    <button
+                      className="vert-ellipsis"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const rect = e.target.getBoundingClientRect();
+                        setPopupData({
+                          user: row,
+                          position: {
+                            x: rect.right + 10,
+                            y: rect.top,
+                          },
+                        });
+                      }}
+                    >
+                      {row.additionalInfo}
+                    </button>
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+        {renderPopup()}
       </div>
     </main>
   );

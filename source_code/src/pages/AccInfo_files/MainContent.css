@@ -68,6 +68,9 @@
     border-top-right-radius: 8px;
     cursor: pointer;
 }
+.accinfo-tab.active p{
+    font-weight: bold;
+}
 
 .accinfo-tab:hover{
     transition: all 0.3s ease;
