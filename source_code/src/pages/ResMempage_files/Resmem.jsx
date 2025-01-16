@@ -1,27 +1,6 @@
 import React, { useState } from "react";
 import "./Resmem.css";
 import Table from "./Table.jsx";
-
-// const dataMap = {
-//   activeMem: [
-//     { name: "John Doe", email: "jdoe@up.edu.ph", batch: 2023, orgbatch: "NA", additionalInfo: "⋮" },
-//     { name: "Ada Lovelace", email: "alovelace@up.edu.ph", batch: 1999, orgbatch: "NA", additionalInfo: "" },
-//     { name: "George Bool", email: "gboole@up.edu.ph", batch: 2022, orgbatch: "NA", additionalInfo: "" },
-//     { name: "Bill Gates", email: "bgates@up.edu.ph", batch: 2010, orgbatch: "NA", additionalInfo: "" },
-//   ],
-//   inactiveMem: [
-//     { name: "John Doe", email: "jdoe@up.edu.ph", batch: 2023, orgbatch: "System7", additionalInfo: "" },
-//     { name: "Ada Lovelace", email: "alovelace@up.edu.ph", batch: 1999, orgbatch: "nightMode", additionalInfo: "" },
-//     { name: "George Bool", email: "gboole@up.edu.ph", batch: 2022, orgbatch: "Reboot", additionalInfo: "" },
-//     { name: "Bill Gates", email: "bgates@up.edu.ph", batch: 2010, orgbatch: "Batch from Home", additionalInfo: "" },
-//   ],
-//   alumni: [
-//     { name: "John Doe", email: "jdoe@up.edu.ph", batch: 2023, orgbatch: "Charter", additionalInfo: "" },
-//     { name: "Ada Lovelace", email: "alovelace@up.edu.ph", batch: 1999, orgbatch: "nightMode", additionalInfo: "" },
-//     { name: "George Bool", email: "gboole@up.edu.ph", batch: 2022, orgbatch: "Reboot", additionalInfo: "" },
-//     { name: "Bill Gates", email: "bgates@up.edu.ph", batch: 2010, orgbatch: "Batch from Home", additionalInfo: "" },
-//   ],
-// };
 function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
@@ -31,10 +10,6 @@ function ResMem() {
   const [type, setType] = useState("activeMem");
   const [searchTerm, setSearchTerm] = useState("");
   const [dropdownVisible, setDropdownVisible] = useState(false);
-
-//   const filteredData = dataMap[type].filter((item) =>
-//     item.name.toLowerCase().includes(searchTerm.toLowerCase())
-//   );
 
   return (
     <body>
@@ -46,7 +21,6 @@ function ResMem() {
         </div>
         <ul className="navButtons">
           <li className="button"><a href="">Dashboard</a></li>
-          <li className="button"><a href="">Connect</a></li>
           <li className="button"><a href="">Mentors</a></li>
           <li className="navActive button"><a href="">Resident Members</a></li>
         </ul>
