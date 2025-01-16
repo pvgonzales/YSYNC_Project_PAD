@@ -11,7 +11,7 @@ function Sidebar() {
       {/* Logo Section */}
       <div className="accinfo-logo">
         <a href="../acc-info/admin-acc-info.html">
-          <img className="logo-img" src={logoImg} alt="YSYNC Logo" />
+          <img className="logo-img" src="" alt="YSYNC Logo" />
         </a>
         <h2>YSYNC</h2>
       </div>
